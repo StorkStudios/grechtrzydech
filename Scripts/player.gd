@@ -51,7 +51,6 @@ func handle_input():
 # Update camera rotation based on mouse movement
 func update_camera_rotation():
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		print(mouse_delta)
 		var rotation_x = -mouse_delta.y * sensitivity_y
 		var rotation_y = -mouse_delta.x * sensitivity_x
 
