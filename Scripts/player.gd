@@ -4,7 +4,8 @@ extends CharacterBody3D
 var move_speed = 5.0
 var gravity = -9.8
 var jump_speed = 10.0
-var sensitivity = 0.1
+var sensitivity_x = 0.01
+var sensitivity_y = 0.5
 var max_look_angle = 80.0
 
 var mouse_delta = Vector2.ZERO
@@ -33,13 +34,13 @@ func handle_input():
 	dir = Vector3.ZERO
 
 	if Input.is_action_pressed("move_forward"):
-		dir -= transform.basis.z
-	if Input.is_action_pressed("move_backward"):
 		dir += transform.basis.z
+	if Input.is_action_pressed("move_backward"):
+		dir -= transform.basis.z
 	if Input.is_action_pressed("move_left"):
-		dir -= transform.basis.x
-	if Input.is_action_pressed("move_right"):
 		dir += transform.basis.x
+	if Input.is_action_pressed("move_right"):
+		dir -= transform.basis.x
 
 	# Normalize dir to ensure consistent speed
 	dir = dir.normalized()
@@ -50,9 +51,9 @@ func handle_input():
 # Update camera rotation based on mouse movement
 func update_camera_rotation():
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		var mouse_motion = mouse_delta
-		var rotation_x = -mouse_motion.y * sensitivity
-		var rotation_y = -mouse_motion.x * sensitivity
+		print(mouse_delta)
+		var rotation_x = -mouse_delta.y * sensitivity_y
+		var rotation_y = -mouse_delta.x * sensitivity_x
 
 		# Clamp vertical rotation to avoid flipping
 		vertical_look_angle += rotation_x
@@ -75,20 +76,16 @@ func apply_gravity(delta):
 
 # Move the player based on input
 func move_player(delta):
-	if is_on_floor() and jump_this_frame:
-		velocity.y = jump_speed
-		jump_this_frame = false
-
 	# Move the character using CharacterBody3D's move_and_slide
 	move_and_slide()
 
 # Capture/uncapture the mouse with ESC
 func _input(event):
-	if event is InputEventKey and event.pressed and event.keycode == KEY_ESCAPE:
-		if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
-	elif event is InputEventMouseMotion:
-		mouse_delta += event.position
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_ESCAPE:
+			if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			else:
+				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	if event is InputEventMouseMotion:
+		mouse_delta = event.relative
