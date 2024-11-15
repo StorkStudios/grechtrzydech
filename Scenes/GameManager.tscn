@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctvohe0asm13g"]
+
+[ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_qb0kb"]
+[ext_resource type="PackedScene" uid="uid://br35mxuh4uu3i" path="res://Scenes/ClockScene.tscn" id="2_dhdwe"]
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_qb0kb")
+
+[node name="ClockScene" parent="." instance=ExtResource("2_dhdwe")]
+
+[connection signal="kill_time_end" from="ClockScene" to="." method="_on_clock_scene_kill_time_end"]
+[connection signal="kill_time_start" from="ClockScene" to="." method="_on_clock_scene_kill_time_start"]
