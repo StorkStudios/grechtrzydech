@@ -18,9 +18,6 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6937, 0)
 shape = SubResource("WorldBoundaryShape3D_fa7u6")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.212043, 1.09776)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_lr0u6")
 camera_attributes = SubResource("CameraAttributesPractical_fpgdr")
