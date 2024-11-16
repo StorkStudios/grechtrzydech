@@ -1,5 +1,5 @@
 class_name InteractTarget;
-extends CollisionShape3D
+extends StaticBody3D;
 
 @export var tag: String;
 @export var allowMultipleInteractions: bool;

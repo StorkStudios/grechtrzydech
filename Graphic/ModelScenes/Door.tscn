@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=4 uid="uid://so351frv8aq8"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/door.gd" id="1_ed5h2"]
-[ext_resource type="PackedScene" uid="uid://csu0rywieacfi" path="res://Scenes/InteractTarget.tscn" id="2_s0c63"]
+[ext_resource type="Script" path="res://Scripts/interact_target.gd" id="3_vy4ur"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h07eu"]
 
@@ -35,8 +35,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_odwav")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ks6ws"]
-size = Vector3(0.22, 2.3, 1.4)
+[sub_resource type="BoxShape3D" id="BoxShape3D_unh88"]
+size = Vector3(0.405, 2.261, 1.345)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rw08s"]
 
@@ -78,7 +78,7 @@ length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/StaticBody3D:rotation")
+tracks/0/path = NodePath("DoorArmature/InteractTarget:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -94,7 +94,7 @@ length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/StaticBody3D:rotation")
+tracks/0/path = NodePath("DoorArmature/InteractTarget:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -109,7 +109,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/StaticBody3D:rotation")
+tracks/0/path = NodePath("DoorArmature/InteractTarget:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -129,7 +129,7 @@ _data = {
 [node name="Door" type="Node3D" node_paths=PackedStringArray("animation_player", "interactTarget")]
 script = ExtResource("1_ed5h2")
 animation_player = NodePath("AnimationPlayer")
-interactTarget = NodePath("DoorArmature/StaticBody3D/InteractTarget")
+interactTarget = NodePath("DoorArmature/InteractTarget")
 
 [node name="DoorArmature" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0654085, -0.115431)
@@ -139,15 +139,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0439122, 0.0616897)
 mesh = SubResource("ArrayMesh_83w0h")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoorArmature"]
+[node name="InteractTarget" type="StaticBody3D" parent="DoorArmature"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965, -0.492)
-
-[node name="InteractTarget" parent="DoorArmature/StaticBody3D" instance=ExtResource("2_s0c63")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121, 0.551)
-shape = SubResource("BoxShape3D_ks6ws")
+script = ExtResource("3_vy4ur")
 allowMultipleInteractions = true
 
-[node name="DoorGodot" type="MeshInstance3D" parent="DoorArmature/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorArmature/InteractTarget"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121513, 0.551)
+shape = SubResource("BoxShape3D_unh88")
+
+[node name="DoorGodot" type="MeshInstance3D" parent="DoorArmature/InteractTarget"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_nyfrk")
 skeleton = NodePath("")
