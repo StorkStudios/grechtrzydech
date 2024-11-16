@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs376vtgjwyfe"
 path.s3tc="res://.godot/imported/CoridorWallRoughness.png-b0320284450bff2b2c0b1bc8e67a26ce.s3tc.ctex"
+path.etc2="res://.godot/imported/CoridorWallRoughness.png-b0320284450bff2b2c0b1bc8e67a26ce.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/Walls/CoridorWallRoughness.png"
-dest_files=["res://.godot/imported/CoridorWallRoughness.png-b0320284450bff2b2c0b1bc8e67a26ce.s3tc.ctex"]
+dest_files=["res://.godot/imported/CoridorWallRoughness.png-b0320284450bff2b2c0b1bc8e67a26ce.s3tc.ctex", "res://.godot/imported/CoridorWallRoughness.png-b0320284450bff2b2c0b1bc8e67a26ce.etc2.ctex"]
 
 [params]
 

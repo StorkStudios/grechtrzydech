@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2rqb16x6ebov"
 path.s3tc="res://.godot/imported/WoodenFurnitureNormal.png-b68d932a0f6dbd4ff4534c356840d605.s3tc.ctex"
+path.etc2="res://.godot/imported/WoodenFurnitureNormal.png-b68d932a0f6dbd4ff4534c356840d605.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/Furnitures/WoodenFurnitureNormal.png"
-dest_files=["res://.godot/imported/WoodenFurnitureNormal.png-b68d932a0f6dbd4ff4534c356840d605.s3tc.ctex"]
+dest_files=["res://.godot/imported/WoodenFurnitureNormal.png-b68d932a0f6dbd4ff4534c356840d605.s3tc.ctex", "res://.godot/imported/WoodenFurnitureNormal.png-b68d932a0f6dbd4ff4534c356840d605.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc0xgfye0xlyk"
 path.s3tc="res://.godot/imported/RoomWall1BaseColor.png-6795630cb4f12177d446b21496993dd6.s3tc.ctex"
+path.etc2="res://.godot/imported/RoomWall1BaseColor.png-6795630cb4f12177d446b21496993dd6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/Walls/RoomWall1BaseColor.png"
-dest_files=["res://.godot/imported/RoomWall1BaseColor.png-6795630cb4f12177d446b21496993dd6.s3tc.ctex"]
+dest_files=["res://.godot/imported/RoomWall1BaseColor.png-6795630cb4f12177d446b21496993dd6.s3tc.ctex", "res://.godot/imported/RoomWall1BaseColor.png-6795630cb4f12177d446b21496993dd6.etc2.ctex"]
 
 [params]
 

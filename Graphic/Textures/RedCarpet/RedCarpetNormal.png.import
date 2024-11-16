@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://3qddyg0mvrol"
 path.s3tc="res://.godot/imported/RedCarpetNormal.png-121bb16ee3582a78db87169e0a6d3f75.s3tc.ctex"
+path.etc2="res://.godot/imported/RedCarpetNormal.png-121bb16ee3582a78db87169e0a6d3f75.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/RedCarpet/RedCarpetNormal.png"
-dest_files=["res://.godot/imported/RedCarpetNormal.png-121bb16ee3582a78db87169e0a6d3f75.s3tc.ctex"]
+dest_files=["res://.godot/imported/RedCarpetNormal.png-121bb16ee3582a78db87169e0a6d3f75.s3tc.ctex", "res://.godot/imported/RedCarpetNormal.png-121bb16ee3582a78db87169e0a6d3f75.etc2.ctex"]
 
 [params]
 

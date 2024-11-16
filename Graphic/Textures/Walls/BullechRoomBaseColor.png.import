@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://x3fpfkq60w2e"
 path.s3tc="res://.godot/imported/BullechRoomBaseColor.png-22964ad1c6f930099064ec944e318ee0.s3tc.ctex"
+path.etc2="res://.godot/imported/BullechRoomBaseColor.png-22964ad1c6f930099064ec944e318ee0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/Walls/BullechRoomBaseColor.png"
-dest_files=["res://.godot/imported/BullechRoomBaseColor.png-22964ad1c6f930099064ec944e318ee0.s3tc.ctex"]
+dest_files=["res://.godot/imported/BullechRoomBaseColor.png-22964ad1c6f930099064ec944e318ee0.s3tc.ctex", "res://.godot/imported/BullechRoomBaseColor.png-22964ad1c6f930099064ec944e318ee0.etc2.ctex"]
 
 [params]
 

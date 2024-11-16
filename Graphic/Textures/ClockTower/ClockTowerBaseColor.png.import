@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4phafgcd5agh"
 path.s3tc="res://.godot/imported/ClockTowerBaseColor.png-574ae17916b4d6dcff57df03f420de04.s3tc.ctex"
+path.etc2="res://.godot/imported/ClockTowerBaseColor.png-574ae17916b4d6dcff57df03f420de04.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/ClockTower/ClockTowerBaseColor.png"
-dest_files=["res://.godot/imported/ClockTowerBaseColor.png-574ae17916b4d6dcff57df03f420de04.s3tc.ctex"]
+dest_files=["res://.godot/imported/ClockTowerBaseColor.png-574ae17916b4d6dcff57df03f420de04.s3tc.ctex", "res://.godot/imported/ClockTowerBaseColor.png-574ae17916b4d6dcff57df03f420de04.etc2.ctex"]
 
 [params]
 

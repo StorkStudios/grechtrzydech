@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://vl2575wnrt48"
 path.s3tc="res://.godot/imported/ClockTowerMetallic.png-95a2a2059434f6c966ffa2caeb9a87e4.s3tc.ctex"
+path.etc2="res://.godot/imported/ClockTowerMetallic.png-95a2a2059434f6c966ffa2caeb9a87e4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/ClockTower/ClockTowerMetallic.png"
-dest_files=["res://.godot/imported/ClockTowerMetallic.png-95a2a2059434f6c966ffa2caeb9a87e4.s3tc.ctex"]
+dest_files=["res://.godot/imported/ClockTowerMetallic.png-95a2a2059434f6c966ffa2caeb9a87e4.s3tc.ctex", "res://.godot/imported/ClockTowerMetallic.png-95a2a2059434f6c966ffa2caeb9a87e4.etc2.ctex"]
 
 [params]
 

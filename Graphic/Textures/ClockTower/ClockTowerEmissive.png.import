@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://drw6pkex48ftd"
 path.s3tc="res://.godot/imported/ClockTowerEmissive.png-8b8b9954e45d2df65b6435ec1b941bd8.s3tc.ctex"
+path.etc2="res://.godot/imported/ClockTowerEmissive.png-8b8b9954e45d2df65b6435ec1b941bd8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/ClockTower/ClockTowerEmissive.png"
-dest_files=["res://.godot/imported/ClockTowerEmissive.png-8b8b9954e45d2df65b6435ec1b941bd8.s3tc.ctex"]
+dest_files=["res://.godot/imported/ClockTowerEmissive.png-8b8b9954e45d2df65b6435ec1b941bd8.s3tc.ctex", "res://.godot/imported/ClockTowerEmissive.png-8b8b9954e45d2df65b6435ec1b941bd8.etc2.ctex"]
 
 [params]
 

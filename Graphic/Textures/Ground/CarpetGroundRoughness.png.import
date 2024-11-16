@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjnu14og0vgwv"
 path.s3tc="res://.godot/imported/CarpetGroundRoughness.png-227d47631726a3e3094317bfa8701cad.s3tc.ctex"
+path.etc2="res://.godot/imported/CarpetGroundRoughness.png-227d47631726a3e3094317bfa8701cad.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/Ground/CarpetGroundRoughness.png"
-dest_files=["res://.godot/imported/CarpetGroundRoughness.png-227d47631726a3e3094317bfa8701cad.s3tc.ctex"]
+dest_files=["res://.godot/imported/CarpetGroundRoughness.png-227d47631726a3e3094317bfa8701cad.s3tc.ctex", "res://.godot/imported/CarpetGroundRoughness.png-227d47631726a3e3094317bfa8701cad.etc2.ctex"]
 
 [params]
 

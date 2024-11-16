@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dc4gx18dajogk"
 path.s3tc="res://.godot/imported/KitchenWetFloorNormal.png-4ef9ab057c98d661fb774b66a955cef2.s3tc.ctex"
+path.etc2="res://.godot/imported/KitchenWetFloorNormal.png-4ef9ab057c98d661fb774b66a955cef2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Graphic/Textures/KitchenWetFloor/KitchenWetFloorNormal.png"
-dest_files=["res://.godot/imported/KitchenWetFloorNormal.png-4ef9ab057c98d661fb774b66a955cef2.s3tc.ctex"]
+dest_files=["res://.godot/imported/KitchenWetFloorNormal.png-4ef9ab057c98d661fb774b66a955cef2.s3tc.ctex", "res://.godot/imported/KitchenWetFloorNormal.png-4ef9ab057c98d661fb774b66a955cef2.etc2.ctex"]
 
 [params]
 
