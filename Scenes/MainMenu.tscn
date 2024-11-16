@@ -1,8 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ccxciogjyvwg3"]
 
 [ext_resource type="Script" path="res://Scripts/menu_controller.gd" id="1_ug77i"]
-
-[sub_resource type="Shortcut" id="Shortcut_8cboa"]
+[ext_resource type="PackedScene" uid="uid://c3t51iuqddibp" path="res://Scenes/UIButton.tscn" id="2_e2mo5"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -20,16 +19,15 @@ offset_top = 20.0
 offset_right = 220.0
 offset_bottom = 170.0
 
-[node name="StartGame" type="Button" parent="VBoxContainer"]
+[node name="StartGameButton" parent="VBoxContainer" instance=ExtResource("2_e2mo5")]
 layout_mode = 2
 text = "Start game"
 
-[node name="CreditsButton" type="Button" parent="VBoxContainer"]
+[node name="CreditsButton" parent="VBoxContainer" instance=ExtResource("2_e2mo5")]
 layout_mode = 2
-shortcut = SubResource("Shortcut_8cboa")
 text = "Credits"
 
-[node name="QuitGame" type="Button" parent="VBoxContainer"]
+[node name="QuitGameButton" parent="VBoxContainer" instance=ExtResource("2_e2mo5")]
 layout_mode = 2
 text = "Quit game"
 
@@ -50,6 +48,6 @@ drag_and_drop_selection_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 
-[connection signal="pressed" from="VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/QuitGame" to="." method="_on_quit_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitGameButton" to="." method="_on_quit_game_pressed"]
