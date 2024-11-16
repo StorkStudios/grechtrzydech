@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3y276dapvses"]
+[gd_scene load_steps=2 format=3 uid="uid://cu457nddwb67r"]
 
 [ext_resource type="PackedScene" uid="uid://qesjbpoc4jtm" path="res://Graphic/Models/Character/Character.glb" id="1_vnx65"]
 
@@ -10,7 +10,6 @@ bones/5/rotation = Quaternion(-0.00542679, 0.000645043, 0.0485531, 0.998806)
 bones/5/scale = Vector3(1, 1, 1)
 bones/6/rotation = Quaternion(0.0154366, 0.00171953, 0.0853829, 0.996227)
 bones/6/scale = Vector3(1, 1, 1)
-bones/7/scale = Vector3(1, 1, 1)
 bones/8/rotation = Quaternion(-0.216029, -0.055656, 0.00683615, 0.974775)
 bones/9/rotation = Quaternion(-0.14656, 0.00700713, -0.0796869, 0.985962)
 bones/10/rotation = Quaternion(0.112249, -0.00226537, -0.0616256, 0.991765)
@@ -65,7 +64,6 @@ bones/44/scale = Vector3(1, 1, 1)
 bones/45/rotation = Quaternion(-0.007432, 0.00391353, -0.000755167, 0.999964)
 bones/45/scale = Vector3(1, 1, 1)
 bones/46/rotation = Quaternion(-0.216171, -0.00162952, 0.068948, 0.973917)
-bones/46/scale = Vector3(1, 1, 1)
 bones/47/scale = Vector3(1, 1, 1)
 bones/48/rotation = Quaternion(0.00589208, 0.00238353, 0.000389245, 0.99998)
 bones/48/scale = Vector3(1, 1, 1)

@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://tw8q5tj3ycus"]
+[gd_scene load_steps=4 format=3 uid="uid://cfdcyx0w2on3a"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_4g35d"]
-[ext_resource type="PackedScene" uid="uid://cmjk73jfot0lu" path="res://Scenes/character_standing_1.tscn" id="2_sxf0x"]
+[ext_resource type="PackedScene" uid="uid://cuiitnao8ofwq" path="res://Scenes/character_standing_1.tscn" id="2_sxf0x"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy4xi"]
 
