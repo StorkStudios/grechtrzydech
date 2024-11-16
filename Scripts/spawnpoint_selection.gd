@@ -1,6 +1,7 @@
 extends Control
 
 @export var game_scene = "res://Scenes/node_3d.tscn"
+@export var audioStream : AudioStream;
 var levels
 var selected_level
 var top_left_corner
@@ -12,6 +13,7 @@ func _ready() -> void:
 	selected_child = $Maps.get_child(selected_level)
 	selected_child.visible = true
 	top_left_corner = selected_child.position
+	play_sound()
 	#top_left_corner.x += get_rect().size.x
 	#top_left_corner.y += get_rect().size.y
 
@@ -35,12 +37,18 @@ func map_to_world_coordinates(map: Vector2, width: float):
 
 func _on_button_left_button_down() -> void:
 	change_visible_map((selected_level-1)%levels)
+	play_sound()
 	
 func _on_button_right_button_down() -> void:
 	change_visible_map((selected_level+1)%levels)
+	play_sound()
 	
 func change_visible_map(new_level):
 	selected_child.visible = false
 	selected_level = new_level
 	selected_child = $Maps.get_child(new_level)
 	selected_child.visible = true
+
+func play_sound():
+	$AudioStreamPlayer.stream = audioStream;
+	$AudioStreamPlayer.play();
