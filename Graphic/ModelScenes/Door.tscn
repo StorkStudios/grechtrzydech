@@ -1,7 +1,7 @@
-[gd_scene load_steps=14 format=4 uid="uid://kytijgv3p6uh"]
+[gd_scene load_steps=14 format=4 uid="uid://so351frv8aq8"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/door.gd" id="1_ed5h2"]
-[ext_resource type="PackedScene" path="res://Scenes/InteractTarget.tscn" id="2_s0c63"]
+[ext_resource type="PackedScene" uid="uid://csu0rywieacfi" path="res://Scenes/InteractTarget.tscn" id="2_s0c63"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h07eu"]
 
@@ -34,6 +34,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_odwav")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ks6ws"]
+size = Vector3(0.22, 2.3, 1.4)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rw08s"]
 
@@ -69,16 +72,13 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_kic4h")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ks6ws"]
-size = Vector3(0.22, 2.3, 1.4)
-
 [sub_resource type="Animation" id="Animation_q5tum"]
 resource_name = "Closing"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/DoorGodot:rotation")
+tracks/0/path = NodePath("DoorArmature/StaticBody3D:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -88,28 +88,13 @@ tracks/0/keys = {
 "values": [Vector3(0, -2.00713, 0), Vector3(0, 0, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_jjrxv"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/DoorGodot:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, -2.00713, 0)]
-}
-
 [sub_resource type="Animation" id="Animation_nvqtj"]
 resource_name = "Opening"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/DoorGodot:rotation")
+tracks/0/path = NodePath("DoorArmature/StaticBody3D:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -119,6 +104,21 @@ tracks/0/keys = {
 "values": [Vector3(0, 0, 0), Vector3(0, -2.00713, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_jjrxv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorArmature/StaticBody3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mridd"]
 _data = {
 "Closing": SubResource("Animation_q5tum"),
@@ -126,9 +126,10 @@ _data = {
 "RESET": SubResource("Animation_jjrxv")
 }
 
-[node name="Door" type="Node3D" node_paths=PackedStringArray("interactTarget")]
+[node name="Door" type="Node3D" node_paths=PackedStringArray("animation_player", "interactTarget")]
 script = ExtResource("1_ed5h2")
-interactTarget = NodePath("DoorArmature/DoorGodot/InteractTarget")
+animation_player = NodePath("AnimationPlayer")
+interactTarget = NodePath("DoorArmature/StaticBody3D/InteractTarget")
 
 [node name="DoorArmature" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0654085, -0.115431)
@@ -138,14 +139,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0439122, 0.0616897)
 mesh = SubResource("ArrayMesh_83w0h")
 skeleton = NodePath("")
 
-[node name="DoorGodot" type="MeshInstance3D" parent="DoorArmature"]
-transform = Transform3D(-0.422619, 0, -0.906307, 0, 1, 0, 0.906307, 0, -0.422619, -7.38353e-05, 0.964825, -0.491809)
-mesh = SubResource("ArrayMesh_nyfrk")
-skeleton = NodePath("")
+[node name="StaticBody3D" type="StaticBody3D" parent="DoorArmature"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965, -0.492)
 
-[node name="InteractTarget" parent="DoorArmature/DoorGodot" instance=ExtResource("2_s0c63")]
+[node name="InteractTarget" parent="DoorArmature/StaticBody3D" instance=ExtResource("2_s0c63")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121, 0.551)
 shape = SubResource("BoxShape3D_ks6ws")
+allowMultipleInteractions = true
+
+[node name="DoorGodot" type="MeshInstance3D" parent="DoorArmature/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_nyfrk")
+skeleton = NodePath("")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

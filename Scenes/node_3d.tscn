@@ -53,3 +53,4 @@ tag = "bulech"
 
 [node name="Door" parent="." instance=ExtResource("5_h7ome")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.913, 0, 1.415)
+interactionTag = "bulech"

@@ -21,13 +21,13 @@ func _process(delta: float) -> void:
 
 func interact() -> void:
 	var collider: Object = get_collider();
+	var interact_target = find_child_of_type(collider as Node, "InteractTarget") as InteractTarget;
 	
 	if (collider is Item):
 		var item := collider as Item;
 		player_hand.try_to_grab_item(item);
 		
-	elif (collider is InteractTarget):
-		var interact_target := collider as InteractTarget;
+	elif (interact_target):
 		interact_target.try_to_interact(player_hand.held_item);
 		
 	elif (player_hand.held_item):
@@ -41,3 +41,13 @@ func attack() -> void:
 	if (collider is Enemy):
 		var enemy := collider as Enemy;
 		enemy.get_killed();
+
+func find_child_of_type(node: Node, type: String) -> Node:
+	if (!node):
+		return null;
+	
+	var children: Array[Node] = node.find_children("", type, false);
+	if (children.size() > 0):
+		return children[0];
+	return null;
+	
