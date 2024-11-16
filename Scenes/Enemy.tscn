@@ -1,15 +1,18 @@
 [gd_scene load_steps=4 format=3 uid="uid://cfdcyx0w2on3a"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_4g35d"]
-[ext_resource type="PackedScene" uid="uid://cuiitnao8ofwq" path="res://Scenes/character_standing_1.tscn" id="2_sxf0x"]
+[ext_resource type="PackedScene" uid="uid://d02yhn53vgxib" path="res://Scenes/character_animated.tscn" id="2_ty6r5"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy4xi"]
 
-[node name="Enemy" type="CharacterBody3D"]
+[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("animation")]
 script = ExtResource("1_4g35d")
+animation = NodePath("CharacterAnimated/AnimationPlayer")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_xy4xi")
 
-[node name="CharacterStanding1" parent="." instance=ExtResource("2_sxf0x")]
+[node name="CharacterAnimated" parent="." instance=ExtResource("2_ty6r5")]
+
+[editable path="CharacterAnimated"]
