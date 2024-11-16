@@ -54,10 +54,6 @@ drag_and_drop_selection_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 
-[connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_pressed"]
-[connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/QuitGameButton" to="." method="_on_quit_game_pressed"]
-
 [editable path="VBoxContainer/StartGameButton"]
 [editable path="VBoxContainer/CreditsButton"]
 [editable path="VBoxContainer/QuitGameButton"]
