@@ -17,8 +17,6 @@ func try_to_interact(item: Item) -> void:
 	
 	did_interact = true;
 	interacted.emit();
-	pass;
 
 func _ready() -> void:
 	did_interact = false;
-	pass
