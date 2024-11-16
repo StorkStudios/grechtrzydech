@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=4 uid="uid://ivv6t04ju8o7"]
+[gd_scene load_steps=5 format=4 uid="uid://b6wr47hy3uksa"]
 
-[ext_resource type="Material" uid="uid://cb8suv56hacgt" path="res://Graphic/Materials/RoomWall1.tres" id="1_1mbpv"]
+[ext_resource type="Material" uid="uid://cb7tpwu2neg7u" path="res://Graphic/Materials/RoomWall2.tres" id="1_vknh5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_csxn5"]
 
@@ -38,6 +38,6 @@ shadow_mesh = SubResource("ArrayMesh_pkddr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00461102, 0, -0.0451738)
 
 [node name="Wall-5x4" type="MeshInstance3D" parent="."]
-material_override = ExtResource("1_1mbpv")
+material_override = ExtResource("1_vknh5")
 mesh = SubResource("ArrayMesh_d1nks")
 skeleton = NodePath("")
