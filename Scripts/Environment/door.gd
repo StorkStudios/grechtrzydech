@@ -5,7 +5,7 @@ extends Node3D
 
 var opened: bool = false;
 
-func _init() -> void:
+func _ready() -> void:
 	interactTarget.interacted.connect(on_interacted);
 	
 func on_interacted() -> void:

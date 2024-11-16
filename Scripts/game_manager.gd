@@ -27,5 +27,5 @@ func npc_killed(npc: Node) -> void:
 func game_over():
 	print("GAME OVER!")
 	await get_tree().create_timer(0.1).timeout
-	get_tree().quit()
+	#get_tree().quit()
 	
