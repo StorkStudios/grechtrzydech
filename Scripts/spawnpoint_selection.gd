@@ -21,10 +21,13 @@ func _process(delta: float) -> void:
 
 func choose_spawnpoint():
 	var map_pos = get_viewport().get_mouse_position()
-	map_to_world_coordinates(map_pos-top_left_corner, selected_child.world_pos)
+	var width = get_viewport_rect().size.x
+	map_to_world_coordinates(map_pos-top_left_corner, width)
 	
-func map_to_world_coordinates(map: Vector2, world: Vector3):
-	var res = world+Vector3(map.x, 0, map.y)
+func map_to_world_coordinates(map: Vector2, width: float):
+	var mapx = map.x*selected_child.width/width
+	var mapy = map.y*selected_child.width/width
+	var res = selected_child.world_pos+Vector3(mapx, 0, mapy)
 	var player: Node3D = get_tree().get_first_node_in_group("Players")
 	print(res)
 	GlobalVariables.player_start_pos = res

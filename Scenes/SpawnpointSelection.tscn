@@ -62,6 +62,7 @@ grow_vertical = 2
 texture_normal = ExtResource("1_pc30g")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
+world_pos = Vector3(-10, 5, -10)
 
 [node name="ButtonLeft" type="Button" parent="."]
 layout_mode = 1
