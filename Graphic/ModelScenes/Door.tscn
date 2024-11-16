@@ -149,7 +149,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121513, 0.551)
 shape = SubResource("BoxShape3D_unh88")
 
 [node name="DoorGodot" type="MeshInstance3D" parent="DoorArmature/InteractTarget"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_nyfrk")
 skeleton = NodePath("")
 

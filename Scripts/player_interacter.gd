@@ -9,15 +9,17 @@ func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("attack")):
 		attack();
 		
+	cursor.set_cursor_state(Cursor.State.normal);
+	
 	var collider: Object = get_collider();
 	if (collider is Item):
 		cursor.set_cursor_state(Cursor.State.pick_up);
 	elif (collider is InteractTarget):
-		cursor.set_cursor_state(Cursor.State.interact);
+		var interact_target := collider as InteractTarget;
+		if (interact_target.will_interact(player_hand.held_item)):
+			cursor.set_cursor_state(Cursor.State.interact);
 	elif (collider is Enemy):
 		cursor.set_cursor_state(Cursor.State.attack);
-	else:
-		cursor.set_cursor_state(Cursor.State.normal);
 
 func interact() -> void:
 	var collider: Object = get_collider();
