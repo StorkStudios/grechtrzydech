@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d7hrppljxwtw"]
+
+[ext_resource type="Script" path="res://Scripts/player_hand.gd" id="1_77bur"]
+
+[node name="PlayerHand" type="Node3D"]
+script = ExtResource("1_77bur")
+animation_duration = 0.5
