@@ -3,7 +3,7 @@
 [ext_resource type="Material" uid="uid://bdxwitxp8usfv" path="res://Graphic/Materials/WallCoridor.tres" id="1_sxho0"]
 [ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="2_ji3sk"]
 [ext_resource type="Material" uid="uid://dlaiew64f84c4" path="res://Graphic/Materials/UpFloor.tres" id="3_n0p6x"]
-[ext_resource type="PackedScene" uid="uid://kytijgv3p6uh" path="res://Graphic/ModelScenes/Door.tscn" id="4_i48ij"]
+[ext_resource type="PackedScene" uid="uid://so351frv8aq8" path="res://Graphic/ModelScenes/Door.tscn" id="4_i48ij"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h36co"]
 

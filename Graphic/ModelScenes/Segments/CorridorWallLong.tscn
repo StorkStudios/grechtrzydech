@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=4 uid="uid://bobayqfktsksi"]
+[gd_scene load_steps=16 format=4 uid="uid://bobayqfktsksi"]
 
 [ext_resource type="Material" uid="uid://bdxwitxp8usfv" path="res://Graphic/Materials/WallCoridor.tres" id="1_74vyt"]
 [ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="2_lywut"]
 [ext_resource type="Material" uid="uid://dlaiew64f84c4" path="res://Graphic/Materials/UpFloor.tres" id="3_em5co"]
 [ext_resource type="PackedScene" uid="uid://so351frv8aq8" path="res://Graphic/ModelScenes/Door.tscn" id="4_tv8av"]
+[ext_resource type="PackedScene" uid="uid://cjdhb1lpfdfct" path="res://Graphic/Models/NrDoor.fbx" id="5_034e3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h36co"]
 
@@ -141,3 +142,6 @@ shape = SubResource("BoxShape3D_lw440")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall-5x4/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.80623, -0.179321, 1.26218)
 shape = SubResource("BoxShape3D_lw440")
+
+[node name="NrDoor" parent="Wall-5x4/StaticBody3D" instance=ExtResource("5_034e3")]
+transform = Transform3D(-1, 0, 0, 0, 0, 1, 0, 1, 0, 2.878, 41.6273, 0)
