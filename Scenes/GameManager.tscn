@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctvohe0asm13g"]
+[gd_scene load_steps=3 format=3 uid="uid://c8gm5uj2w4ke8"]
 
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_qb0kb"]
-[ext_resource type="PackedScene" uid="uid://br35mxuh4uu3i" path="res://Scenes/ClockScene.tscn" id="2_dhdwe"]
+[ext_resource type="PackedScene" path="res://Scenes/ClockScene.tscn" id="2_dhdwe"]
 
 [node name="GameManager" type="Node"]
 script = ExtResource("1_qb0kb")

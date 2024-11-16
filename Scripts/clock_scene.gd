@@ -1,5 +1,5 @@
 extends Node
-class_name clock
+class_name ClockScene
 
 @export var time_between_kills: float = 1
 @export var kill_time: float = 1
