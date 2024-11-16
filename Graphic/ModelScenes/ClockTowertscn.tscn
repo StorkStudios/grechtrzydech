@@ -169,7 +169,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_v758p")
 
 [node name="ClockTowerAndDoor" type="Node3D"]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+transform = Transform3D(3.75812, 0, 0, 0, 3.75812, 0, 0, 0, 3.75812, 0, 0, 0)
 
 [node name="Arrows" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.76674, 20.4694, 0.18354)

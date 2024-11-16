@@ -1,44 +1,13 @@
-[gd_scene load_steps=5 format=4 uid="uid://dij6s8lixgymv"]
+[gd_scene load_steps=3 format=3 uid="uid://dij6s8lixgymv"]
 
 [ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="1_s8eml"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oi1nk"]
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_sk7wc"]
-_surfaces = [{
-"aabb": AABB(-5, 0, -3, 10, 1e-05, 6),
-"format": 34896613377,
-"index_count": 12,
-"index_data": PackedByteArray("BAADAAUABAACAAMAAAAFAAEAAAAEAAUA"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 6,
-"vertex_data": PackedByteArray("AAAAAP//AAD//wAA//8AAAAAAAAAAAAA//8AAAAAAAAAAAAA/38AAP//AAD/fwAA")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_d7shi"]
-resource_name = "Walls_Plane"
-_surfaces = [{
-"aabb": AABB(-5, 0, -3, 10, 1e-05, 6),
-"attribute_data": PackedByteArray("MDSl+DA0ngeZBqX4mQaeB5kGpfgwNKX4mQaeBzA0ngc="),
-"format": 34896613399,
-"index_count": 12,
-"index_data": PackedByteArray("BQADAAcABQACAAMAAAAGAAEAAAAEAAYA"),
-"material": SubResource("StandardMaterial3D_oi1nk"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("AAAAAP//VNX//wAA//9U1QAAAAAAAFTV//8AAAAAVNUAAAAA/39U1QAAAAD/f1TV//8AAP9/VNX//wAA/39U1aqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_sk7wc")
+[sub_resource type="PlaneMesh" id="PlaneMesh_bcssj"]
 
 [node name="Carpet" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.190201, 0, 0.0320636)
 
 [node name="Ground" type="MeshInstance3D" parent="."]
-transform = Transform3D(2.73123, 0, 0, 0, 1.00428, 0, 0, 0, 1.9128, 0, 0, 0)
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0)
 material_override = ExtResource("1_s8eml")
-mesh = SubResource("ArrayMesh_d7shi")
+mesh = SubResource("PlaneMesh_bcssj")
 skeleton = NodePath("")

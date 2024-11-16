@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=4 uid="uid://dbub7cvjtp8ud"]
+[gd_scene load_steps=6 format=4 uid="uid://dbub7cvjtp8ud"]
 
 [ext_resource type="Material" uid="uid://cgksjb16pbyx1" path="res://Graphic/Materials/BullechRoomWall.tres" id="1_gr0ex"]
+[ext_resource type="PackedScene" uid="uid://dij6s8lixgymv" path="res://Graphic/ModelScenes/WallsAndGround/CarpetGround.tscn" id="2_4v04s"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_csxn5"]
 
@@ -37,7 +38,16 @@ shadow_mesh = SubResource("ArrayMesh_afq3u")
 [node name="Walls" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00461102, 0, -0.0451738)
 
-[node name="Wall-5x4" type="MeshInstance3D" parent="."]
+[node name="Wall-5x5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 3)
 material_override = ExtResource("1_gr0ex")
 mesh = SubResource("ArrayMesh_d1nks")
 skeleton = NodePath("")
+
+[node name="Wall-5x4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+material_override = ExtResource("1_gr0ex")
+mesh = SubResource("ArrayMesh_d1nks")
+skeleton = NodePath("")
+
+[node name="Carpet" parent="." instance=ExtResource("2_4v04s")]
