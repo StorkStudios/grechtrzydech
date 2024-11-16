@@ -42,5 +42,5 @@ func doormat_animation() -> void:
 	while (time < animation_duration):
 		time += get_process_delta_time();
 		var t: float = time / animation_duration;
-		position = start_posiiton.lerp(local_position_target, t);
+		position = start_posiiton.lerp(start_posiiton + local_position_target, t);
 		await get_tree().process_frame;
