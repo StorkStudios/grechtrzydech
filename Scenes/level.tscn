@@ -1,0 +1,58 @@
+[gd_scene load_steps=11 format=3 uid="uid://pxdn0ccsegk2"]
+
+[ext_resource type="PackedScene" uid="uid://durub8p1hj84q" path="res://Scenes/Player.tscn" id="1_q7s76"]
+[ext_resource type="PackedScene" uid="uid://b8jai8n4cjp5w" path="res://Scenes/Wall.tscn" id="2_tq4ib"]
+[ext_resource type="PackedScene" uid="uid://tw8q5tj3ycus" path="res://Scenes/Enemy.tscn" id="3_wd5i5"]
+[ext_resource type="PackedScene" uid="uid://bbfy1qytdjcd6" path="res://Scenes/Item.tscn" id="4_obtn6"]
+[ext_resource type="PackedScene" uid="uid://c8gm5uj2w4ke8" path="res://Scenes/GameManager.tscn" id="5_jphyl"]
+[ext_resource type="PackedScene" uid="uid://so351frv8aq8" path="res://Graphic/ModelScenes/Door.tscn" id="6_7pwk0"]
+[ext_resource type="PackedScene" path="res://Scenes/PauseMenu.tscn" id="7_jq3bk"]
+
+[sub_resource type="Environment" id="Environment_lr0u6"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_fpgdr"]
+
+[sub_resource type="Compositor" id="Compositor_vl3l5"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_lr0u6")
+camera_attributes = SubResource("CameraAttributesPractical_fpgdr")
+compositor = SubResource("Compositor_vl3l5")
+
+[node name="Player" parent="." instance=ExtResource("1_q7s76")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="StaticBody3D2" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(20, 0, 0, 0, 0.25, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="StaticBody3D6" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(20, 0, 0, 0, 0.25, 0, 0, 0, 2, 0, 3, 0)
+
+[node name="StaticBody3D7" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(20, 0, 0, 0, 0.25, 0, 0, 0, 2, 0.263464, 5.76322, 0.0989809)
+
+[node name="StaticBody3D4" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.01747, 0.695005, -0.905751)
+
+[node name="StaticBody3D3" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.10508, 0.733794, -5.11187)
+
+[node name="StaticBody3D5" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.840501, 0.618664, 5.82977)
+
+[node name="Enemy" parent="." instance=ExtResource("3_wd5i5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.112, 1, -3.65)
+
+[node name="Item" parent="." instance=ExtResource("4_obtn6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.09465, 0.984758, 3.2454)
+tag = "bulech"
+
+[node name="GameManager" parent="." groups=["GameManager"] instance=ExtResource("5_jphyl")]
+
+[node name="Door" parent="." instance=ExtResource("6_7pwk0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.913, 0, 1.415)
+
+[node name="PauseMenu" parent="." instance=ExtResource("7_jq3bk")]
+process_mode = 3
