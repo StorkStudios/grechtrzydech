@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=4 uid="uid://so351frv8aq8"]
+[gd_scene load_steps=15 format=4 uid="uid://so351frv8aq8"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/door.gd" id="1_ed5h2"]
+[ext_resource type="Material" uid="uid://ct2887d3r2qi5" path="res://Graphic/Materials/door.tres" id="2_ng6kl"]
 [ext_resource type="Script" path="res://Scripts/interact_target.gd" id="3_vy4ur"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h07eu"]
@@ -136,6 +137,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0654085, -0.115431)
 
 [node name="DoorFrameGodot" type="MeshInstance3D" parent="DoorArmature"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0439122, 0.0616897)
+material_override = ExtResource("2_ng6kl")
 mesh = SubResource("ArrayMesh_83w0h")
 skeleton = NodePath("")
 
@@ -149,6 +151,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121513, 0.551)
 shape = SubResource("BoxShape3D_unh88")
 
 [node name="DoorGodot" type="MeshInstance3D" parent="DoorArmature/InteractTarget"]
+material_override = ExtResource("2_ng6kl")
 mesh = SubResource("ArrayMesh_nyfrk")
 skeleton = NodePath("")
 
