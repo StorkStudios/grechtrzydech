@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://ceeqo6qsr8jc2"]
+[gd_scene load_steps=11 format=4 uid="uid://cl2ed6wx1ccp5"]
 
 [ext_resource type="Material" uid="uid://bdxwitxp8usfv" path="res://Graphic/Materials/WallCoridor.tres" id="1_sxho0"]
 [ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="2_ji3sk"]
@@ -44,7 +44,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4s2kb")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_csryl"]
-size = Vector3(4.22052, 0.75, 2.04554)
+size = Vector3(4.22052, 0.75, 0.824373)
 
 [node name="WallLong" type="Node3D"]
 
@@ -73,7 +73,7 @@ transform = Transform3D(1, -5.37319e-16, 0, -5.37319e-16, 1, 0, 0, 0, 1, 0.08345
 shape = SubResource("BoxShape3D_vb8jt")
 
 [node name="Door" parent="." instance=ExtResource("4_i48ij")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.060167, -0.0444942, 2.02839)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.044, 2.075)
 
 [node name="Wall-5x4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2)
@@ -88,9 +88,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.746, 0.122662, 1.47768)
 shape = SubResource("BoxShape3D_csryl")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Wall-5x4/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.518817, 0, 3.21482)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.518817, 0, 2.60424)
 shape = SubResource("BoxShape3D_csryl")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall-5x4/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75008, 0, 1.33977)
 shape = SubResource("BoxShape3D_csryl")
+
+[node name="Wall-5x5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 2.15)
+material_override = ExtResource("1_sxho0")
+mesh = SubResource("ArrayMesh_c4xyt")
+skeleton = NodePath("")

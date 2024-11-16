@@ -167,16 +167,16 @@ animation_player = NodePath("AnimationPlayer")
 interactTarget = NodePath("DoorArmature/InteractTarget")
 
 [node name="DoorArmature" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0654085, -0.115431)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.065, 0)
 
 [node name="DoorFrameGodot" type="MeshInstance3D" parent="DoorArmature"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0439122, 0.0616897)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.044, 0)
 material_override = ExtResource("2_ng6kl")
 mesh = SubResource("ArrayMesh_83w0h")
 skeleton = NodePath("")
 
 [node name="InteractTarget" type="StaticBody3D" parent="DoorArmature"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965, -0.492)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965, -0.56)
 script = ExtResource("3_vy4ur")
 allow_multiple_interactions = true
 interactSound = ExtResource("4_hdm21")
