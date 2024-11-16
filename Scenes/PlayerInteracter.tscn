@@ -9,6 +9,7 @@
 
 [node name="PlayerInteracter" type="RayCast3D" node_paths=PackedStringArray("cursor")]
 target_position = Vector3(0, 0, 1)
+collision_mask = 3
 script = ExtResource("1_g6wpe")
 cursor = NodePath("Cursor")
 

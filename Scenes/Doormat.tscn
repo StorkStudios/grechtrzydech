@@ -9,6 +9,7 @@ size = Vector3(1, 0.01, 1)
 size = Vector2(1, 1)
 
 [node name="Doormat" type="StaticBody3D"]
+collision_layer = 2
 script = ExtResource("1_6dhlw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

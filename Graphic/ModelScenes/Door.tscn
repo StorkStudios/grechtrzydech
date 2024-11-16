@@ -177,6 +177,7 @@ skeleton = NodePath("")
 [node name="InteractTarget" type="StaticBody3D" parent="DoorArmature"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965, -0.492)
 script = ExtResource("3_vy4ur")
+allow_multiple_interactions = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorArmature/InteractTarget"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121513, 0.551)
