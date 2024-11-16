@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/item.gd" id="1_g0w35"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jmep1"]
+size = Vector3(0.1, 0.1, 0.1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_gjafv"]
 
@@ -14,4 +15,5 @@ collider = NodePath("CollisionShape3D")
 shape = SubResource("BoxShape3D_jmep1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 mesh = SubResource("BoxMesh_gjafv")
