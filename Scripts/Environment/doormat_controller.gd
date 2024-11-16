@@ -10,6 +10,9 @@ func _init() -> void:
 	interacted.connect(on_interacted);
 
 func _ready() -> void:
+	if (!revealed_item):
+		return;
+	
 	revealed_item.set_kinematic(true);
 	revealed_item.visible = false;
 	revealed_item.global_position = to_global(item_position);
@@ -25,6 +28,10 @@ func will_interact(item: Item) -> bool:
 
 func on_interacted() -> void:
 	doormat_animation();
+	
+	if (!revealed_item):
+		return;
+		
 	revealed_item.set_kinematic(false);
 	revealed_item.visible = true;
 	
