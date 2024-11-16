@@ -16,7 +16,7 @@ func try_to_grab_item(item: Item) -> void:
 	held_item.reparent(self);
 	item_animation();
 
-# korutyna 😎
+# korutyna 😎huj
 func item_animation() -> void:
 	var time: float = 0;
 	var start_posiiton: Vector3 = held_item.position;

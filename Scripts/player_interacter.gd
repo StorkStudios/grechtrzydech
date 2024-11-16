@@ -2,6 +2,10 @@ extends RayCast3D
 
 @export var player_hand: PlayerHand;
 @export var cursor: Cursor;
+@export var audioStreamPlayer: AudioStreamPlayer3D
+
+var playback : AudioStreamPlaybackPolyphonic
+
 
 func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("interact")):
@@ -27,10 +31,16 @@ func interact() -> void:
 	if (collider is Item):
 		var item := collider as Item;
 		player_hand.try_to_grab_item(item);
+		if (item.pickupSound != null):
+			audioStreamPlayer.stream = item.pickupSound;
+			audioStreamPlayer.play();
 		
 	elif (collider is InteractTarget):
 		var interact_target := collider as InteractTarget;
 		interact_target.try_to_interact(player_hand.held_item);
+		if (interact_target.interactSound != null):
+			audioStreamPlayer.stream = interact_target.interactSound;
+			audioStreamPlayer.play();
 		
 	elif (player_hand.held_item):
 		player_hand.drop_item();

@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bbfy1qytdjcd6"]
+[gd_scene load_steps=5 format=3 uid="uid://bbfy1qytdjcd6"]
 
 [ext_resource type="Script" path="res://Scripts/item.gd" id="1_g0w35"]
+[ext_resource type="AudioStream" uid="uid://cmfib1uoc6ud6" path="res://Sounds/ring_inventory.wav" id="2_8nsc6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jmep1"]
 size = Vector3(0.1, 0.1, 0.1)
@@ -11,6 +12,7 @@ size = Vector3(0.1, 0.1, 0.1)
 collision_layer = 2
 script = ExtResource("1_g0w35")
 collider = NodePath("CollisionShape3D")
+pickupSound = ExtResource("2_8nsc6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_jmep1")

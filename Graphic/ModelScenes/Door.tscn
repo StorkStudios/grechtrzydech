@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=4 uid="uid://so351frv8aq8"]
+[gd_scene load_steps=20 format=4 uid="uid://so351frv8aq8"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/door.gd" id="1_ed5h2"]
 [ext_resource type="Material" path="res://Graphic/Materials/door.tres" id="2_ng6kl"]
 [ext_resource type="Script" path="res://Scripts/interact_target.gd" id="3_vy4ur"]
+[ext_resource type="AudioStream" uid="uid://buqxxoeqe1fo6" path="res://Sounds/LockedDoorHandleJiggle.wav" id="4_hdm21"]
 [ext_resource type="Material" uid="uid://bfejkyscjywt8" path="res://Graphic/Materials/NrDoor/Door01.tres" id="4_uon2t"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h07eu"]
@@ -178,6 +179,7 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965, -0.492)
 script = ExtResource("3_vy4ur")
 allow_multiple_interactions = true
+interactSound = ExtResource("4_hdm21")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorArmature/InteractTarget"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121513, 0.551)

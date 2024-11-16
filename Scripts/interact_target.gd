@@ -3,6 +3,7 @@ extends StaticBody3D;
 
 @export var tag: String;
 @export var allow_multiple_interactions: bool;
+@export var interactSound: AudioStream;
 
 signal interacted;
 

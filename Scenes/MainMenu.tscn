@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ccxciogjyvwg3"]
 
 [ext_resource type="Script" path="res://Scripts/menu_controller.gd" id="1_ug77i"]
-[ext_resource type="PackedScene" path="res://Scenes/UIButton.tscn" id="2_e2mo5"]
+[ext_resource type="PackedScene" uid="uid://c3t51iuqddibp" path="res://Scenes/UIButton.tscn" id="2_e2mo5"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3

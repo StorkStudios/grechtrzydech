@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://durub8p1hj84q"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_ie06p"]
-[ext_resource type="PackedScene" path="res://Scenes/PlayerHand.tscn" id="2_2ywn3"]
+[ext_resource type="PackedScene" uid="uid://d7hrppljxwtw" path="res://Scenes/PlayerHand.tscn" id="2_2ywn3"]
 [ext_resource type="PackedScene" uid="uid://cop5c8x0aitxj" path="res://Scenes/PlayerInteracter.tscn" id="3_7s13a"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy4xi"]
@@ -23,10 +23,14 @@ mesh = SubResource("CapsuleMesh_fvn77")
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.703267, 0)
 
-[node name="PlayerInteracter" parent="CharacterBody3D/Camera3D" node_paths=PackedStringArray("player_hand") instance=ExtResource("3_7s13a")]
+[node name="PlayerInteracter" parent="CharacterBody3D/Camera3D" node_paths=PackedStringArray("player_hand", "audioStreamPlayer") instance=ExtResource("3_7s13a")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
 target_position = Vector3(0, 0, 3)
 player_hand = NodePath("../PlayerHand")
+audioStreamPlayer = NodePath("InteractorStreamPlayer")
+
+[node name="InteractorStreamPlayer" type="AudioStreamPlayer3D" parent="CharacterBody3D/Camera3D/PlayerInteracter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.703267, 0)
 
 [node name="PlayerHand" parent="CharacterBody3D/Camera3D" instance=ExtResource("2_2ywn3")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.366225, -0.163733, -0.58801)
@@ -36,4 +40,3 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.3662
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-volume_db = -80.0
