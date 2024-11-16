@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://br35mxuh4uu3i"]
+[gd_scene load_steps=3 format=3 uid="uid://br35mxuh4uu3i"]
 
 [ext_resource type="Script" path="res://Scripts/clock_scene.gd" id="1_scgmm"]
+[ext_resource type="Script" path="res://Scripts/bell.gd" id="2_0gjyp"]
 
 [node name="ClockScene" type="Node"]
 script = ExtResource("1_scgmm")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+volume_db = -80.0
+
+[node name="Bell" type="Node" parent="AudioStreamPlayer3D"]
+script = ExtResource("2_0gjyp")
+
+[connection signal="kill_time_start" from="." to="AudioStreamPlayer3D/Bell" method="_on_clock_scene_kill_time_start"]
