@@ -17,6 +17,11 @@ var dir = Vector3.ZERO
 # Vertical look angle
 var vertical_look_angle = 0.0
 
+func _ready() -> void:
+	if(GlobalVariables.player_start_pos != null):
+		get_parent_node_3d().position = GlobalVariables.player_start_pos
+	
+
 func _process(delta):
 	handle_input()
 	update_camera_rotation()

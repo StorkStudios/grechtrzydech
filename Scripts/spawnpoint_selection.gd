@@ -1,7 +1,6 @@
-extends Node
+extends Control
 
-@export var world_map_corner: Vector3
-
+@export var game_scene = "res://Scenes/node_3d.tscn"
 var levels
 var selected_level
 var top_left_corner
@@ -25,12 +24,11 @@ func choose_spawnpoint():
 	map_to_world_coordinates(map_pos-top_left_corner, selected_child.world_pos)
 	
 func map_to_world_coordinates(map: Vector2, world: Vector3):
-	var res = world+Vector3(map.x, map.y, 0)
+	var res = world+Vector3(map.x, 0, map.y)
 	var player: Node3D = get_tree().get_first_node_in_group("Players")
 	print(res)
-	if(player != null):
-		player.position = res
-
+	GlobalVariables.player_start_pos = res
+	get_tree().change_scene_to_file(game_scene)
 
 func _on_button_left_button_down() -> void:
 	change_visible_map((selected_level-1)%levels)
