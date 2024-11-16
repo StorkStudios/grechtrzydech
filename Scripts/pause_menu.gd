@@ -34,7 +34,6 @@ func _input(event):
 		
 func pause():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	print("Pause")
 	visible = true
 	paused = true
 	get_tree().paused = true
@@ -42,7 +41,6 @@ func pause():
 	
 func unpause():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	print("Unpause")
 	visible = false
 	paused = false
 	get_tree().paused = false

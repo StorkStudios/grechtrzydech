@@ -2,9 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_200fq"]
 [ext_resource type="PackedScene" uid="uid://c3t51iuqddibp" path="res://Scenes/UIButton.tscn" id="2_ofs4h"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_shi25"]
-font_size = 50
+[ext_resource type="Texture2D" uid="uid://gvyxexj2wf3" path="res://Graphic/Sprites/pausescreen.png" id="2_owpli"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -15,6 +13,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_200fq")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_owpli")
+expand_mode = 1
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -23,8 +31,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -100.0
+offset_top = 50.0
 offset_right = 100.0
-offset_bottom = 100.0
+offset_bottom = 150.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -39,21 +48,6 @@ layout_mode = 2
 
 [node name="Label" parent="VBoxContainer/QuitGame" index="0"]
 text = "Quit"
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -125.0
-offset_top = 50.0
-offset_right = 125.0
-offset_bottom = 100.0
-grow_horizontal = 2
-text = "Game paused"
-label_settings = SubResource("LabelSettings_shi25")
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/ContinueGame" to="." method="_on_continue_game_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitGame" to="." method="_on_quit_game_pressed"]
