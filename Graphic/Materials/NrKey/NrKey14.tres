@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://dfq6dx3mw7mi8"]
+
+[ext_resource type="Texture2D" uid="uid://3dmr0o7o78ui" path="res://Graphic/Textures/Key/NrKeyBaseColor.png" id="1_xaful"]
+[ext_resource type="Texture2D" uid="uid://b0b3a8fs6w8iq" path="res://Graphic/Textures/Key/NrKeyMetallic.png" id="2_hawd0"]
+[ext_resource type="Texture2D" uid="uid://kluncnmhmv28" path="res://Graphic/Textures/Key/NrKeyNormal.png" id="3_2spku"]
+[ext_resource type="Texture2D" uid="uid://b7scfcskwhas3" path="res://Graphic/Textures/Key/NrKeyRoughness.png" id="4_8c0ft"]
+
+[resource]
+albedo_texture = ExtResource("1_xaful")
+metallic = 1.0
+metallic_texture = ExtResource("2_hawd0")
+roughness_texture = ExtResource("4_8c0ft")
+normal_enabled = true
+normal_texture = ExtResource("3_2spku")
+uv1_offset = Vector3(0, -0.41, 0)
