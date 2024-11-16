@@ -6,6 +6,7 @@ extends RayCast3D
 
 var playback : AudioStreamPlaybackPolyphonic
 
+signal killed_enemy;
 
 func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("interact")):
@@ -53,3 +54,4 @@ func attack() -> void:
 	if (collider is Enemy):
 		var enemy := collider as Enemy;
 		enemy.get_killed();
+		killed_enemy.emit();
