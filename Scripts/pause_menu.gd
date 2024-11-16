@@ -1,7 +1,7 @@
 extends Control
 
 
-@export var game_scene = "res://Scenes/MainMenu.tscn"
+@export var menu_scene = "res://Scenes/MainMenu.tscn"
 
 var paused = false
 
@@ -11,7 +11,7 @@ func _on_continue_game_pressed() -> void:
 
 
 func _on_quit_game_pressed() -> void:
-	get_tree().change_scene_to_file(game_scene)
+	get_tree().change_scene_to_file(menu_scene)
 	
 	
 func _ready() -> void:
