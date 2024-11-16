@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://bqjmu7je4vyia"]
+
+[ext_resource type="Texture2D" uid="uid://coa4774e62xyi" path="res://Graphic/Textures/Characters/Type2/Character_Hair_2BaseColor.png" id="1_3bt3t"]
+[ext_resource type="Texture2D" uid="uid://dihjuy87hge85" path="res://Graphic/Textures/Characters/Type1/Character_Hair_Metallic.png" id="2_e0gme"]
+[ext_resource type="Texture2D" uid="uid://b6gistkgbomn7" path="res://Graphic/Textures/Characters/Type1/Character_Hair_Normal.png" id="3_jaj18"]
+[ext_resource type="Texture2D" uid="uid://b0yf680cd1xga" path="res://Graphic/Textures/Characters/Type1/Character_Hair_Roughness.png" id="4_pik2e"]
+
+[resource]
+albedo_texture = ExtResource("1_3bt3t")
+metallic = 1.0
+metallic_texture = ExtResource("2_e0gme")
+roughness_texture = ExtResource("4_pik2e")
+normal_enabled = true
+normal_texture = ExtResource("3_jaj18")

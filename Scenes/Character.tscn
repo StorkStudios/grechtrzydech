@@ -1,6 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://cu457nddwb67r"]
 
 [ext_resource type="PackedScene" uid="uid://qesjbpoc4jtm" path="res://Graphic/Models/Character/Character.glb" id="1_vnx65"]
+[ext_resource type="Material" uid="uid://n6spjqeooe44" path="res://Graphic/Materials/CharacterAccesories1.tres" id="2_kwdvp"]
+[ext_resource type="Material" uid="uid://dcdt6ivrsfg68" path="res://Graphic/Materials/CharacterHair1.tres" id="2_pjhno"]
+[ext_resource type="Material" uid="uid://cqhvm1h5gnrnd" path="res://Graphic/Materials/CharacterSuit1.tres" id="2_puib2"]
+[ext_resource type="Material" uid="uid://djl5j5ogbwt17" path="res://Graphic/Materials/CharacterEyes1.tres" id="3_jgkr2"]
+[ext_resource type="Material" uid="uid://crlm5geks8dj2" path="res://Graphic/Materials/CharacterFace1.tres" id="4_0ew0u"]
 
 [node name="Character" instance=ExtResource("1_vnx65")]
 
@@ -80,3 +85,39 @@ bones/54/scale = Vector3(1, 1, 1)
 bones/56/rotation = Quaternion(0.492971, 0.000431601, 0.0180864, 0.869857)
 bones/56/scale = Vector3(1, 1, 1)
 bones/57/rotation = Quaternion(0.266156, 2.87446e-08, 0.00782039, 0.963898)
+
+[node name="Beard" parent="Armature/Skeleton3D" index="0"]
+material_override = ExtResource("2_pjhno")
+
+[node name="Cylinder" parent="Armature/Skeleton3D" index="1"]
+material_override = ExtResource("2_kwdvp")
+
+[node name="Eyebrows" parent="Armature/Skeleton3D" index="2"]
+material_override = ExtResource("2_pjhno")
+
+[node name="EyeLeft" parent="Armature/Skeleton3D" index="3"]
+material_override = ExtResource("3_jgkr2")
+
+[node name="EyeRight" parent="Armature/Skeleton3D" index="4"]
+material_override = ExtResource("3_jgkr2")
+
+[node name="Glasses" parent="Armature/Skeleton3D" index="5"]
+material_override = ExtResource("2_kwdvp")
+
+[node name="Hair" parent="Armature/Skeleton3D" index="6"]
+material_override = ExtResource("2_pjhno")
+
+[node name="Hands" parent="Armature/Skeleton3D" index="7"]
+material_override = ExtResource("4_0ew0u")
+
+[node name="Head" parent="Armature/Skeleton3D" index="8"]
+material_override = ExtResource("4_0ew0u")
+
+[node name="Moustache" parent="Armature/Skeleton3D" index="9"]
+material_override = ExtResource("2_pjhno")
+
+[node name="MoustacheBeard" parent="Armature/Skeleton3D" index="10"]
+material_override = ExtResource("2_pjhno")
+
+[node name="Suit" parent="Armature/Skeleton3D" index="11"]
+material_override = ExtResource("2_puib2")
