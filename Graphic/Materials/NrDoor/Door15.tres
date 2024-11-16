@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://dver4nu2gvctc"]
+
+[ext_resource type="Texture2D" uid="uid://c6lwq1ap8qxg" path="res://Graphic/Textures/Doors/NrDoorBaseColor.png" id="1_hwsqw"]
+[ext_resource type="Texture2D" uid="uid://dkrsrjj3mtm66" path="res://Graphic/Textures/Doors/NrDoorMetallic.png" id="2_vnm5e"]
+[ext_resource type="Texture2D" uid="uid://dog2fa8ni7oh" path="res://Graphic/Textures/Doors/NrDoorNormal.png" id="3_lpn8s"]
+[ext_resource type="Texture2D" uid="uid://cg4q48b5ugwp7" path="res://Graphic/Textures/Doors/NrDoorRoughness.png" id="4_tlah5"]
+
+[resource]
+albedo_texture = ExtResource("1_hwsqw")
+metallic = 1.0
+metallic_texture = ExtResource("2_vnm5e")
+roughness_texture = ExtResource("4_tlah5")
+normal_enabled = true
+normal_texture = ExtResource("3_lpn8s")
+uv1_offset = Vector3(0.195, -0.998, 0)
