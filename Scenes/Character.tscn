@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://cu457nddwb67r"]
+[gd_scene load_steps=9 format=3 uid="uid://cu457nddwb67r"]
 
 [ext_resource type="PackedScene" uid="uid://qesjbpoc4jtm" path="res://Graphic/Models/Character/Character.glb" id="1_vnx65"]
 [ext_resource type="Material" uid="uid://n6spjqeooe44" path="res://Graphic/Materials/CharacterAccesories1.tres" id="2_kwdvp"]
@@ -6,6 +6,10 @@
 [ext_resource type="Material" uid="uid://cqhvm1h5gnrnd" path="res://Graphic/Materials/CharacterSuit1.tres" id="2_puib2"]
 [ext_resource type="Material" uid="uid://djl5j5ogbwt17" path="res://Graphic/Materials/CharacterEyes1.tres" id="3_jgkr2"]
 [ext_resource type="Material" uid="uid://crlm5geks8dj2" path="res://Graphic/Materials/CharacterFace1.tres" id="4_0ew0u"]
+[ext_resource type="Texture2D" uid="uid://b6tr6uxkh3q5t" path="res://Graphic/Textures/Characters/Type1/Character_Eyes_BaseColor.png" id="5_6fig2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fa5al"]
+albedo_texture = ExtResource("5_6fig2")
 
 [node name="Character" instance=ExtResource("1_vnx65")]
 
@@ -99,7 +103,7 @@ material_override = ExtResource("2_pjhno")
 material_override = ExtResource("3_jgkr2")
 
 [node name="EyeRight" parent="Armature/Skeleton3D" index="4"]
-material_override = ExtResource("3_jgkr2")
+material_override = SubResource("StandardMaterial3D_fa5al")
 
 [node name="Glasses" parent="Armature/Skeleton3D" index="5"]
 material_override = ExtResource("2_kwdvp")
