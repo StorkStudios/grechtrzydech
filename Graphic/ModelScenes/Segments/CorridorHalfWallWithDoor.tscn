@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://cl2ed6wx1ccp5"]
+[gd_scene load_steps=11 format=4 uid="uid://ceeqo6qsr8jc2"]
 
 [ext_resource type="Material" uid="uid://bdxwitxp8usfv" path="res://Graphic/Materials/WallCoridor.tres" id="1_sxho0"]
 [ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="2_ji3sk"]
@@ -43,6 +43,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4s2kb")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_csryl"]
+size = Vector3(4.22052, 0.75, 2.04554)
+
 [node name="WallLong" type="Node3D"]
 
 [node name="Carpet" type="MeshInstance3D" parent="."]
@@ -77,3 +80,17 @@ transform = Transform3D(-1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2)
 material_override = ExtResource("1_sxho0")
 mesh = SubResource("ArrayMesh_c4xyt")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wall-5x4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall-5x4/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.746, 0.122662, 1.47768)
+shape = SubResource("BoxShape3D_csryl")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Wall-5x4/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.518817, 0, 3.21482)
+shape = SubResource("BoxShape3D_csryl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Wall-5x4/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75008, 0, 1.33977)
+shape = SubResource("BoxShape3D_csryl")
