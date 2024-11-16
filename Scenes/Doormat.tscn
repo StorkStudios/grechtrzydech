@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://byyhu5vreuvlr"]
+
+[ext_resource type="Script" path="res://Scripts/Environment/doormat_controller.gd" id="1_6dhlw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qh687"]
+size = Vector3(1, 0.01, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vmq2d"]
+size = Vector2(1, 1)
+
+[node name="Doormat" type="StaticBody3D"]
+script = ExtResource("1_6dhlw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_qh687")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_vmq2d")

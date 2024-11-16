@@ -2,7 +2,7 @@ class_name InteractTarget;
 extends StaticBody3D;
 
 @export var tag: String;
-@export var allowMultipleInteractions: bool;
+@export var allow_multiple_interactions: bool;
 
 signal interacted;
 
@@ -16,7 +16,7 @@ func try_to_interact(item: Item) -> void:
 	interacted.emit();
 
 func will_interact(item: Item) -> bool:
-	if (!allowMultipleInteractions && did_interact):
+	if (!allow_multiple_interactions && did_interact):
 		return false;
 		
 	if (tag != "" && (!item || item.tag != tag)):

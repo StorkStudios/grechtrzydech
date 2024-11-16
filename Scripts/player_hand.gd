@@ -19,10 +19,11 @@ func try_to_grab_item(item: Item) -> void:
 # korutyna 😎
 func item_animation() -> void:
 	var time: float = 0;
+	var start_posiiton: Vector3 = held_item.position;
 	while (held_item && time < animation_duration):
 		time += get_process_delta_time();
 		var t: float = time / animation_duration;
-		held_item.position = held_item.position.lerp(Vector3.ZERO, t);
+		held_item.position = start_posiiton.lerp(Vector3.ZERO, t);
 		await get_tree().process_frame;
 
 func drop_item() -> void:

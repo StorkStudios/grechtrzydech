@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=4 uid="uid://so351frv8aq8"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/door.gd" id="1_ed5h2"]
-[ext_resource type="Material" uid="uid://ct2887d3r2qi5" path="res://Graphic/Materials/door.tres" id="2_ng6kl"]
+[ext_resource type="Material" path="res://Graphic/Materials/door.tres" id="2_ng6kl"]
 [ext_resource type="Script" path="res://Scripts/interact_target.gd" id="3_vy4ur"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h07eu"]
@@ -144,7 +144,6 @@ skeleton = NodePath("")
 [node name="InteractTarget" type="StaticBody3D" parent="DoorArmature"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965, -0.492)
 script = ExtResource("3_vy4ur")
-allowMultipleInteractions = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorArmature/InteractTarget"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121513, 0.551)
