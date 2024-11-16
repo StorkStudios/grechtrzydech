@@ -74,15 +74,7 @@ func move_player(delta):
 	# Move the character using CharacterBody3D's move_and_slide
 	move_and_slide()
 
-# Capture/uncapture the mouse with ESC
+
 func _input(event):
-	if event is InputEventKey and event.pressed:
-		if event.keycode == KEY_ESCAPE:
-			if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-			else:
-				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	elif event is InputEventMouseMotion:
+	if event is InputEventMouseMotion:
 		mouse_delta = event.relative
-	elif event is InputEventMouseButton:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
