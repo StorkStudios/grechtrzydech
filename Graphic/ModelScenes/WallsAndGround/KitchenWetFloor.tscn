@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dktpr2vruwtg"]
+
+[ext_resource type="Material" uid="uid://dlnpyphdcplol" path="res://Graphic/Materials/KitchenWetFloor.tres" id="1_svejr"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w0a5b"]
+
+[node name="Carpet" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.001, 0, 0)
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.73562, 0, 0, 0, 1.00589, 0, 0, 0, 2.77551, 0.00368226, 0, -0.0344434)
+material_override = ExtResource("1_svejr")
+mesh = SubResource("PlaneMesh_w0a5b")
+skeleton = NodePath("")

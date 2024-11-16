@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://cnalgpi5plpeo"]
+[gd_scene load_steps=17 format=4 uid="uid://cnalgpi5plpeo"]
 
 [ext_resource type="Material" uid="uid://d01t164x4j0vv" path="res://Graphic/Materials/ClockTower.tres" id="1_os3g4"]
 
@@ -168,59 +168,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_v758p")
 
-[sub_resource type="Animation" id="Animation_j3w1w"]
-resource_name = "Closed"
-length = 0.0416667
-tracks/0/type = "rotation_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/Skeleton3D:Door_2")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0.5, -0.5, 0.5, 0.5)
-
-[sub_resource type="Animation" id="Animation_kda5p"]
-resource_name = "Closing"
-length = 0.416667
-tracks/0/type = "rotation_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/Skeleton3D:Door_2")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0.690346, 0.153046, -0.153046, 0.690346, 0.0333333, 1, 0.690346, 0.153046, -0.153046, 0.690346, 0.0666667, 1, 0.706187, -0.0360617, 0.0360617, 0.706187, 0.1, 1, 0.662919, -0.246047, 0.246047, 0.662919, 0.133333, 1, 0.590527, -0.388945, 0.388945, 0.590527, 0.166667, 1, 0.521685, -0.477331, 0.477331, 0.521685, 0.2, 1, 0.479159, -0.520007, 0.520007, 0.479159, 0.233333, 1, 0.456048, -0.540389, 0.540389, 0.456048, 0.266667, 1, 0.450151, -0.545311, 0.545311, 0.450151, 0.3, 1, 0.457164, -0.539445, 0.539445, 0.457164, 0.333333, 1, 0.471981, -0.52653, 0.52653, 0.471981, 0.366667, 1, 0.487445, -0.512248, 0.512248, 0.487445, 0.4, 1, 0.496515, -0.503461, 0.503461, 0.496515, 0.416667, 1, 0.5, -0.5, 0.5, 0.5)
-
-[sub_resource type="Animation" id="Animation_qf3p1"]
-resource_name = "Opened"
-length = 0.416667
-tracks/0/type = "rotation_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/Skeleton3D:Door_2")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0.690346, 0.153046, -0.153046, 0.690346)
-
-[sub_resource type="Animation" id="Animation_nx3gu"]
-resource_name = "Opening"
-length = 0.416667
-tracks/0/type = "rotation_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("DoorArmature/Skeleton3D:Door_2")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0.5, -0.5, 0.5, 0.5, 0.0333333, 1, 0.5, -0.5, 0.5, 0.5, 0.0666667, 1, 0.614968, -0.34902, 0.34902, 0.614968, 0.1, 1, 0.691301, -0.148672, 0.148672, 0.691301, 0.133333, 1, 0.707025, 0.0107426, -0.0107426, 0.707025, 0.166667, 1, 0.696454, 0.122276, -0.122276, 0.696454, 0.2, 1, 0.683518, 0.181117, -0.181117, 0.683518, 0.233333, 1, 0.674978, 0.210725, -0.210725, 0.674978, 0.266667, 1, 0.672649, 0.218045, -0.218045, 0.672649, 0.3, 1, 0.675412, 0.209329, -0.209329, 0.675412, 0.333333, 1, 0.680969, 0.190475, -0.190475, 0.680969, 0.366667, 1, 0.686337, 0.170121, -0.170121, 0.686337, 0.4, 1, 0.689266, 0.157837, -0.157837, 0.689266, 0.416667, 1, 0.690346, 0.153046, -0.153046, 0.690346)
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_1gfkp"]
-_data = {
-"Closed": SubResource("Animation_j3w1w"),
-"Closing": SubResource("Animation_kda5p"),
-"Opened": SubResource("Animation_qf3p1"),
-"Opening": SubResource("Animation_nx3gu")
-}
-
 [node name="ClockTowerAndDoor" type="Node3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 
 [node name="Arrows" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.76674, 20.4694, 0.18354)
@@ -251,8 +200,3 @@ transform = Transform3D(0.728655, 0, 0, 0, 0.728655, 0, 0, 0, 0.728655, -5.54657
 material_override = ExtResource("1_os3g4")
 mesh = SubResource("ArrayMesh_ktv5y")
 skeleton = NodePath("")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_1gfkp")
-}
