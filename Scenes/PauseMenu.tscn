@@ -30,11 +30,15 @@ grow_vertical = 2
 
 [node name="ContinueGame" parent="VBoxContainer" instance=ExtResource("2_ofs4h")]
 layout_mode = 2
-text = "Continue game"
+
+[node name="Label" parent="VBoxContainer/ContinueGame" index="0"]
+text = "Continue"
 
 [node name="QuitGame" parent="VBoxContainer" instance=ExtResource("2_ofs4h")]
 layout_mode = 2
-text = "Quit game"
+
+[node name="Label" parent="VBoxContainer/QuitGame" index="0"]
+text = "Quit"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -53,3 +57,6 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/ContinueGame" to="." method="_on_continue_game_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitGame" to="." method="_on_quit_game_pressed"]
+
+[editable path="VBoxContainer/ContinueGame"]
+[editable path="VBoxContainer/QuitGame"]

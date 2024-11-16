@@ -21,15 +21,21 @@ offset_bottom = 170.0
 
 [node name="StartGameButton" parent="VBoxContainer" instance=ExtResource("2_e2mo5")]
 layout_mode = 2
+
+[node name="Label" parent="VBoxContainer/StartGameButton" index="0"]
 text = "Start game"
 
 [node name="CreditsButton" parent="VBoxContainer" instance=ExtResource("2_e2mo5")]
 layout_mode = 2
+
+[node name="Label" parent="VBoxContainer/CreditsButton" index="0"]
 text = "Credits"
 
 [node name="QuitGameButton" parent="VBoxContainer" instance=ExtResource("2_e2mo5")]
 layout_mode = 2
-text = "Quit game"
+
+[node name="Label" parent="VBoxContainer/QuitGameButton" index="0"]
+text = "Quit"
 
 [node name="Credits" type="TextEdit" parent="."]
 visible = false
@@ -51,3 +57,7 @@ middle_mouse_paste_enabled = false
 [connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitGameButton" to="." method="_on_quit_game_pressed"]
+
+[editable path="VBoxContainer/StartGameButton"]
+[editable path="VBoxContainer/CreditsButton"]
+[editable path="VBoxContainer/QuitGameButton"]
