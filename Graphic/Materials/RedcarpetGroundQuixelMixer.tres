@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dcpp7a4e5uxer"]
+
+[ext_resource type="Texture2D" uid="uid://28acv4ve52ge" path="res://Graphic/Textures/RedCarpet/RedCarpetAlbedo.png" id="1_r8am0"]
+[ext_resource type="Texture2D" uid="uid://3qddyg0mvrol" path="res://Graphic/Textures/RedCarpet/RedCarpetNormal.png" id="2_sibyy"]
+[ext_resource type="Texture2D" uid="uid://b0318fjcyxaw5" path="res://Graphic/Textures/RedCarpet/RedCarpetRoughness.png" id="3_hqrc2"]
+
+[resource]
+albedo_color = Color(0.635558, 0.347407, 0.441493, 1)
+albedo_texture = ExtResource("1_r8am0")
+roughness_texture = ExtResource("3_hqrc2")
+normal_enabled = true
+normal_texture = ExtResource("2_sibyy")
+grow = true

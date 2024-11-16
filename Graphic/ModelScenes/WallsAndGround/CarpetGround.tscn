@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://dij6s8lixgymv"]
 
-[ext_resource type="Material" uid="uid://b8bjyn3jlim21" path="res://Graphic/Materials/carpetGround.tres" id="1_qs5mx"]
+[ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="1_s8eml"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oi1nk"]
 
@@ -39,6 +39,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.190201, 0, 0.0320636)
 
 [node name="Ground" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.73123, 0, 0, 0, 1.00428, 0, 0, 0, 1.9128, 0, 0, 0)
-material_override = ExtResource("1_qs5mx")
+material_override = ExtResource("1_s8eml")
 mesh = SubResource("ArrayMesh_d7shi")
 skeleton = NodePath("")
