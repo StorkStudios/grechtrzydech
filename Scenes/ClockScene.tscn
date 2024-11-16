@@ -6,10 +6,7 @@
 [node name="ClockScene" type="Node"]
 script = ExtResource("1_scgmm")
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-volume_db = -80.0
-
-[node name="Bell" type="Node" parent="AudioStreamPlayer3D"]
+[node name="Bell" type="Node" parent="."]
 script = ExtResource("2_0gjyp")
 
-[connection signal="kill_time_start" from="." to="AudioStreamPlayer3D/Bell" method="_on_clock_scene_kill_time_start"]
+[connection signal="kill_time_start" from="." to="Bell" method="_on_clock_scene_kill_time_start"]

@@ -2,5 +2,5 @@ class_name Enemy
 extends Node
 
 func get_killed() -> void:
-	GameManager.npc_killed(self)
+	get_tree().get_first_node_in_group("GameManager").npc_killed(self)
 	self.queue_free()
