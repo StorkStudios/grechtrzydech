@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cl2ed6wx1ccp5" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor.tscn" id="7_5sabv"]
 [ext_resource type="PackedScene" path="res://Scenes/PauseMenu.tscn" id="7_jq3bk"]
 [ext_resource type="PackedScene" uid="uid://dx7s5kcs8aiaa" path="res://Graphic/ModelScenes/WallsAndGround/Stairs.tscn" id="8_xi5l7"]
-[ext_resource type="PackedScene" uid="uid://bobayqfktsksi" path="res://Graphic/ModelScenes/Segments/CorridorWallLong.tscn" id="9_mxm70"]
+[ext_resource type="PackedScene" uid="uid://ddv6io8lyx2ic" path="res://Graphic/ModelScenes/Segments/CorridorCeiling.tscn" id="9_cf0u4"]
 
 [sub_resource type="Environment" id="Environment_lr0u6"]
 
@@ -101,11 +101,11 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.5, 
 [node name="Stair2" parent="." instance=ExtResource("8_xi5l7")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.5, 3.125, 0)
 
-[node name="WallLong13" parent="." instance=ExtResource("9_mxm70")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6, 0)
+[node name="WallLong16" parent="." instance=ExtResource("9_cf0u4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 6, 0)
 
-[node name="WallLong14" parent="." instance=ExtResource("9_mxm70")]
+[node name="WallLong17" parent="." instance=ExtResource("9_cf0u4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 
-[node name="WallLong15" parent="." instance=ExtResource("9_mxm70")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 6, 0)
+[node name="WallLong18" parent="." instance=ExtResource("9_cf0u4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6, 0)
