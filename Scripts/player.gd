@@ -17,10 +17,6 @@ var dir = Vector3.ZERO
 # Vertical look angle
 var vertical_look_angle = 0.0
 
-func _ready():
-	# Capture the mouse
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
 func _process(delta):
 	handle_input()
 	update_camera_rotation()
@@ -86,5 +82,7 @@ func _input(event):
 				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			else:
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	if event is InputEventMouseMotion:
+	elif event is InputEventMouseMotion:
 		mouse_delta = event.relative
+	elif event is InputEventMouseButton:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
