@@ -9,7 +9,7 @@
 size = Vector2(10, 4)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vb8jt"]
-size = Vector3(9.98076, 0.184631, 3.84821)
+size = Vector3(10.2575, 0.184631, 3.84821)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_88gey"]
 
@@ -69,7 +69,7 @@ skeleton = NodePath("")
 [node name="StaticBody3D" type="StaticBody3D" parent="Carpet/Carpet"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Carpet/Carpet/StaticBody3D"]
-transform = Transform3D(1, 6.21176e-22, 0, 6.6815e-22, 1, 0, 0, 0, 1, 0.318512, -0.223572, -0.0295105)
+transform = Transform3D(1, -5.37319e-16, 0, -5.37319e-16, 1, 0, 0, 0, 1, 0.0834595, -0.223572, -0.0295105)
 shape = SubResource("BoxShape3D_vb8jt")
 
 [node name="Door" parent="." instance=ExtResource("4_i48ij")]
