@@ -103,7 +103,7 @@ _data = {
 "Opening": SubResource("Animation_nx3gu")
 }
 
-[node name="Door" type="Node3D"]
+[node name="ClockTowerAndDoor" type="Node3D"]
 
 [node name="DoorArmature" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.67722, -1.38372)
