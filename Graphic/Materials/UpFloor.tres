@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dlaiew64f84c4"]
+
+[ext_resource type="Texture2D" uid="uid://ed2ggnjr4qyt" path="res://Graphic/Textures/UpFloor/UpFloorAlbedo.png" id="1_dnaag"]
+[ext_resource type="Texture2D" uid="uid://cj885wnm6qc2j" path="res://Graphic/Textures/KitchenWetFloor/KitchenWetFloorMetalness.png" id="2_mx235"]
+[ext_resource type="Texture2D" uid="uid://c7s2hltrtil67" path="res://Graphic/Textures/UpFloor/UpFloorNormal.png" id="3_0cyar"]
+
+[resource]
+albedo_color = Color(0.82495, 0.769987, 0.710961, 1)
+albedo_texture = ExtResource("1_dnaag")
+metallic = 1.0
+metallic_texture = ExtResource("2_mx235")
+normal_enabled = true
+normal_texture = ExtResource("3_0cyar")
+uv1_scale = Vector3(3, 3, 3)
