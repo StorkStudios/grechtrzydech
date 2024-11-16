@@ -7,6 +7,7 @@ extends StaticBody3D;
 signal interacted;
 
 var did_interact: bool = false;
+var override_interaction: bool = false;
 
 func try_to_interact(item: Item) -> void:
 	if (!will_interact(item)):
@@ -16,6 +17,9 @@ func try_to_interact(item: Item) -> void:
 	interacted.emit();
 
 func will_interact(item: Item) -> bool:
+	if (override_interaction):
+		return true;
+	
 	if (!allow_multiple_interactions && did_interact):
 		return false;
 		

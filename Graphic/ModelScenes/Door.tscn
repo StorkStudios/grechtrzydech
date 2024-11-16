@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=4 uid="uid://so351frv8aq8"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/door.gd" id="1_ed5h2"]
-[ext_resource type="Material" uid="uid://ct2887d3r2qi5" path="res://Graphic/Materials/door.tres" id="2_ng6kl"]
+[ext_resource type="Material" path="res://Graphic/Materials/door.tres" id="2_ng6kl"]
 [ext_resource type="Script" path="res://Scripts/interact_target.gd" id="3_vy4ur"]
 [ext_resource type="Material" uid="uid://bfejkyscjywt8" path="res://Graphic/Materials/NrDoor/Door01.tres" id="4_uon2t"]
 
