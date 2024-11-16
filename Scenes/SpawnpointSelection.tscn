@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bayswrgsk5lxl"]
+[gd_scene load_steps=5 format=3 uid="uid://bayswrgsk5lxl"]
 
 [ext_resource type="Script" path="res://Scripts/spawnpoint_selection.gd" id="1_nsedc"]
 [ext_resource type="Texture2D" uid="uid://c0wp8en4kp5lo" path="res://Graphic/Sprites/coconut.jpg" id="1_pc30g"]
 [ext_resource type="AudioStream" uid="uid://eyuwwhx4nas0" path="res://Sounds/turn_page.wav" id="2_nhb6k"]
 [ext_resource type="Script" path="res://Scripts/map_data.gd" id="3_0klxe"]
-[ext_resource type="BitMap" uid="uid://cgbesbcsdnw0h" path="res://Graphic/Bitmaps/coconut_bitmap.jpg" id="3_5mvhl"]
 
 [node name="SpawnSelection" type="Control"]
 layout_mode = 3
@@ -27,48 +26,53 @@ grow_vertical = 2
 [node name="Map1" type="TextureButton" parent="Maps"]
 visible = false
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -324.0
+offset_right = 324.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_pc30g")
-texture_click_mask = ExtResource("3_5mvhl")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
-world_pos = Vector3(10, 30, 5)
+world_pos = Vector3(-13, 1, -14)
+width = 27.0
 
 [node name="Map2" type="TextureButton" parent="Maps"]
 visible = false
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_right = -888.0
-offset_bottom = -392.0
+offset_left = -324.0
+offset_right = 324.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_pc30g")
-texture_click_mask = ExtResource("3_5mvhl")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
-world_pos = Vector3(15, 50, 100)
+world_pos = Vector3(-14, 4, -15)
+width = 28.5
 
 [node name="Map3" type="TextureButton" parent="Maps"]
 visible = false
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_right = -97.0
-offset_bottom = -114.0
+offset_left = -324.0
+offset_right = 324.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_pc30g")
-texture_click_mask = ExtResource("3_5mvhl")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
-world_pos = Vector3(-10, 5, -10)
+world_pos = Vector3(-14, 8, -15)
+width = 28.5
 
 [node name="ButtonLeft" type="Button" parent="."]
 layout_mode = 1

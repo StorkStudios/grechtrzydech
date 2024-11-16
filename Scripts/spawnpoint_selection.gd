@@ -1,6 +1,6 @@
 extends Control
 
-@export var game_scene = "res://Scenes/node_3d.tscn"
+@export var game_scene = "res://Scenes/level.tscn"
 @export var audioStream : AudioStream;
 var levels
 var selected_level
@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 
 func choose_spawnpoint():
 	var map_pos = get_viewport().get_mouse_position()
-	var width = get_viewport_rect().size.x
+	var width = selected_child.size.x
 	map_to_world_coordinates(map_pos-top_left_corner, width)
 	
 func map_to_world_coordinates(map: Vector2, width: float):
