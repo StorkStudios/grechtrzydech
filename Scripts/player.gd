@@ -1,8 +1,8 @@
 extends CharacterBody3D
 
 # Movement properties
-var move_speed = 5.0
-var gravity = -9.8
+@export var move_speed = 5.0
+@export var gravity = -9.8
 var jump_speed = 10.0
 var sensitivity_x = 0.01
 var sensitivity_y = 0.5
