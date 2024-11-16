@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://pxdn0ccsegk2"]
+[gd_scene load_steps=14 format=3 uid="uid://pxdn0ccsegk2"]
 
 [ext_resource type="PackedScene" uid="uid://durub8p1hj84q" path="res://Scenes/Player.tscn" id="1_q7s76"]
 [ext_resource type="PackedScene" uid="uid://b8jai8n4cjp5w" path="res://Scenes/Wall.tscn" id="2_tq4ib"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" path="res://Scenes/PauseMenu.tscn" id="7_jq3bk"]
 [ext_resource type="PackedScene" uid="uid://dx7s5kcs8aiaa" path="res://Graphic/ModelScenes/WallsAndGround/Stairs.tscn" id="8_xi5l7"]
 [ext_resource type="PackedScene" uid="uid://ddv6io8lyx2ic" path="res://Graphic/ModelScenes/Segments/CorridorCeiling.tscn" id="9_cf0u4"]
+[ext_resource type="PackedScene" uid="uid://bd0psx38coyy2" path="res://Scenes/EnemySpawnpoint.tscn" id="10_btbda"]
 
 [sub_resource type="Environment" id="Environment_lr0u6"]
 
@@ -109,3 +110,35 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.1, 0, 7.5, 0)
 
 [node name="WallLong18" parent="." instance=ExtResource("9_cf0u4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.1, 10, 7.5, 0)
+
+[node name="EnemySpawnpoints" type="Node" parent="."]
+
+[node name="EnemySpawnpoint" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6019, 0, -12.0171)
+
+[node name="EnemySpawnpoint2" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.3078, 0, 0)
+
+[node name="EnemySpawnpoint3" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.42317, 0.156957, 9.51751)
+
+[node name="EnemySpawnpoint4" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.91126, -14.4771)
+
+[node name="EnemySpawnpoint5" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.02677, 6.80886)
+
+[node name="EnemySpawnpoint6" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.24153, 7.50671)
+
+[node name="EnemySpawnpoint7" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6978, 8.01084, -8.36277)
+
+[node name="EnemySpawnpoint8" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2685, 4.09335, 0)
+
+[node name="EnemySpawnpoint9" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.72785, 8.2971)
+
+[node name="EnemySpawnpoint10" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.785, 2.46616, 5.09912)
