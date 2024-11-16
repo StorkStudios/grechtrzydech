@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://b8bjyn3jlim21"]
+
+[ext_resource type="Texture2D" uid="uid://b25vqpacsatcu" path="res://Graphic/Textures/Ground/CarpetGroundBaseColor.png" id="1_sg0iv"]
+[ext_resource type="Texture2D" uid="uid://dk2rl0swul6sp" path="res://Graphic/Textures/Ground/CarpetGroundNormal.png" id="2_a5uj6"]
+[ext_resource type="Texture2D" uid="uid://bjnu14og0vgwv" path="res://Graphic/Textures/Ground/CarpetGroundRoughness.png" id="3_idyhb"]
+
+[resource]
+albedo_texture = ExtResource("1_sg0iv")
+roughness_texture = ExtResource("3_idyhb")
+normal_enabled = true
+normal_texture = ExtResource("2_a5uj6")
+grow = true
