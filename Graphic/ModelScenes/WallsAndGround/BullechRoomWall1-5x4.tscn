@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=4 uid="uid://dbub7cvjtp8ud"]
+[gd_scene load_steps=7 format=4 uid="uid://dbub7cvjtp8ud"]
 
 [ext_resource type="Material" uid="uid://cgksjb16pbyx1" path="res://Graphic/Materials/BullechRoomWall.tres" id="1_gr0ex"]
 [ext_resource type="PackedScene" uid="uid://dij6s8lixgymv" path="res://Graphic/ModelScenes/WallsAndGround/CarpetGround.tscn" id="2_4v04s"]
+[ext_resource type="PackedScene" uid="uid://kytijgv3p6uh" path="res://Graphic/ModelScenes/Door.tscn" id="3_cukrb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_csxn5"]
 
@@ -54,3 +55,6 @@ skeleton = NodePath("")
 
 [node name="Carpet" parent="." instance=ExtResource("2_4v04s")]
 transform = Transform3D(-1, 7.64274e-15, 8.74228e-08, 0, -1, 8.74228e-08, 8.74228e-08, 8.74228e-08, 1, 0, 5, 0)
+
+[node name="Door" parent="." instance=ExtResource("3_cukrb")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.05833, 0, 2.87165)
