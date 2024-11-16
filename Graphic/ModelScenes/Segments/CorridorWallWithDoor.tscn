@@ -1,9 +1,9 @@
-[gd_scene load_steps=14 format=4 uid="uid://bobayqfktsksi"]
+[gd_scene load_steps=14 format=4 uid="uid://cxub8ahj6q2ex"]
 
-[ext_resource type="Material" uid="uid://bdxwitxp8usfv" path="res://Graphic/Materials/WallCoridor.tres" id="1_74vyt"]
-[ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="2_lywut"]
-[ext_resource type="Material" uid="uid://dlaiew64f84c4" path="res://Graphic/Materials/UpFloor.tres" id="3_em5co"]
-[ext_resource type="PackedScene" uid="uid://kytijgv3p6uh" path="res://Graphic/ModelScenes/Door.tscn" id="4_tv8av"]
+[ext_resource type="Material" uid="uid://bdxwitxp8usfv" path="res://Graphic/Materials/WallCoridor.tres" id="1_sxho0"]
+[ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="2_ji3sk"]
+[ext_resource type="Material" uid="uid://dlaiew64f84c4" path="res://Graphic/Materials/UpFloor.tres" id="3_n0p6x"]
+[ext_resource type="PackedScene" uid="uid://kytijgv3p6uh" path="res://Graphic/ModelScenes/Door.tscn" id="4_i48ij"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h36co"]
 
@@ -82,7 +82,7 @@ shadow_mesh = SubResource("ArrayMesh_4s2kb")
 
 [node name="Wall-5x5" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, -2)
-material_override = ExtResource("1_74vyt")
+material_override = ExtResource("1_sxho0")
 mesh = SubResource("ArrayMesh_rlor8")
 skeleton = NodePath("")
 
@@ -94,7 +94,7 @@ shape = SubResource("BoxShape3D_fgrxe")
 
 [node name="Carpet" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 8.74228e-08, -8.74228e-08, -8.74228e-08, 1, 0, 8.74228e-08, 7.10543e-15, 1, 0, 0, 0)
-material_override = ExtResource("2_lywut")
+material_override = ExtResource("2_ji3sk")
 mesh = SubResource("PlaneMesh_8fwtx")
 skeleton = NodePath("")
 
@@ -106,7 +106,7 @@ shape = SubResource("BoxShape3D_vb8jt")
 
 [node name="Carpet" type="MeshInstance3D" parent="Carpet"]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -2.62268e-07, 3, 1.61194e-15)
-material_override = ExtResource("3_em5co")
+material_override = ExtResource("3_n0p6x")
 mesh = SubResource("PlaneMesh_8fwtx")
 skeleton = NodePath("")
 
@@ -116,11 +116,11 @@ skeleton = NodePath("")
 transform = Transform3D(1, 6.21176e-22, 0, 6.6815e-22, 1, 0, 0, 0, 1, 0.318512, -0.223572, -0.0295105)
 shape = SubResource("BoxShape3D_vb8jt")
 
-[node name="Door" parent="." instance=ExtResource("4_tv8av")]
+[node name="Door" parent="." instance=ExtResource("4_i48ij")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.060167, -0.0444942, 2.02839)
 
 [node name="Wall-5x4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2)
-material_override = ExtResource("1_74vyt")
+material_override = ExtResource("1_sxho0")
 mesh = SubResource("ArrayMesh_c4xyt")
 skeleton = NodePath("")
