@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bayswrgsk5lxl"]
+[gd_scene load_steps=6 format=3 uid="uid://bayswrgsk5lxl"]
 
 [ext_resource type="Script" path="res://Scripts/spawnpoint_selection.gd" id="1_nsedc"]
 [ext_resource type="Texture2D" uid="uid://c0wp8en4kp5lo" path="res://Graphic/Sprites/coconut.jpg" id="1_pc30g"]
 [ext_resource type="AudioStream" uid="uid://eyuwwhx4nas0" path="res://Sounds/turn_page.wav" id="2_nhb6k"]
 [ext_resource type="Script" path="res://Scripts/map_data.gd" id="3_0klxe"]
+[ext_resource type="BitMap" uid="uid://cgbesbcsdnw0h" path="res://Graphic/Bitmaps/coconut_bitmap.jpg" id="3_5mvhl"]
 
 [node name="SpawnSelection" type="Control"]
 layout_mode = 3
@@ -32,6 +33,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_pc30g")
+texture_click_mask = ExtResource("3_5mvhl")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
 world_pos = Vector3(10, 30, 5)
@@ -47,6 +49,7 @@ offset_bottom = -392.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_pc30g")
+texture_click_mask = ExtResource("3_5mvhl")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
 world_pos = Vector3(15, 50, 100)
@@ -62,6 +65,7 @@ offset_bottom = -114.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_pc30g")
+texture_click_mask = ExtResource("3_5mvhl")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
 world_pos = Vector3(-10, 5, -10)
