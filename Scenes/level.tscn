@@ -1,7 +1,7 @@
-[gd_scene load_steps=27 format=3 uid="uid://pxdn0ccsegk2"]
+[gd_scene load_steps=28 format=3 uid="uid://pxdn0ccsegk2"]
 
 [ext_resource type="PackedScene" uid="uid://durub8p1hj84q" path="res://Scenes/Player.tscn" id="1_q7s76"]
-[ext_resource type="PackedScene" path="res://Scenes/Wall.tscn" id="2_tq4ib"]
+[ext_resource type="PackedScene" uid="uid://b8jai8n4cjp5w" path="res://Scenes/Wall.tscn" id="2_tq4ib"]
 [ext_resource type="PackedScene" uid="uid://bbfy1qytdjcd6" path="res://Scenes/Item.tscn" id="4_obtn6"]
 [ext_resource type="PackedScene" uid="uid://c8gm5uj2w4ke8" path="res://Scenes/GameManager.tscn" id="5_jphyl"]
 [ext_resource type="PackedScene" uid="uid://ceeqo6qsr8jc2" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor.tscn" id="7_5sabv"]
@@ -21,8 +21,9 @@
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor22.tscn" id="19_ltj1t"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor23.tscn" id="20_67wpk"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor24.tscn" id="21_wdqrh"]
-[ext_resource type="PackedScene" path="res://Scenes/NrKey.tscn" id="22_d1yec"]
+[ext_resource type="PackedScene" uid="uid://dipiexg733cu6" path="res://Scenes/NrKey.tscn" id="22_d1yec"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Furnitures/table.tscn" id="23_rbg6p"]
+[ext_resource type="PackedScene" uid="uid://cgnvbmppuk0a7" path="res://Scenes/timer.tscn" id="24_gwox4"]
 
 [sub_resource type="Environment" id="Environment_lr0u6"]
 ambient_light_source = 2
@@ -455,3 +456,5 @@ tag = "NrKey24"
 
 [node name="Table" parent="." instance=ExtResource("23_rbg6p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.72388, 0, 7.43018)
+
+[node name="Timer" parent="." instance=ExtResource("24_gwox4")]

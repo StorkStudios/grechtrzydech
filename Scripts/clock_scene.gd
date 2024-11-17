@@ -6,7 +6,11 @@ class_name ClockScene
 @export var isGameRunning: bool = true
 signal kill_time_start
 signal kill_time_end
+var timer: Timer
+
 func _ready() -> void:
+	timer = Timer.new()
+	add_child(timer)
 	while isGameRunning:
 		await clock()
 
@@ -14,7 +18,9 @@ func _process(delta: float) -> void:
 	pass
 
 func clock():
-	await get_tree().create_timer(time_between_kills).timeout
+	timer.start(time_between_kills)
+	await timer.timeout
 	kill_time_start.emit()
-	await get_tree().create_timer(kill_time).timeout
+	timer.start(kill_time)
+	await timer.timeout
 	kill_time_end.emit()
