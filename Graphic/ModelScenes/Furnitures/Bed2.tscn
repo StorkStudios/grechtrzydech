@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=4 uid="uid://krskuon176lr"]
+[gd_scene load_steps=6 format=4 uid="uid://krskuon176lr"]
 
 [ext_resource type="Material" uid="uid://cb7tpwu2neg7u" path="res://Graphic/Materials/RoomWall2.tres" id="1_bxg1i"]
 
@@ -36,6 +36,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_mv43v")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_3gbw1"]
+size = Vector3(4.4129, 1.83595, 2.20203)
+
 [node name="Bed" type="Node3D"]
 
 [node name="Bed" type="MeshInstance3D" parent="."]
@@ -43,3 +46,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.03187, -0.195405, 0.908128
 material_override = ExtResource("1_bxg1i")
 mesh = SubResource("ArrayMesh_1ug5v")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Bed"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bed/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05588, 0.91021, -0.791565)
+shape = SubResource("BoxShape3D_3gbw1")

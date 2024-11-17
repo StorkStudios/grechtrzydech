@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=4 uid="uid://cc80nje2yo0oh"]
+[gd_scene load_steps=6 format=4 uid="uid://cc80nje2yo0oh"]
 
 [ext_resource type="Material" uid="uid://c8bhscqor3r23" path="res://Graphic/Materials/WoodenFUrnitures.tres" id="1_x3lkv"]
 
@@ -34,6 +34,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ncor2")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_cjde3"]
+size = Vector3(0.913758, 1.59864, 0.800545)
+
 [node name="Chair" type="Node3D"]
 
 [node name="Chair" type="MeshInstance3D" parent="."]
@@ -41,3 +44,9 @@ transform = Transform3D(1.07496, 0, 0, 0, 1.07496, 0, 0, 0, 1.07496, -0.20277, 0
 material_override = ExtResource("1_x3lkv")
 mesh = SubResource("ArrayMesh_phm8t")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Chair"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Chair/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0197094, 0.807921, 0.0110746)
+shape = SubResource("BoxShape3D_cjde3")

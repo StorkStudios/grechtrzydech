@@ -1,8 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://dub5haqt3qstb"]
+[gd_scene load_steps=4 format=3 uid="uid://dub5haqt3qstb"]
 
 [ext_resource type="ArrayMesh" uid="uid://bkdlrtbxwy872" path="res://Graphic/Models/worktable.obj" id="1_x2ya4"]
 [ext_resource type="Material" uid="uid://c8bhscqor3r23" path="res://Graphic/Materials/WoodenFUrnitures.tres" id="2_c77j0"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_sh4xg"]
+size = Vector3(1.05491, 1.03406, 2.0361)
+
 [node name="Worktable" type="MeshInstance3D"]
 mesh = ExtResource("1_x2ya4")
 surface_material_override/0 = ExtResource("2_c77j0")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0144041, 0.513637, -0.508826)
+shape = SubResource("BoxShape3D_sh4xg")

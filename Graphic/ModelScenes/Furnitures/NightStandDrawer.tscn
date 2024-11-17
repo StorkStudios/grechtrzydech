@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://4h3e3yswppdu"]
+[gd_scene load_steps=12 format=4 uid="uid://4h3e3yswppdu"]
 
 [ext_resource type="Material" uid="uid://c8bhscqor3r23" path="res://Graphic/Materials/WoodenFUrnitures.tres" id="1_6u8du"]
 
@@ -100,6 +100,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_lcgcs")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_8f8cd"]
+size = Vector3(1.3623, 0.811283, 1.00171)
+
 [node name="NightStandDrawere" type="Node3D"]
 transform = Transform3D(0.65, 0, 0, 0, 0.65, 0, 0, 0, 0.65, 0, 0, 0)
 
@@ -120,3 +123,9 @@ transform = Transform3D(-0.768367, 0, 0, 0, 0, 0.768367, 0, 0.768367, 0, 0.09679
 material_override = ExtResource("1_6u8du")
 mesh = SubResource("ArrayMesh_tv5ck")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0760498, 0.397875, 0.0328369)
+shape = SubResource("BoxShape3D_8f8cd")
