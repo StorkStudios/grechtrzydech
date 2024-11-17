@@ -30,6 +30,10 @@ func npc_killed(npc: Node) -> void:
 			state = game_state.npc_killed
 			killed_counter += 1
 			print(npc.name + 'killed')
+			if (killed_counter >= 4):
+				GlobalVariables.music.change_music(Music.MusicEnum.Level3, 0.5);
+			elif (killed_counter >= 2):
+				GlobalVariables.music.change_music(Music.MusicEnum.Level2, 0.5);
 			if( killed_counter >= $EnemySpawner.enemy_number):
 				win()
 				
