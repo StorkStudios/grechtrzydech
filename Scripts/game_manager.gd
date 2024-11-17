@@ -7,6 +7,7 @@ var hub_scene = "res://Scenes/Hub.tscn"
 var timeout = 2;
 const black_duration: float = 1;
 var is_game_over: bool = false;
+var killed_counter = 0
 
 func _on_clock_scene_kill_time_end() -> void:
 	if(state == game_state.npc_killed):
@@ -27,7 +28,10 @@ func npc_killed(npc: Node) -> void:
 			game_over()
 		game_state.kill_time:
 			state = game_state.npc_killed
+			killed_counter += 1
 			print(npc.name + 'killed')
+			if( killed_counter >= $EnemySpawner.enemy_number):
+				game_over()
 
 func game_over():
 	print("GAME OVER!")
