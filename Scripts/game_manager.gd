@@ -29,4 +29,5 @@ func npc_killed(npc: Node) -> void:
 func game_over():
 	print("GAME OVER!")
 	await get_tree().create_timer(timeout).timeout
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().change_scene_to_file(hub_scene)
