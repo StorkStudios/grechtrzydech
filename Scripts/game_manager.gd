@@ -3,7 +3,8 @@ extends Node
 enum game_state {kill_time, npc_killed, free}
 var state = game_state.free
 var hub_scene = "res://Scenes/Hub.tscn"
-var timeout = 3;
+var timeout = 2;
+const black_duration: float = 1;
 
 func _on_clock_scene_kill_time_end() -> void:
 	if(state == game_state.npc_killed):
@@ -30,4 +31,8 @@ func game_over():
 	print("GAME OVER!")
 	await get_tree().create_timer(timeout).timeout
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	GlobalVariables.to_black(black_duration, on_to_black_ended)
+
+func on_to_black_ended() -> void:
 	get_tree().change_scene_to_file(hub_scene)
+	GlobalVariables.from_black(black_duration)

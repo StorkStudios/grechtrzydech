@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://cgso6vhmqyu27"]
+[gd_scene load_steps=2 format=3 uid="uid://dn5hefh71aaxc"]
 
 [ext_resource type="Script" path="res://Scripts/global_variables.gd" id="1_1c0t8"]
 
-[node name="GlobalVariables" type="Node"]
+[node name="GlobalVariables" type="Node" node_paths=PackedStringArray("color_rect")]
 script = ExtResource("1_1c0t8")
+color_rect = NodePath("ColorRect")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)

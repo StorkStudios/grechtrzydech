@@ -5,6 +5,8 @@ extends Node3D;
 @export var anim_player: AnimationPlayer;
 @export var game_scene = "res://Scenes/SpawnpointSelection.tscn"
 
+const black_duration: float = 1;
+
 var mouse_inbounds: bool = false;
 
 func _ready() -> void:
@@ -25,4 +27,8 @@ func _input(event: InputEvent) -> void:
 			load_level();
 
 func load_level() -> void:
-	get_tree().change_scene_to_file(game_scene)
+	GlobalVariables.to_black(black_duration, on_to_black_ended);
+
+func on_to_black_ended() -> void:
+	get_tree().change_scene_to_file(game_scene);
+	GlobalVariables.from_black(black_duration);
