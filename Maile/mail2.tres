@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://bybdf1t4sgeei"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_5bh5x"]
+
+[resource]
+script = ExtResource("1_5bh5x")
+from = "deathcorp.hr@morbid.co"
+to = "ilovecats@gmetal.com"
+subject = "Peoples stupidity"
+body = "Hey Deathy,
+we recommend you try to take advantage of these imbeciles that rent our rooms. They usually forget about their room keys and leave them all around the place. Also, most people still hide their keys under their doormat so you know what to do. Just remember, the clock is ticking and you’re the bell.
+The higher managment"

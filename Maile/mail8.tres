@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://hvxthwi3v2mw"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_rymq2"]
+
+[resource]
+script = ExtResource("1_rymq2")
+from = "darklordwastaken@morbi.us"
+to = "ilovecats@gmetal.com"
+subject = "How was your day?"
+body = "Hey honey,
+I was just wondering how your day was. We can see each other often nowadays because of our jobs so I came up with an idea. I can write you an email sometimes to keep you company mentally. Either way good luck and take care! 
+xoxoxo
+Husband"

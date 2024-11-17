@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://cyaoe45g1pu8j"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_286m4"]
+
+[resource]
+script = ExtResource("1_286m4")
+from = "storkstudios@gmail.com"
+to = "ilovecats@gmetal.com"
+subject = "Play our new game."
+body = "We are proud to introduce our new game. Bullet Waste 2. It is a melee slasher parkour with arena combat and poker based minigames where you need to acquire highly valuable artifacts that can be used to enhance your weapon which you will need because some enemies can be defeated using only these upgrades. There are also some more rules. We were working on it very hard and finally after 57 years we can present you our new CoreBasicMechanicsDemoForPublicV3_2 which you can play now on our itch.io.
+Cheers"

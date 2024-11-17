@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://dohsw8rqhrl33"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_d6hg3"]
+
+[resource]
+script = ExtResource("1_d6hg3")
+from = "darklordwastaken@morbi.us"
+to = "ilovecats@gmetal.com"
+subject = "Love you"
+body = "Hey honey,
+I’m writing to you to just say that I love you. Hope your work is going fine. I want you to know I fully support you and never gonna give you up, never gonna give you up, never gonna let you down, never gonna run around and desert you, never gonna make you cry, never gonna say goodbye, never gonna tell a lie and hurt you."

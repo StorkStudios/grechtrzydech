@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://cmqk1pykjuvtc"]
+
+[ext_resource type="Script" path="res://Scripts/hub_player.gd" id="1_7xoef"]
+[ext_resource type="Script" path="res://Scripts/pc_screen.gd" id="2_gw130"]
+[ext_resource type="PackedScene" uid="uid://cpmnyp5n7qp7v" path="res://Scenes/PCDisplay.tscn" id="3_fxq4x"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2g4cb"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_wl6qf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mm33t"]
+size = Vector3(1, 1, 0.03)
+
+[node name="Hub" type="Node3D"]
+
+[node name="Player" type="Camera3D" parent="."]
+script = ExtResource("1_7xoef")
+look_angles = Vector2(45, 45)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.06263)
+mesh = SubResource("BoxMesh_2g4cb")
+
+[node name="PCScreen" type="Node3D" parent="." node_paths=PackedStringArray("sub_viewport", "mesh_instance", "area", "collision_shape")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.38933)
+script = ExtResource("2_gw130")
+sub_viewport = NodePath("SubViewport")
+mesh_instance = NodePath("MeshInstance3D")
+area = NodePath("MeshInstance3D/Area3D")
+collision_shape = NodePath("MeshInstance3D/Area3D/CollisionShape3D")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PCScreen"]
+mesh = SubResource("QuadMesh_wl6qf")
+
+[node name="Area3D" type="Area3D" parent="PCScreen/MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PCScreen/MeshInstance3D/Area3D"]
+shape = SubResource("BoxShape3D_mm33t")
+
+[node name="SubViewport" type="SubViewport" parent="PCScreen"]
+size = Vector2i(1024, 1024)
+
+[node name="Control" parent="PCScreen/SubViewport" instance=ExtResource("3_fxq4x")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]

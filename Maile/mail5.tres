@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://c4bhk0md37pxd"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_5yfou"]
+
+[resource]
+script = ExtResource("1_5yfou")
+from = "john.w@continent.al"
+to = "ilovecats@gmetal.com"
+subject = "Was it you?"
+body = "I need to ask you. Was it you that took my dog? I mean no harm… for sure…"

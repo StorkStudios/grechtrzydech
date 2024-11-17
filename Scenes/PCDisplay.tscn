@@ -1,0 +1,87 @@
+[gd_scene load_steps=17 format=3 uid="uid://cpmnyp5n7qp7v"]
+
+[ext_resource type="Script" path="res://Scripts/pc_display.gd" id="1_4mcat"]
+[ext_resource type="Resource" uid="uid://bpb8151vr3qb5" path="res://Maile/mail1.tres" id="2_5c1o8"]
+[ext_resource type="Resource" uid="uid://bybdf1t4sgeei" path="res://Maile/mail2.tres" id="3_hv3g4"]
+[ext_resource type="Resource" uid="uid://bnxk6dsdn2q6l" path="res://Maile/mail3.tres" id="4_m4o61"]
+[ext_resource type="Resource" uid="uid://bi0qgbspkqyfx" path="res://Maile/mail4.tres" id="5_s4i8f"]
+[ext_resource type="Resource" uid="uid://c4bhk0md37pxd" path="res://Maile/mail5.tres" id="6_4q158"]
+[ext_resource type="Resource" uid="uid://d3na6k3jhe0n8" path="res://Maile/mail6.tres" id="7_p1fpe"]
+[ext_resource type="Resource" uid="uid://cke2x0vn7g4xc" path="res://Maile/mail7.tres" id="8_2qghs"]
+[ext_resource type="Resource" uid="uid://hvxthwi3v2mw" path="res://Maile/mail8.tres" id="9_5nekq"]
+[ext_resource type="Resource" uid="uid://bxrrabotasgte" path="res://Maile/mail9.tres" id="10_0c1r3"]
+[ext_resource type="Resource" uid="uid://dohsw8rqhrl33" path="res://Maile/mail10.tres" id="11_xwg4u"]
+[ext_resource type="Resource" uid="uid://cyaoe45g1pu8j" path="res://Maile/mail11.tres" id="12_fu6ji"]
+[ext_resource type="PackedScene" uid="uid://c5l12t4j1xyyq" path="res://Scenes/mail_entry.tscn" id="13_42m65"]
+[ext_resource type="Texture2D" uid="uid://t7mdlowvssri" path="res://Graphic/Sprites/background.png" id="14_fb3g8"]
+[ext_resource type="Script" path="res://Scripts/full_email.gd" id="15_h36h2"]
+[ext_resource type="Texture2D" uid="uid://bak8spdu6uuta" path="res://Graphic/Sprites/back_arrow.png" id="15_pfuan"]
+
+[node name="PCDisplay" type="Control" node_paths=PackedStringArray("mail_parent", "full_email")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4mcat")
+mail_instance = ExtResource("13_42m65")
+mail_resources = Array[Resource]([ExtResource("2_5c1o8"), ExtResource("3_hv3g4"), ExtResource("4_m4o61"), ExtResource("5_s4i8f"), ExtResource("6_4q158"), ExtResource("7_p1fpe"), ExtResource("8_2qghs"), ExtResource("9_5nekq"), ExtResource("10_0c1r3"), ExtResource("11_xwg4u"), ExtResource("12_fu6ji")])
+mail_parent = NodePath("ScrollContainer/BoxContainer")
+full_email = NodePath("FullEmail")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="FullEmail" type="NinePatchRect" parent="." node_paths=PackedStringArray("back_button", "text_field")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_fb3g8")
+patch_margin_left = 20
+patch_margin_top = 20
+patch_margin_right = 20
+patch_margin_bottom = 20
+script = ExtResource("15_h36h2")
+back_button = NodePath("Button")
+text_field = NodePath("RichTextLabel")
+
+[node name="Button" type="TextureButton" parent="FullEmail"]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 95.0
+offset_bottom = 95.0
+texture_normal = ExtResource("15_pfuan")
+texture_pressed = ExtResource("15_pfuan")
+texture_hover = ExtResource("15_pfuan")
+texture_disabled = ExtResource("15_pfuan")
+texture_focused = ExtResource("15_pfuan")
+stretch_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="FullEmail"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 105.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 48

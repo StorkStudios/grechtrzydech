@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5l12t4j1xyyq"]
+
+[ext_resource type="Script" path="res://Scripts/mail_entry.gd" id="1_ewr5o"]
+
+[node name="MailEntry" type="Button"]
+theme_override_font_sizes/font_size = 48
+text = "fgh aegrfj shrjfh dskjfhsk fhsjkf hsejkfhkjsd"
+alignment = 0
+script = ExtResource("1_ewr5o")

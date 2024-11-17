@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://bi0qgbspkqyfx"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_2rvp6"]
+
+[resource]
+script = ExtResource("1_2rvp6")
+from = "cutecatsandmore.noreply@ccam.com"
+to = "ilovecats@gmetal.com"
+subject = "Newsletter"
+body = "Hey “Deaddy”,
+here is the newest things that you can see on our site:
+- Cat videos compilation vol. 2137
+- How to feed your pet. A guide to proper diet for cats.
+- The newest star. An interview with Car from garn47.
+- Do you groom your pussy cat? An extensive poll.
+
+Also we’d like to thank you for your monthly donations. You’ve given us $437368362 so far. Thank you so much. "
