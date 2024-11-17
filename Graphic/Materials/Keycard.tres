@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bihpbpy41vkxa"]
+
+[ext_resource type="Texture2D" uid="uid://dfvp4qjgty1yh" path="res://Graphic/Textures/Key/Keycard.png" id="1_rlixs"]
+
+[resource]
+albedo_texture = ExtResource("1_rlixs")
+normal_enabled = true
+grow = true

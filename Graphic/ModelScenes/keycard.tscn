@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dod01qgmd832y"]
+
+[ext_resource type="Material" uid="uid://bihpbpy41vkxa" path="res://Graphic/Materials/Keycard.tres" id="1_7huu5"]
+[ext_resource type="ArrayMesh" uid="uid://bu7sn38sx4rlk" path="res://Graphic/Models/Keycard.obj" id="1_voybc"]
+
+[node name="Keycard" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+material_override = ExtResource("1_7huu5")
+mesh = ExtResource("1_voybc")
