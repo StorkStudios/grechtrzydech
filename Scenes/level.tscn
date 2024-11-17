@@ -32,7 +32,7 @@
 
 [sub_resource type="Environment" id="Environment_lr0u6"]
 background_energy_multiplier = 0.0
-ambient_light_source = 1
+ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
 ambient_light_energy = 0.0
 glow_enabled = true
@@ -160,6 +160,24 @@ transform = Transform3D(30, 0, 0, 0, 0.745, 0, 0, 0, 0.01, 0.042, 7.125, -2.296)
 
 [node name="StaticBody3D16" parent="." instance=ExtResource("2_tq4ib")]
 transform = Transform3D(30, 0, 0, 0, 0.745, 0, 0, 0, 0.01, 0.042, 7.125, 18.45)
+
+[node name="StaticBody3D44" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(30, 0, 0, 0, 0.745, 0, 0, 0, 0.01, 0.042, 7.88152, 18.45)
+
+[node name="StaticBody3D45" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(30, 0, 0, 0, 0.745, 0, 0, 0, 0.01, 0.042, 4.11534, 18.45)
+
+[node name="StaticBody3D46" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(-1.5299e-07, 0, 0.01, 0, 0.745, 0, -3.5, 0, -4.37114e-10, -15, 4.115, 16.7369)
+
+[node name="StaticBody3D49" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(-1.5299e-07, 0, 0.01, 0, 0.745, 0, -3.5, 0, -4.37114e-10, 15, 4.115, 16.737)
+
+[node name="StaticBody3D47" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(-1.5299e-07, 0, 0.01, 0, 0.745, 0, -3.5, 0, -4.37114e-10, -15, 7.882, 16.709)
+
+[node name="StaticBody3D48" parent="." instance=ExtResource("2_tq4ib")]
+transform = Transform3D(-1.5299e-07, 0, 0.01, 0, 0.745, 0, -3.5, 0, -4.37114e-10, 15, 7.882, 16.709)
 
 [node name="StaticBody3D11" parent="." instance=ExtResource("2_tq4ib")]
 transform = Transform3D(30, 0, 0, 0, 0.745, 0, 0, 0, 0.01, 0.0421581, 3.375, 2.29617)
