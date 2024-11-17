@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxhajvia2unks"]
+
+[ext_resource type="Material" uid="uid://d01t164x4j0vv" path="res://Graphic/Materials/ClockTower.tres" id="1_qmaxl"]
+[ext_resource type="ArrayMesh" uid="uid://x1nc4hgnaqiy" path="res://Graphic/Models/MiniClock/Clock.obj" id="1_xfv4g"]
+[ext_resource type="ArrayMesh" uid="uid://mgflg850j43o" path="res://Graphic/Models/MiniClock/HArrow.obj" id="2_qncn6"]
+[ext_resource type="ArrayMesh" uid="uid://djcdyy6pj4w5g" path="res://Graphic/Models/MiniClock/MinArrow.obj" id="3_18n4m"]
+
+[node name="Chair" type="Node3D"]
+
+[node name="Clock" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_qmaxl")
+mesh = ExtResource("1_xfv4g")
+
+[node name="HArrow" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_qmaxl")
+mesh = ExtResource("2_qncn6")
+
+[node name="MinArrow" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_qmaxl")
+mesh = ExtResource("3_18n4m")
