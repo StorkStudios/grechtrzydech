@@ -1,16 +1,15 @@
 [gd_scene load_steps=5 format=3 uid="uid://bpt40y57otp6j"]
 
-[ext_resource type="Script" path="res://Scripts/key.gd" id="1_gemg8"]
-[ext_resource type="PackedScene" uid="uid://gfx0x1nt3pi1" path="res://Graphic/Models/GoldenKey.fbx" id="1_w04xj"]
+[ext_resource type="Script" path="res://Scripts/item.gd" id="1_0waa2"]
 [ext_resource type="AudioStream" uid="uid://cmfib1uoc6ud6" path="res://Sounds/ring_inventory.wav" id="2_3o2d1"]
+[ext_resource type="PackedScene" uid="uid://bp64463yvojkj" path="res://Scenes/golden_key_model.tscn" id="3_chdls"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_66m6s"]
 size = Vector3(0.4, 0.1, 0.1)
 
 [node name="GoldenKey" type="RigidBody3D" node_paths=PackedStringArray("collider")]
 collision_layer = 2
-script = ExtResource("1_gemg8")
-base_res_path = "res://Graphic/Materials/"
+script = ExtResource("1_0waa2")
 tag = "SilverGoldenKey"
 collider = NodePath("CollisionShape3D")
 pickupSound = ExtResource("2_3o2d1")
@@ -19,5 +18,5 @@ pickupSound = ExtResource("2_3o2d1")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.15, 0, 0.2)
 shape = SubResource("BoxShape3D_66m6s")
 
-[node name="Key" parent="CollisionShape3D" instance=ExtResource("1_w04xj")]
+[node name="GoldenKey" parent="CollisionShape3D" instance=ExtResource("3_chdls")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.15, 0, -0.2)

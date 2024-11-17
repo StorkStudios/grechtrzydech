@@ -5,5 +5,4 @@ var tres = ".tres"
 
 func _ready() -> void:
 	
-	for child: MeshInstance3D in find_children("", "MeshInstance3D"):
-		child.set_surface_override_material(0, load(base_res_path + tag + tres))
+	find_child("NrPaperKey").set_surface_override_material(0, load(base_res_path + tag + tres))

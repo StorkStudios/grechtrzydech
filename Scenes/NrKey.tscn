@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://Scripts/key.gd" id="1_1cl35"]
 [ext_resource type="AudioStream" uid="uid://cmfib1uoc6ud6" path="res://Sounds/ring_inventory.wav" id="2_1j4ov"]
-[ext_resource type="PackedScene" uid="uid://bxvyku3fick7s" path="res://Scenes/NrKeymodel.tscn" id="3_cjm4t"]
+[ext_resource type="PackedScene" uid="uid://bxvyku3fick7s" path="res://Scenes/nr_key_model.tscn.tscn" id="3_gbt6s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pgq08"]
-size = Vector3(0.4, 0.1, 0.1)
+size = Vector3(0.6, 0.1, 0.1)
 
 [node name="NrKey" type="RigidBody3D" node_paths=PackedStringArray("collider")]
 collision_layer = 2
@@ -17,5 +17,5 @@ pickupSound = ExtResource("2_1j4ov")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_pgq08")
 
-[node name="NrKey" parent="." instance=ExtResource("3_cjm4t")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+[node name="Key" parent="." instance=ExtResource("3_gbt6s")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.1, 0, 0)

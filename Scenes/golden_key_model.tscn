@@ -1,5 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bp64463yvojkj"]
+[gd_scene load_steps=3 format=3 uid="uid://bp64463yvojkj"]
 
 [ext_resource type="PackedScene" uid="uid://gfx0x1nt3pi1" path="res://Graphic/Models/GoldenKey.fbx" id="1_vn3fh"]
+[ext_resource type="Material" path="res://Graphic/Materials/SilverGoldenKey.tres" id="2_xxo8b"]
 
 [node name="GoldenKey" instance=ExtResource("1_vn3fh")]
+
+[node name="GoldenKey" parent="." index="0"]
+material_override = ExtResource("2_xxo8b")

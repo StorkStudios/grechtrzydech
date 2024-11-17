@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cpg7ik4j2e3cr"]
-
-[ext_resource type="PackedScene" uid="uid://jwyl6pg4w1jg" path="res://Graphic/Models/NrKey.fbx" id="1_col1i"]
-
-[node name="NrKey" instance=ExtResource("1_col1i")]
