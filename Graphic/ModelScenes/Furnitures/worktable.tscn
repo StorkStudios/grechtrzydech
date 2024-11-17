@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dub5haqt3qstb"]
+
+[ext_resource type="ArrayMesh" uid="uid://bkdlrtbxwy872" path="res://Graphic/Models/worktable.obj" id="1_x2ya4"]
+[ext_resource type="Material" uid="uid://c8bhscqor3r23" path="res://Graphic/Materials/WoodenFUrnitures.tres" id="2_c77j0"]
+
+[node name="Worktable" type="MeshInstance3D"]
+mesh = ExtResource("1_x2ya4")
+surface_material_override/0 = ExtResource("2_c77j0")
