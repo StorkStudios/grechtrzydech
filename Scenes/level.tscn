@@ -1,13 +1,13 @@
-[gd_scene load_steps=41 format=3 uid="uid://pxdn0ccsegk2"]
+[gd_scene load_steps=42 format=3 uid="uid://pxdn0ccsegk2"]
 
 [ext_resource type="PackedScene" uid="uid://durub8p1hj84q" path="res://Scenes/Player.tscn" id="1_q7s76"]
 [ext_resource type="PackedScene" uid="uid://b8jai8n4cjp5w" path="res://Scenes/Wall.tscn" id="2_tq4ib"]
 [ext_resource type="PackedScene" uid="uid://c8gm5uj2w4ke8" path="res://Scenes/GameManager.tscn" id="5_jphyl"]
-[ext_resource type="PackedScene" uid="uid://cl2ed6wx1ccp5" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor.tscn" id="7_5sabv"]
+[ext_resource type="PackedScene" uid="uid://ceeqo6qsr8jc2" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor.tscn" id="7_5sabv"]
 [ext_resource type="PackedScene" uid="uid://bqy1bfxwkghw" path="res://Scenes/PauseMenu.tscn" id="7_jq3bk"]
 [ext_resource type="PackedScene" uid="uid://dx7s5kcs8aiaa" path="res://Graphic/ModelScenes/WallsAndGround/Stairs.tscn" id="8_xi5l7"]
 [ext_resource type="PackedScene" uid="uid://ddv6io8lyx2ic" path="res://Graphic/ModelScenes/Segments/CorridorCeiling.tscn" id="9_cf0u4"]
-[ext_resource type="PackedScene" path="res://Scenes/EnemySpawnpoint.tscn" id="10_btbda"]
+[ext_resource type="PackedScene" uid="uid://bd0psx38coyy2" path="res://Scenes/EnemySpawnpoint.tscn" id="10_btbda"]
 [ext_resource type="PackedScene" uid="uid://ghwwbvjjj37a" path="res://Scenes/Doormat.tscn" id="11_njfq7"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor01.tscn" id="12_sdi57"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor11.tscn" id="13_j64lj"]
@@ -36,6 +36,7 @@
 [ext_resource type="Material" path="res://Graphic/Materials/CharacterHair1.tres" id="34_kq2lj"]
 [ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="35_koblx"]
 [ext_resource type="Material" path="res://Graphic/Materials/UpFloor.tres" id="36_aif51"]
+[ext_resource type="PackedScene" uid="uid://dxhajvia2unks" path="res://Scenes/WallClock.tscn" id="37_fgmsm"]
 
 [sub_resource type="Environment" id="Environment_lr0u6"]
 background_energy_multiplier = 0.0
@@ -2448,3 +2449,38 @@ material_override = ExtResource("36_aif51")
 mesh = SubResource("PlaneMesh_xdjo8")
 skeleton = NodePath("../..")
 surface_material_override/0 = ExtResource("33_51wsk")
+
+[node name="Clocks" type="Node3D" parent="."]
+
+[node name="WallClock" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -11.3682, 1.89149, 2.52779)
+
+[node name="WallClock2" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -1.44989, 5.71892, 6.09056)
+
+[node name="WallClock3" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, -1.54192, 2.06066, -6.11843)
+
+[node name="WallClock4" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 7.14072, 1.56424, 6.06192)
+
+[node name="WallClock5" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -1.75206, 1.79242, 14.2514)
+
+[node name="WallClock6" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 14.9248, 5.24662, 2.29957)
+
+[node name="WallClock7" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, -2.9, 5.5, -5.9)
+
+[node name="WallClock8" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 11.8364, 5.80012, -5.825)
+
+[node name="WallClock9" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0.5, 0, -0.5, -2.18557e-08, 0, 0, 0, 0.5, 0.747094, 10.4471, 0.533469)
+
+[node name="WallClock10" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 4.83139, 5.3, -9.5)
+
+[node name="WallClock11" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 4.71958, 5.2509, 10.6291)

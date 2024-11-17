@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cnpl74bbpkx01"]
+[gd_scene load_steps=5 format=3 uid="uid://dipiexg733cu6"]
 
 [ext_resource type="Script" path="res://Scripts/key.gd" id="1_1cl35"]
 [ext_resource type="AudioStream" uid="uid://cmfib1uoc6ud6" path="res://Sounds/ring_inventory.wav" id="2_1j4ov"]

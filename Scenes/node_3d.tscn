@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://c8gm5uj2w4ke8" path="res://Scenes/GameManager.tscn" id="5_cf7b0"]
 [ext_resource type="PackedScene" uid="uid://so351frv8aq8" path="res://Graphic/ModelScenes/Door.tscn" id="5_h7ome"]
 [ext_resource type="PackedScene" uid="uid://bqy1bfxwkghw" path="res://Scenes/PauseMenu.tscn" id="7_ltlv6"]
-[ext_resource type="PackedScene" uid="uid://cnpl74bbpkx01" path="res://Scenes/NrKey.tscn" id="8_jgafh"]
-[ext_resource type="PackedScene" uid="uid://dg1t4ts7asno1" path="res://Scenes/KeycardKey.tscn" id="9_wswf7"]
-[ext_resource type="PackedScene" uid="uid://dhiaxpdkheula" path="res://Scenes/GoldenKey.tscn" id="10_0bw6x"]
+[ext_resource type="PackedScene" uid="uid://dipiexg733cu6" path="res://Scenes/NrKey.tscn" id="8_jgafh"]
+[ext_resource type="PackedScene" path="res://Scenes/KeycardKey.tscn" id="9_wswf7"]
+[ext_resource type="PackedScene" uid="uid://bpt40y57otp6j" path="res://Scenes/GoldenKey.tscn" id="10_0bw6x"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_fa7u6"]
 

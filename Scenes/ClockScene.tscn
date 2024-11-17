@@ -5,8 +5,6 @@
 
 [node name="ClockScene" type="Node"]
 script = ExtResource("1_scgmm")
-time_between_kills = 10.0
-kill_time = 3.0
 
 [node name="Bell" type="Node" parent="."]
 script = ExtResource("2_0gjyp")

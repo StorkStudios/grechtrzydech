@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxhajvia2unks"]
+
+[ext_resource type="Script" path="res://Scripts/wall_clock.gd" id="1_644e0"]
+[ext_resource type="Material" uid="uid://d01t164x4j0vv" path="res://Graphic/Materials/ClockTower.tres" id="2_urnyn"]
+[ext_resource type="ArrayMesh" uid="uid://x1nc4hgnaqiy" path="res://Graphic/Models/MiniClock/Clock.obj" id="3_cladc"]
+[ext_resource type="ArrayMesh" uid="uid://mgflg850j43o" path="res://Graphic/Models/MiniClock/HArrow.obj" id="4_3720i"]
+[ext_resource type="ArrayMesh" uid="uid://djcdyy6pj4w5g" path="res://Graphic/Models/MiniClock/MinArrow.obj" id="5_j1vc0"]
+
+[node name="WallClock" type="Node3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+script = ExtResource("1_644e0")
+
+[node name="Clock" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_urnyn")
+mesh = ExtResource("3_cladc")
+
+[node name="HArrow" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_urnyn")
+mesh = ExtResource("4_3720i")
+
+[node name="MinArrow" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_urnyn")
+mesh = ExtResource("5_j1vc0")

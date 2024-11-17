@@ -7,6 +7,7 @@ class_name ClockScene
 signal kill_time_start
 signal kill_time_end
 var timer: Timer
+var is_kill_time = false
 
 func _ready() -> void:
 	timer = Timer.new()
@@ -20,7 +21,9 @@ func _process(delta: float) -> void:
 func clock():
 	timer.start(time_between_kills)
 	await timer.timeout
+	is_kill_time = true
 	kill_time_start.emit()
 	timer.start(kill_time)
 	await timer.timeout
+	is_kill_time = false
 	kill_time_end.emit()

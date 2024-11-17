@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dhiaxpdkheula"]
+[gd_scene load_steps=5 format=3 uid="uid://bpt40y57otp6j"]
 
 [ext_resource type="Script" path="res://Scripts/key.gd" id="1_gemg8"]
 [ext_resource type="PackedScene" uid="uid://gfx0x1nt3pi1" path="res://Graphic/Models/GoldenKey.fbx" id="1_w04xj"]
