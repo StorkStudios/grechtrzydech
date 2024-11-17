@@ -1,4 +1,7 @@
 extends CharacterBody3D
+class_name Player
+
+enum walking_state {walk, idle}
 
 # Movement properties
 @export var move_speed = 5.0
@@ -11,11 +14,15 @@ var max_look_angle = 80.0
 var mouse_delta = Vector2.ZERO
 var jump_this_frame = false
 
+var current_walking_state = walking_state.idle;
+
 # Movement vectors
 var dir = Vector3.ZERO
 
 # Vertical look angle
 var vertical_look_angle = 0.0
+
+signal walking_state_changed;
 
 func _ready() -> void:
 	if(GlobalVariables.player_start_pos != null):
@@ -48,6 +55,11 @@ func handle_input():
 
 	velocity.x = dir.x * move_speed
 	velocity.z = dir.z * move_speed
+	
+	var walk = walking_state.walk if dir.x != 0 || dir.z != 0 else walking_state.idle;
+	if walk != current_walking_state:
+		current_walking_state = walk
+		walking_state_changed.emit(walk)
 
 # Update camera rotation based on mouse movement
 func update_camera_rotation():
