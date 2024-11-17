@@ -44,7 +44,7 @@ func interact() -> void:
 	
 	elif (collider is Enemy):
 		var enemy := collider as Enemy;
-		if (enemy.get_killed()):
+		if (!player_hand.held_item && enemy.get_killed()):
 			killed_enemy.emit();
 	
 	elif (player_hand.held_item):
