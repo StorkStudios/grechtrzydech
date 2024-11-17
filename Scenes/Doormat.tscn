@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://ghwwbvjjj37a"]
+[gd_scene load_steps=6 format=3 uid="uid://ghwwbvjjj37a"]
 
 [ext_resource type="Script" path="res://Scripts/Environment/doormat_controller.gd" id="1_6dhlw"]
 [ext_resource type="AudioStream" uid="uid://dhk3s5vkaelyi" path="res://Sounds/cloth-inventory.wav" id="2_b7420"]
+[ext_resource type="Material" uid="uid://crdh1o3c8ybxo" path="res://Graphic/Materials/WallAndSturcturesMaterials/Plansk.tres" id="3_woy1q"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qh687"]
 size = Vector3(1, 0.01, 1)
@@ -20,4 +21,5 @@ interactSound = ExtResource("2_b7420")
 shape = SubResource("BoxShape3D_qh687")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("3_woy1q")
 mesh = SubResource("PlaneMesh_vmq2d")

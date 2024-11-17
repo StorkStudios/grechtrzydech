@@ -5,9 +5,13 @@
 [ext_resource type="Texture2D" uid="uid://bquxl31lr1c5d" path="res://Graphic/Textures/Attick/AttickRoughness.png" id="3_aowl5"]
 
 [resource]
+albedo_color = Color(0.499476, 0.376733, 0.268736, 1)
 albedo_texture = ExtResource("1_4s6ax")
+roughness = 0.02
 roughness_texture = ExtResource("3_aowl5")
 normal_enabled = true
+normal_scale = 14.55
 normal_texture = ExtResource("2_3b8u0")
 uv1_scale = Vector3(2, 1, 1)
+uv2_scale = Vector3(2.285, 2.285, 2.285)
 grow = true

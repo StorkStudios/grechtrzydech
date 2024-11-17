@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://7dwge2b1x0pm"]
+
+[ext_resource type="Texture2D" uid="uid://tjk8semn5ylu" path="res://Graphic/Textures/Home/HomeAlbedo.png" id="1_1ntc6"]
+[ext_resource type="Texture2D" uid="uid://bme737b30pqxu" path="res://Graphic/Textures/Home/HomeNormal.png" id="2_yak7b"]
+
+[resource]
+albedo_color = Color(0.475751, 0.310638, 0.134106, 1)
+albedo_texture = ExtResource("1_1ntc6")
+normal_enabled = true
+normal_texture = ExtResource("2_yak7b")
+uv1_scale = Vector3(3.315, 0.13, 1)
+grow = true
