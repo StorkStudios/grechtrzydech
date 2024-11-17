@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://durub8p1hj84q" path="res://Scenes/Player.tscn" id="1_q7s76"]
 [ext_resource type="PackedScene" uid="uid://b8jai8n4cjp5w" path="res://Scenes/Wall.tscn" id="2_tq4ib"]
 [ext_resource type="PackedScene" uid="uid://c8gm5uj2w4ke8" path="res://Scenes/GameManager.tscn" id="5_jphyl"]
-[ext_resource type="PackedScene" uid="uid://ceeqo6qsr8jc2" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor.tscn" id="7_5sabv"]
+[ext_resource type="PackedScene" uid="uid://cl2ed6wx1ccp5" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor.tscn" id="7_5sabv"]
 [ext_resource type="PackedScene" uid="uid://bqy1bfxwkghw" path="res://Scenes/PauseMenu.tscn" id="7_jq3bk"]
 [ext_resource type="PackedScene" uid="uid://dx7s5kcs8aiaa" path="res://Graphic/ModelScenes/WallsAndGround/Stairs.tscn" id="8_xi5l7"]
 [ext_resource type="PackedScene" uid="uid://ddv6io8lyx2ic" path="res://Graphic/ModelScenes/Segments/CorridorCeiling.tscn" id="9_cf0u4"]
@@ -23,20 +23,20 @@
 [ext_resource type="PackedScene" uid="uid://bpt40y57otp6j" path="res://Scenes/GoldenKey.tscn" id="23_bloqp"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Furnitures/table.tscn" id="23_rbg6p"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoorMain.tscn" id="24_g5iwv"]
-[ext_resource type="PackedScene" uid="uid://cgnvbmppuk0a7" path="res://Scenes/timer.tscn" id="24_gwox4"]
+[ext_resource type="PackedScene" path="res://Scenes/timer.tscn" id="24_gwox4"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/MainDoor.tscn" id="24_t86co"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoorEvac.tscn" id="26_qtqho"]
 [ext_resource type="PackedScene" uid="uid://cc80nje2yo0oh" path="res://Graphic/ModelScenes/Furnitures/Chair.tscn" id="28_un7hg"]
 [ext_resource type="PackedScene" uid="uid://dnm3dh215fl1c" path="res://Graphic/ModelScenes/Furnitures/Wardrobe.tscn" id="29_cha6f"]
-[ext_resource type="PackedScene" uid="uid://dvmyrtlex3yvn" path="res://Scenes/KeycardKey.tscn" id="29_edo63"]
+[ext_resource type="PackedScene" uid="uid://dg1t4ts7asno1" path="res://Scenes/KeycardKey.tscn" id="29_edo63"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Furnitures/worktable.tscn" id="30_8ojve"]
 [ext_resource type="PackedScene" uid="uid://dre1uy72lvj28" path="res://Graphic/ModelScenes/Furnitures/Bed1.tscn" id="31_td8lv"]
 [ext_resource type="PackedScene" uid="uid://4h3e3yswppdu" path="res://Graphic/ModelScenes/Furnitures/NightStandDrawer.tscn" id="32_jlaup"]
-[ext_resource type="Material" path="res://Graphic/Materials/GreencarpetGroundQuixelMixer.tres" id="33_51wsk"]
+[ext_resource type="Material" uid="uid://5gappeh3f0lu" path="res://Graphic/Materials/GreencarpetGroundQuixelMixer.tres" id="33_51wsk"]
 [ext_resource type="Material" path="res://Graphic/Materials/CharacterHair1.tres" id="34_kq2lj"]
 [ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="35_koblx"]
-[ext_resource type="Material" path="res://Graphic/Materials/UpFloor.tres" id="36_aif51"]
-[ext_resource type="PackedScene" uid="uid://dxhajvia2unks" path="res://Scenes/WallClock.tscn" id="37_fgmsm"]
+[ext_resource type="Material" uid="uid://dlaiew64f84c4" path="res://Graphic/Materials/UpFloor.tres" id="36_aif51"]
+[ext_resource type="PackedScene" path="res://Scenes/WallClock.tscn" id="37_fgmsm"]
 [ext_resource type="PackedScene" uid="uid://krskuon176lr" path="res://Graphic/ModelScenes/Furnitures/Bed2.tscn" id="37_p5cha"]
 
 [sub_resource type="Environment" id="Environment_lr0u6"]
@@ -350,7 +350,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0044, 3.80286, -5.00683)
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.96664, 0.177856, 11.2098)
 
 [node name="WallLong4" parent="." instance=ExtResource("12_sdi57")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.98159, 0.125, 11.2)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.94332, 0.120122, 11.0065)
 
 [node name="WallLong40" parent="." instance=ExtResource("13_j64lj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 3.75, 4.2)
@@ -2484,54 +2484,6 @@ transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 
 
 [node name="WallClock11" parent="Clocks" instance=ExtResource("37_fgmsm")]
 transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 4.71958, 5.2509, 10.6291)
-
-[node name="WallClock12" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 14.8788, 2.07658, 9.84829)
-
-[node name="WallClock13" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -14.8236, 1.5803, 10.6615)
-
-[node name="WallClock14" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-2.18557e-08, 0.5, 0, -0.5, -2.18557e-08, 0, 0, 0, 0.5, -13.3755, 3.44324, 0.0450568)
-
-[node name="WallClock15" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -7.90272, 5.7431, -6.575)
-
-[node name="WallClock16" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 1.64415, 2.01547, -6.575)
-
-[node name="WallClock17" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 4.92608, 9.58169, -8.78733)
-
-[node name="WallClock18" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 14.845, 9.43168, -10.5898)
-
-[node name="WallClock19" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 3.01744, 9.41144, -6.1144)
-
-[node name="WallClock20" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -4.83524, 9.42605, 5.825)
-
-[node name="WallClock21" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 4.78162, 9.36465, 11.4308)
-
-[node name="WallClock22" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 5.20447, 9.07324, 9.38884)
-
-[node name="WallClock23" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -5.22031, 9.11998, -10.265)
-
-[node name="WallClock24" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -14.8811, 2.48459, -11.4611)
-
-[node name="WallClock25" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 9.68347, 5.36902, -14.2978)
-
-[node name="WallClock26" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 14.8841, 5.53367, 10.7153)
-
-[node name="WallClock27" parent="Clocks" instance=ExtResource("37_fgmsm")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -12.1283, 5.56411, 14.2698)
 
 [node name="Bed2" parent="." instance=ExtResource("31_td8lv")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -12.7043, 7.475, 10.1741)
