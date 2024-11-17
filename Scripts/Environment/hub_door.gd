@@ -28,7 +28,7 @@ func _input(event: InputEvent) -> void:
 
 func load_level() -> void:
 	GlobalVariables.to_black(black_duration, on_to_black_ended);
-	GlobalVariables.music.change_music(Music.MusicEnum.Level1, black_duration * 2);
+	GlobalVariables.music.change_music(Music.MusicEnum.Level1, black_duration);
 
 func on_to_black_ended() -> void:
 	get_tree().change_scene_to_file(game_scene);

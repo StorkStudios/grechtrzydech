@@ -14,6 +14,7 @@ func _on_continue_game_pressed() -> void:
 func _on_quit_game_pressed() -> void:
 	get_tree().paused = false
 	get_tree().change_scene_to_file(menu_scene)
+	GlobalVariables.music.change_music(Music.MusicEnum.Menu, 0.1);
 	
 	
 func _ready() -> void:

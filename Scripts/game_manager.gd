@@ -39,6 +39,7 @@ func game_over():
 	await get_tree().create_timer(timeout).timeout
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	GlobalVariables.to_black(black_duration, on_to_black_ended)
+	GlobalVariables.music.change_music(Music.MusicEnum.Hub, black_duration);
 
 func on_to_black_ended() -> void:
 	get_tree().change_scene_to_file(hub_scene)
