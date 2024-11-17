@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://detobh8fvfi1q"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_7tjrf"]
+
+[resource]
+script = ExtResource("1_7tjrf")
+from = "marketing@BONERid.er"
+to = "ilovecats@gmetal.com"
+subject = "Love waits"
+body = "Do you have a hard bone?
+Do you feel empty?
+There are cold skeletons in your area that are waiting to grind some bones together.
+Check out our new app BONERider at the app store and start comparing your bones today."

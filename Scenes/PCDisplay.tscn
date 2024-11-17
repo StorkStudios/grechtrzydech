@@ -1,8 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://cpmnyp5n7qp7v"]
+[gd_scene load_steps=19 format=3 uid="uid://cpmnyp5n7qp7v"]
 
 [ext_resource type="Script" path="res://Scripts/pc_display.gd" id="1_4mcat"]
 [ext_resource type="Resource" uid="uid://bpb8151vr3qb5" path="res://Maile/mail1.tres" id="2_5c1o8"]
 [ext_resource type="Resource" uid="uid://bybdf1t4sgeei" path="res://Maile/mail2.tres" id="3_hv3g4"]
+[ext_resource type="Resource" uid="uid://l1eqnkwgs4i0" path="res://Maile/tutorial.tres" id="3_lvkfj"]
 [ext_resource type="Resource" uid="uid://bnxk6dsdn2q6l" path="res://Maile/mail3.tres" id="4_m4o61"]
 [ext_resource type="Resource" uid="uid://bi0qgbspkqyfx" path="res://Maile/mail4.tres" id="5_s4i8f"]
 [ext_resource type="Resource" uid="uid://c4bhk0md37pxd" path="res://Maile/mail5.tres" id="6_4q158"]
@@ -14,6 +15,7 @@
 [ext_resource type="Resource" uid="uid://cyaoe45g1pu8j" path="res://Maile/mail11.tres" id="12_fu6ji"]
 [ext_resource type="PackedScene" uid="uid://c5l12t4j1xyyq" path="res://Scenes/mail_entry.tscn" id="13_42m65"]
 [ext_resource type="Texture2D" uid="uid://t7mdlowvssri" path="res://Graphic/Sprites/background.png" id="14_fb3g8"]
+[ext_resource type="Resource" uid="uid://detobh8fvfi1q" path="res://Maile/mail12.tres" id="15_7dro3"]
 [ext_resource type="Script" path="res://Scripts/full_email.gd" id="15_h36h2"]
 [ext_resource type="Texture2D" uid="uid://bak8spdu6uuta" path="res://Graphic/Sprites/back_arrow.png" id="15_pfuan"]
 
@@ -26,9 +28,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4mcat")
 mail_instance = ExtResource("13_42m65")
-mail_resources = Array[Resource]([ExtResource("2_5c1o8"), ExtResource("3_hv3g4"), ExtResource("4_m4o61"), ExtResource("5_s4i8f"), ExtResource("6_4q158"), ExtResource("7_p1fpe"), ExtResource("8_2qghs"), ExtResource("9_5nekq"), ExtResource("10_0c1r3"), ExtResource("11_xwg4u"), ExtResource("12_fu6ji")])
+mail_resources = Array[Resource]([ExtResource("3_lvkfj"), ExtResource("2_5c1o8"), ExtResource("3_hv3g4"), ExtResource("4_m4o61"), ExtResource("5_s4i8f"), ExtResource("6_4q158"), ExtResource("7_p1fpe"), ExtResource("8_2qghs"), ExtResource("9_5nekq"), ExtResource("10_0c1r3"), ExtResource("11_xwg4u"), ExtResource("12_fu6ji"), ExtResource("15_7dro3")])
 mail_parent = NodePath("ScrollContainer/BoxContainer")
 full_email = NodePath("FullEmail")
+random_mails = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 1

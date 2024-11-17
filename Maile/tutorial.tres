@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://l1eqnkwgs4i0"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_h8ec4"]
+
+[resource]
+script = ExtResource("1_h8ec4")
+from = "deathcorp.hr@morbid.co"
+to = "ilovecats@gmetal.com"
+subject = "Welcome to your new job"
+body = "Hey Deathy,
+we welcome you in our ranks. You were assigned a very important task of \"taking care\" of our clients. We hope that you'll get comfortable in this position very quickly.
+Good luck and don't F up
+The higher management"

@@ -5,6 +5,7 @@ extends Control;
 @export var mail_resources: Array[Resource];
 @export var mail_parent: BoxContainer;
 @export var full_email: FullEmail;
+@export var random_mails: int;
 
 func _ready() -> void:
 	update_mails();
@@ -15,15 +16,16 @@ func _ready() -> void:
 		mail_entry.pressed.connect(func(): full_email.open_mail(mail_resource));
 
 func update_mails() -> void:
-	if (GlobalVariables.mail_animation_state == 1):
+	if (GlobalVariables.mail_animation_state == 0):
 		GlobalVariables.mails.append(mail_resources[0]);
-		GlobalVariables.mails.append(mail_resources.slice(2).pick_random());
-	elif (GlobalVariables.mail_animation_state == 2):
+	if (GlobalVariables.mail_animation_state == 1):
 		GlobalVariables.mails.append(mail_resources[1]);
-		GlobalVariables.mails.append(mail_resources.filter(func(x): return GlobalVariables.mails.find(x) < 0).pick_random());
+		GlobalVariables.add_random_mail(mail_resources.slice(3));
+	elif (GlobalVariables.mail_animation_state == 2):
+		GlobalVariables.mails.append(mail_resources[2]);
+		GlobalVariables.add_random_mail(mail_resources);
 	elif (GlobalVariables.mail_animation_state > 2):
-		var mails_left := mail_resources.filter(func(x): return GlobalVariables.mails.find(x) < 0);
-		if (mails_left.size() > 0):
-			GlobalVariables.mails.append(mails_left.pick_random());
+		for i in range(random_mails):
+			GlobalVariables.add_random_mail(mail_resources);
 	
 	GlobalVariables.mail_animation_state += 1;

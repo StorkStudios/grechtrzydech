@@ -25,3 +25,8 @@ func from_black(duration: float) -> void:
 		await get_tree().process_frame;
 	color_rect.color.a = 0;
 	color_rect.visible = false;
+
+func add_random_mail(mail_resources: Array[Resource]) -> void:
+	var mails_left := mail_resources.filter(func(x): return mails.find(x) < 0);
+	if (mails_left.size() > 0):
+		mails.append(mails_left.pick_random());
