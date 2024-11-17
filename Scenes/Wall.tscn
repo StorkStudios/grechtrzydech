@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8jai8n4cjp5w"]
+[gd_scene load_steps=5 format=3 uid="uid://b8jai8n4cjp5w"]
 
+[ext_resource type="Material" uid="uid://dcdt6ivrsfg68" path="res://Graphic/Materials/CharacterHair1.tres" id="1_5c70y"]
 [ext_resource type="Material" uid="uid://bdxwitxp8usfv" path="res://Graphic/Materials/WallCoridor.tres" id="1_o8bkj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ht8li"]
@@ -14,5 +15,6 @@ shape = SubResource("BoxShape3D_ht8li")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0)
+material_override = ExtResource("1_5c70y")
 mesh = SubResource("BoxMesh_dkjjj")
 surface_material_override/0 = ExtResource("1_o8bkj")
