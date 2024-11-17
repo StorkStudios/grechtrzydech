@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://crdh1o3c8ybxo"]
+
+[ext_resource type="Texture2D" uid="uid://bjjffhlenv2jb" path="res://Graphic/Textures/WoodenPlanks/WoodenPlanksAlbedo.png" id="1_l2ods"]
+[ext_resource type="Texture2D" uid="uid://f57e87ryrise" path="res://Graphic/Textures/WoodenPlanks/WoodenPlanksNormal.png" id="2_yakx8"]
+[ext_resource type="Texture2D" uid="uid://bqm0cmwo06dit" path="res://Graphic/Textures/WoodenPlanks/WoodenPlanksRoughness.png" id="3_agn4y"]
+
+[resource]
+albedo_texture = ExtResource("1_l2ods")
+roughness_texture = ExtResource("3_agn4y")
+normal_enabled = true
+normal_texture = ExtResource("2_yakx8")
+uv1_scale = Vector3(2, 1, 1)
+grow = true
