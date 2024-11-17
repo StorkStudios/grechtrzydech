@@ -14,7 +14,7 @@ func _ready() -> void:
 	selected_child.visible = true
 	for map in $Maps.get_children():
 		var x_list = map.find_children("", "EnemySpawnpoint")
-		for x: EnemySpawnpoint in x_list:
+w		for x: EnemySpawnpoint in x_list:
 			if(GlobalVariables.rooms.find(x.key_code) != -1):
 				x.visible = true
 	top_left_corner = selected_child.position
