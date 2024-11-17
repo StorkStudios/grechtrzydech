@@ -11,3 +11,4 @@ func get_killed() -> void:
 	can_be_killed = false;
 	get_tree().get_first_node_in_group("GameManager").npc_killed(self)
 	animation.play_death_animation();
+	$AudioStreamPlayer3D.play();

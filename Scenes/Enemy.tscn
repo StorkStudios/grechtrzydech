@@ -1,8 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfdcyx0w2on3a"]
+[gd_scene load_steps=11 format=3 uid="uid://cfdcyx0w2on3a"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_4g35d"]
-[ext_resource type="PackedScene" path="res://Scenes/character_animated.tscn" id="2_ty6r5"]
+[ext_resource type="PackedScene" uid="uid://d02yhn53vgxib" path="res://Scenes/character_animated.tscn" id="2_ty6r5"]
 [ext_resource type="Script" path="res://Scripts/character_appearance_randomizer.gd" id="3_pnv6v"]
+[ext_resource type="Script" path="res://Scripts/character_sound_randomizer.gd" id="4_tnyvm"]
+[ext_resource type="AudioStream" uid="uid://djx2layp2gp1r" path="res://Sounds/death_1.mp3" id="5_6p7d5"]
+[ext_resource type="AudioStream" uid="uid://bc4x4re5abi4l" path="res://Sounds/death_2.mp3" id="6_kygu7"]
+[ext_resource type="AudioStream" uid="uid://528887vo6gvk" path="res://Sounds/death_3.mp3" id="7_qdwyf"]
+[ext_resource type="AudioStream" uid="uid://dbgrc5afnfngu" path="res://Sounds/death_4.mp3" id="8_araup"]
+[ext_resource type="AudioStream" uid="uid://d0iakv0okm6ac" path="res://Sounds/death_5.mp3" id="9_xy8rt"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy4xi"]
 
@@ -18,5 +24,9 @@ shape = SubResource("CapsuleShape3D_xy4xi")
 
 [node name="Skeleton3D" parent="CharacterAnimated/Armature" index="0"]
 script = ExtResource("3_pnv6v")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+script = ExtResource("4_tnyvm")
+sounds = Array[AudioStream]([ExtResource("5_6p7d5"), ExtResource("6_kygu7"), ExtResource("7_qdwyf"), ExtResource("8_araup"), ExtResource("9_xy8rt")])
 
 [editable path="CharacterAnimated"]
