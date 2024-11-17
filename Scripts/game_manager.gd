@@ -2,6 +2,8 @@ extends Node
 
 enum game_state {kill_time, npc_killed, free}
 var state = game_state.free
+var hub_scene = "res://Scenes/Hub.tscn"
+var timeout = 3;
 
 func _on_clock_scene_kill_time_end() -> void:
 	if(state == game_state.npc_killed):
@@ -26,6 +28,5 @@ func npc_killed(npc: Node) -> void:
 
 func game_over():
 	print("GAME OVER!")
-	await get_tree().create_timer(0.1).timeout
-	#get_tree().quit()
-	
+	await get_tree().create_timer(timeout).timeout
+	get_tree().change_scene_to_file(hub_scene)
