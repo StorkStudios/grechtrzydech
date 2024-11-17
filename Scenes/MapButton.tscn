@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5k0n1ks075ar"]
+
+[ext_resource type="Texture2D" uid="uid://blmsondhql6xh" path="res://Graphic/Sprites/arrows.png" id="1_aj7cc"]
+[ext_resource type="Script" path="res://Scripts/ui_button.gd" id="1_r7voj"]
+[ext_resource type="Texture2D" uid="uid://chlrojrv4a7uj" path="res://Graphic/Sprites/arrowsclicked.png" id="2_i2dnq"]
+[ext_resource type="Texture2D" uid="uid://dhw52ujyoo43w" path="res://Graphic/Sprites/arrowshover.png" id="3_tgm61"]
+
+[node name="MapButton" type="TextureButton"]
+offset_right = 75.0
+offset_bottom = 75.0
+texture_normal = ExtResource("1_aj7cc")
+texture_pressed = ExtResource("2_i2dnq")
+texture_hover = ExtResource("3_tgm61")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("1_r7voj")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="mouse_entered" from="." to="." method="_on_hoover"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
