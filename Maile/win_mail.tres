@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://dqs60ha2srabe"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_xhcwl"]
+
+[resource]
+script = ExtResource("1_xhcwl")
+from = "deathcorp.hr@morbid.com"
+to = "ilovecats@gmetal.com"
+subject = "Thank you for your service"
+body = "Dear Deathy,
+
+I would like to thank you for your engagement in fulfilling your duties. Your performance today, which did not exceed our expectations in any way, managed to reduce the world population by a total of five. I would like to remind you every employee that elimates more than 10,000,000 targets per month is eligible to receive a bonus of 100$. Your score this month is currently 13, so you are making really good progress.
+
+Sincely,
+The higher management"

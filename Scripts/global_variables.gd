@@ -3,8 +3,9 @@ extends Node
 var player_start_pos: Vector3
 
 var mail_animation_state: int = 0;
-var mails: Array[Resource] = [];
+var mails: Array[MailResource] = [];
 
+@export var win_mail: MailResource;
 @export var color_rect: ColorRect;
 @export var music: Music;
 
@@ -31,3 +32,6 @@ func add_random_mail(mail_resources: Array[Resource]) -> void:
 	var mails_left := mail_resources.filter(func(x): return mails.find(x) < 0);
 	if (mails_left.size() > 0):
 		mails.append(mails_left.pick_random());
+
+func add_win_main():
+	mails.append(win_mail);

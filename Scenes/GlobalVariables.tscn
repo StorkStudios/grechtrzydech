@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dn5hefh71aaxc"]
+[gd_scene load_steps=9 format=3 uid="uid://dn5hefh71aaxc"]
 
 [ext_resource type="Script" path="res://Scripts/global_variables.gd" id="1_1c0t8"]
 [ext_resource type="Script" path="res://Scripts/music.gd" id="2_mkys3"]
+[ext_resource type="Resource" uid="uid://dqs60ha2srabe" path="res://Maile/win_mail.tres" id="2_mo4u5"]
 [ext_resource type="AudioStream" uid="uid://c4dbgy7ped34w" path="res://Sounds/Music/Song6_loop.wav" id="3_imhom"]
 [ext_resource type="AudioStream" uid="uid://dkfppcas3kqm7" path="res://Sounds/Music/Song3_loop_radio.wav" id="4_0rdns"]
 [ext_resource type="AudioStream" uid="uid://crj0rjrjtuvan" path="res://Sounds/Music/Song5_loopish.wav" id="5_03k41"]
@@ -10,6 +11,7 @@
 
 [node name="GlobalVariables" type="Node" node_paths=PackedStringArray("color_rect", "music")]
 script = ExtResource("1_1c0t8")
+win_mail = ExtResource("2_mo4u5")
 color_rect = NodePath("ColorRect")
 music = NodePath("Music")
 

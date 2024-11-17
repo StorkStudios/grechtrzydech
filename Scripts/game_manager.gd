@@ -31,7 +31,15 @@ func npc_killed(npc: Node) -> void:
 			killed_counter += 1
 			print(npc.name + 'killed')
 			if( killed_counter >= $EnemySpawner.enemy_number):
-				game_over()
+				win()
+				
+func win():
+	print("YOU WIN!")
+	is_game_over = true;
+	await get_tree().create_timer(timeout).timeout
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	GlobalVariables.to_black(black_duration, on_to_black_ended)
+	GlobalVariables.add_win_main();
 
 func game_over():
 	print("GAME OVER!")
