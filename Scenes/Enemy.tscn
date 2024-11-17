@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://cfdcyx0w2on3a"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_4g35d"]
-[ext_resource type="PackedScene" uid="uid://d02yhn53vgxib" path="res://Scenes/character_animated.tscn" id="2_ty6r5"]
+[ext_resource type="PackedScene" path="res://Scenes/character_animated.tscn" id="2_ty6r5"]
 [ext_resource type="Script" path="res://Scripts/character_appearance_randomizer.gd" id="3_pnv6v"]
 [ext_resource type="Script" path="res://Scripts/character_sound_randomizer.gd" id="4_tnyvm"]
 [ext_resource type="AudioStream" uid="uid://djx2layp2gp1r" path="res://Sounds/death_1.mp3" id="5_6p7d5"]

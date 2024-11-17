@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bp64463yvojkj"]
+
+[ext_resource type="PackedScene" uid="uid://gfx0x1nt3pi1" path="res://Graphic/Models/GoldenKey.fbx" id="1_vn3fh"]
+
+[node name="GoldenKey" instance=ExtResource("1_vn3fh")]

@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://21j6bbw4y4ps"]
+[gd_scene load_steps=4 format=3 uid="uid://bqy1bfxwkghw"]
 
 [ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_200fq"]
-[ext_resource type="PackedScene" uid="uid://c3t51iuqddibp" path="res://Scenes/UIButton.tscn" id="2_ofs4h"]
+[ext_resource type="PackedScene" path="res://Scenes/UIButton.tscn" id="2_ofs4h"]
 [ext_resource type="Texture2D" uid="uid://gvyxexj2wf3" path="res://Graphic/Sprites/pausescreen.png" id="2_owpli"]
 
 [node name="PauseMenu" type="Control"]
