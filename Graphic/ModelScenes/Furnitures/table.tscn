@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://21oiyaj13hrb"]
+
+[ext_resource type="ArrayMesh" uid="uid://bi66s4afwlhqx" path="res://Graphic/Models/table.obj" id="1_53o8n"]
+[ext_resource type="Material" path="res://Graphic/Materials/door.tres" id="2_tpa46"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3sq5r"]
+size = Vector3(3.77979, 1.10303, 1.79456)
+
+[node name="Table" type="MeshInstance3D"]
+mesh = ExtResource("1_53o8n")
+surface_material_override/0 = ExtResource("2_tpa46")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.990967, 0.551513, -0.00262451)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_3sq5r")
