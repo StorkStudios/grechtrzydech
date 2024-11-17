@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://cutc4i2812e57"]
+
+[ext_resource type="Texture2D" uid="uid://kmxlf0eftpte" path="res://Graphic/Sprites/credits.png" id="1_psipd"]
+[ext_resource type="PackedScene" uid="uid://c3t51iuqddibp" path="res://Scenes/UIButton.tscn" id="2_m5n0c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mhphg"]
+font_size = 36
+font_color = Color(0.842635, 9.62615e-07, 2.88785e-07, 1)
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1jixu"]
+font_size = 18
+font_color = Color(0.792157, 0.0784314, 0.0784314, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Credits" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_psipd")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 163.0
+offset_right = 504.0
+offset_bottom = 645.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Credits"
+label_settings = SubResource("LabelSettings_mhphg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Game by:
+Adam Dachtera, Andrzej Gauza, Szymon Kaczmarek, Piotr Oleksy, Daniel Wiechetek, Stefan Zbąszyniak
+Special thanks to Miłosz Chrzępiec
+
+Assets:
+Bell sound Copyrght 2008-2010 Ulrich Metzner
+Interaction sound effects by artisticdude"
+label_settings = SubResource("LabelSettings_1jixu")
+autowrap_mode = 3
+
+[node name="CreditsButton" parent="." instance=ExtResource("2_m5n0c")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+offset_left = -452.0
+offset_top = -148.0
+offset_right = -302.0
+offset_bottom = -98.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label" parent="CreditsButton" index="0"]
+text = "Back"
+
+[editable path="CreditsButton"]
