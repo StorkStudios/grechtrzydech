@@ -63,14 +63,15 @@ text_field = NodePath("RichTextLabel")
 layout_mode = 1
 offset_left = 20.0
 offset_top = 20.0
-offset_right = 95.0
+offset_right = 1109.0
 offset_bottom = 95.0
+action_mode = 0
 texture_normal = ExtResource("15_pfuan")
 texture_pressed = ExtResource("15_pfuan")
 texture_hover = ExtResource("15_pfuan")
 texture_disabled = ExtResource("15_pfuan")
 texture_focused = ExtResource("15_pfuan")
-stretch_mode = 0
+stretch_mode = 4
 
 [node name="RichTextLabel" type="RichTextLabel" parent="FullEmail"]
 layout_mode = 1
