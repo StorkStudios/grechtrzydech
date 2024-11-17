@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://durub8p1hj84q"]
+[gd_scene load_steps=7 format=3 uid="uid://durub8p1hj84q"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_ie06p"]
 [ext_resource type="PackedScene" uid="uid://d7hrppljxwtw" path="res://Scenes/PlayerHand.tscn" id="2_2ywn3"]
-[ext_resource type="PackedScene" uid="uid://dx6c87hgpglww" path="res://Scenes/PlayerInteracter.tscn" id="3_7s13a"]
+[ext_resource type="PackedScene" uid="uid://cop5c8x0aitxj" path="res://Scenes/PlayerInteracter.tscn" id="3_7s13a"]
+[ext_resource type="PackedScene" uid="uid://bm4t7l586qjyc" path="res://Scenes/dead_hand.tscn" id="4_24fce"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy4xi"]
 
@@ -46,6 +47,13 @@ distance_fade_begin = 10.0
 distance_fade_length = 30.0
 omni_range = 13.0
 
+[node name="DeadHand" parent="CharacterBody3D/Camera3D" instance=ExtResource("4_24fce")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.385905, -0.703267, -0.502834)
+
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+
+[connection signal="killed_enemy" from="CharacterBody3D/Camera3D/PlayerInteracter" to="CharacterBody3D/Camera3D/DeadHand/AnimationPlayer" method="_on_player_interacter_killed_enemy"]
+
+[editable path="CharacterBody3D/Camera3D/DeadHand"]
