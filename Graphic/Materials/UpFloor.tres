@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dlaiew64f84c4"]
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dpggshvn32x8o"]
 
 [ext_resource type="Texture2D" uid="uid://ed2ggnjr4qyt" path="res://Graphic/Textures/UpFloor/UpFloorAlbedo.png" id="1_dnaag"]
 [ext_resource type="Texture2D" uid="uid://cj885wnm6qc2j" path="res://Graphic/Textures/KitchenWetFloor/KitchenWetFloorMetalness.png" id="2_mx235"]

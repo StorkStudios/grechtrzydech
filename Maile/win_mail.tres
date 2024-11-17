@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://dfg1janqyjbyr"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://cbrmrmrc87iuw"]
 
 [ext_resource type="Texture2D" uid="uid://cy4y52acp6rje" path="res://Graphic/Sprites/read_win_mail.png" id="1_73nc2"]
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_xhcwl"]

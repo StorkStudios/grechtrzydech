@@ -3,6 +3,8 @@ extends Node
 var player_start_pos: Vector3
 
 var mail_animation_state: int = 0;
+var time_between_kills_modifier: int = 0
+var kill_time_modifier: int = 0
 var mails: Array[MailResource] = [];
 var possible_rooms: Array[String] = ["NrKey01", "NrKey11", "NrKey12", "NrKey13", "NrKey14", "NrKey15", "NrKey21", "NrKey22", "NrKey23", "NrKey24"]
 var rooms: Array[String] = []

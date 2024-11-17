@@ -30,6 +30,7 @@ func _input(event: InputEvent) -> void:
 func load_level() -> void:
 	if random_npcs:
 		GlobalVariables.randomize_rooms()
+		GlobalVariables.time_between_kills_modifier = -5
 	else:
 		GlobalVariables.rooms = ["NrKey01", "NrKey11", "NrKey14", "NrKey22", "NrKey24"]
 	GlobalVariables.to_black(black_duration, on_to_black_ended);

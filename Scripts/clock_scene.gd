@@ -10,6 +10,8 @@ var timer: Timer
 var is_kill_time = false
 
 func _ready() -> void:
+	time_between_kills += GlobalVariables.time_between_kills_modifier
+	kill_time += GlobalVariables.kill_time_modifier
 	timer = Timer.new()
 	add_child(timer)
 	while isGameRunning:
