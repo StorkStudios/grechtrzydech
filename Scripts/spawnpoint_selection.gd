@@ -12,10 +12,13 @@ func _ready() -> void:
 	selected_level = 0
 	selected_child = $Maps.get_child(selected_level)
 	selected_child.visible = true
+	for map in $Maps.get_children():
+		var x_list = map.find_children("", "EnemySpawnpoint")
+		for x: EnemySpawnpoint in x_list:
+			if(GlobalVariables.rooms.find(x.key_code) != -1):
+				x.visible = true
 	top_left_corner = selected_child.position
 	play_sound()
-	#top_left_corner.x += get_rect().size.x
-	#top_left_corner.y += get_rect().size.y
 
 
 func _process(delta: float) -> void:

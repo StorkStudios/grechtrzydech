@@ -31,5 +31,6 @@ func load_level() -> void:
 	GlobalVariables.music.change_music(Music.MusicEnum.Level1, black_duration);
 
 func on_to_black_ended() -> void:
+	GlobalVariables.rooms = ["NrKey01", "NrKey11", "NrKey14", "NrKey22", "NrKey24"]
 	get_tree().change_scene_to_file(game_scene);
 	GlobalVariables.from_black(black_duration);

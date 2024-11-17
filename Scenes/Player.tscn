@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://durub8p1hj84q"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_ie06p"]
-[ext_resource type="PackedScene" uid="uid://d7hrppljxwtw" path="res://Scenes/PlayerHand.tscn" id="2_2ywn3"]
+[ext_resource type="PackedScene" path="res://Scenes/PlayerHand.tscn" id="2_2ywn3"]
 [ext_resource type="PackedScene" uid="uid://cop5c8x0aitxj" path="res://Scenes/PlayerInteracter.tscn" id="3_7s13a"]
-[ext_resource type="PackedScene" uid="uid://bm4t7l586qjyc" path="res://Scenes/dead_hand.tscn" id="4_24fce"]
+[ext_resource type="PackedScene" path="res://Scenes/dead_hand.tscn" id="4_24fce"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy4xi"]
 
@@ -109,10 +109,10 @@ bones/44/rotation = Quaternion(-0.213846, 0.822625, -0.152707, 0.504222)
 bones/45/rotation = Quaternion(0.610777, 0.0106844, 0.0138478, 0.791609)
 
 [node name="Scythe50" parent="CharacterBody3D/Camera3D/DeadHand/RightkeletonHand/Skeleton3D" index="0"]
-transform = Transform3D(0.181013, 0.959343, 0.216554, 0.194532, -0.250766, 0.948301, 0.964049, -0.129528, -0.232014, -0.494222, 0.045532, 0.678096)
+transform = Transform3D(0.181013, 0.959343, 0.216554, 0.194532, -0.250767, 0.9483, 0.964049, -0.129528, -0.232014, -0.494222, 0.045532, 0.678097)
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="CharacterBody3D/Camera3D"]
-transform = Transform3D(-0.563485, 0.466715, 0.681661, -0.754471, -0.626859, -0.194478, 0.336539, -0.623878, 0.705348, -0.258364, -0.744526, -1.31884)
+transform = Transform3D(-0.215315, 0.736319, 0.641463, 0.248246, -0.594021, 0.765188, 0.944464, 0.323998, -0.0548869, -0.355845, -0.838333, -1.46815)
 bone_name = "Picking"
 bone_idx = 15
 use_external_skeleton = true

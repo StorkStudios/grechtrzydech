@@ -7,6 +7,7 @@ var hub_scene = "res://Scenes/Hub.tscn"
 var timeout = 2;
 const black_duration: float = 1;
 var is_game_over: bool = false;
+var enemy_number = GlobalVariables.rooms.size()
 var killed_counter = 0
 
 func _on_clock_scene_kill_time_end() -> void:
