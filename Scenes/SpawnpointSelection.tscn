@@ -63,6 +63,14 @@ grow_vertical = 2
 script = ExtResource("1_nsedc")
 audioStream = ExtResource("2_nhb6k")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -2944.0
+offset_top = -1591.0
+offset_right = 3994.0
+offset_bottom = 2374.0
+color = Color(0.737255, 0.584314, 0.396078, 1)
+
 [node name="Maps" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -313,6 +321,21 @@ offset_right = -152.0
 offset_bottom = 376.0
 grow_horizontal = 0
 grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "
+- use arrows on the left to switch between floors
+
+- X signs mark your victims that you have to kill each time the bell rings
+
+- Rooms can only be unlocked by keys labeled with their number
+
+- Each room has a copy of its own key inside
+
+- Gold marked doors can only be opened with golden key
+
+- Green marked doors can only be open with a keycard
+
+- Multiple keys can be found in the rooms marked with \"KEYS\" label"
 autowrap_mode = 2
 
 [connection signal="button_down" from="Maps/Map1" to="." method="choose_spawnpoint"]
