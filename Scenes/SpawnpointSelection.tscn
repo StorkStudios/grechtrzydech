@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bayswrgsk5lxl"]
+[gd_scene load_steps=24 format=3 uid="uid://bayswrgsk5lxl"]
 
 [ext_resource type="Script" path="res://Scripts/spawnpoint_selection.gd" id="1_nsedc"]
 [ext_resource type="AudioStream" uid="uid://eyuwwhx4nas0" path="res://Sounds/turn_page.wav" id="2_nhb6k"]
@@ -9,11 +9,23 @@
 [ext_resource type="Texture2D" uid="uid://ngeueri8cbmq" path="res://Graphic/Sprites/BuildingPlanFloor3.png" id="6_egotk"]
 [ext_resource type="BitMap" uid="uid://620jt3msu1s5" path="res://Graphic/Bitmaps/BuildingMaskFloor2.png" id="7_p7p0j"]
 [ext_resource type="BitMap" uid="uid://du4qr7yd4316x" path="res://Graphic/Bitmaps/BuildingMaskFloor3.png" id="9_hlypo"]
-[ext_resource type="PackedScene" uid="uid://c5k0n1ks075ar" path="res://Scenes/MapButton.tscn" id="10_mamej"]
+[ext_resource type="PackedScene" path="res://Scenes/MapButton.tscn" id="10_mamej"]
 [ext_resource type="Texture2D" uid="uid://blmsondhql6xh" path="res://Graphic/Sprites/arrows.png" id="11_ph5o3"]
 [ext_resource type="Texture2D" uid="uid://chlrojrv4a7uj" path="res://Graphic/Sprites/arrowsclicked.png" id="12_4p1qv"]
 [ext_resource type="Texture2D" uid="uid://dhw52ujyoo43w" path="res://Graphic/Sprites/arrowshover.png" id="13_roaba"]
 [ext_resource type="Texture2D" uid="uid://c4s6hqhjgoaoe" path="res://Graphic/Sprites/floortitles.png" id="14_ilfbs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbk2a"]
+atlas = ExtResource("14_ilfbs")
+region = Rect2(0, 0, 1304, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxv38"]
+atlas = ExtResource("14_ilfbs")
+region = Rect2(0, 290, 1304, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sq8s"]
+atlas = ExtResource("14_ilfbs")
+region = Rect2(0, 580, 1304, 220)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n6drk"]
 atlas = ExtResource("11_ph5o3")
@@ -38,10 +50,6 @@ region = Rect2(356, 0, 316, 0)
 [sub_resource type="AtlasTexture" id="AtlasTexture_d8h0c"]
 atlas = ExtResource("13_roaba")
 region = Rect2(356, 0, 316, 0)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xhqli"]
-atlas = ExtResource("14_ilfbs")
-region = Rect2(0, 574.5, 1337, 224)
 
 [node name="SpawnSelection" type="Control"]
 layout_mode = 3
@@ -74,6 +82,18 @@ script = ExtResource("3_0klxe")
 world_pos = Vector3(-20, 1, -19)
 width = 40.0
 
+[node name="Floor1" type="TextureRect" parent="Maps/Map1"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -48.0
+offset_top = 250.0
+offset_right = 1256.0
+offset_bottom = 470.0
+grow_horizontal = 0
+texture = SubResource("AtlasTexture_dbk2a")
+
 [node name="Map2" type="TextureButton" parent="Maps"]
 visible = false
 layout_mode = 1
@@ -87,6 +107,18 @@ script = ExtResource("3_0klxe")
 world_pos = Vector3(-20, 4, -19)
 width = 40.0
 
+[node name="Floor2" type="TextureRect" parent="Maps/Map2"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -48.0
+offset_top = 250.0
+offset_right = 1256.0
+offset_bottom = 470.0
+grow_horizontal = 0
+texture = SubResource("AtlasTexture_dxv38")
+
 [node name="Map3" type="TextureButton" parent="Maps"]
 visible = false
 layout_mode = 1
@@ -99,6 +131,18 @@ stretch_mode = 0
 script = ExtResource("3_0klxe")
 world_pos = Vector3(-20, 8, -19)
 width = 40.0
+
+[node name="Floor3" type="TextureRect" parent="Maps/Map3"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -48.0
+offset_top = 250.0
+offset_right = 1256.0
+offset_bottom = 470.0
+grow_horizontal = 0
+texture = SubResource("AtlasTexture_0sq8s")
 
 [node name="MapButtonLeft" parent="." instance=ExtResource("10_mamej")]
 layout_mode = 1
@@ -135,36 +179,6 @@ texture_pressed = SubResource("AtlasTexture_sxhlc")
 texture_hover = SubResource("AtlasTexture_d8h0c")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-
-[node name="Floor2" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -1109.0
-offset_bottom = 223.0
-grow_horizontal = 0
-texture = SubResource("AtlasTexture_xhqli")
-
-[node name="Floor3" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -1109.0
-offset_bottom = 223.0
-grow_horizontal = 0
-texture = SubResource("AtlasTexture_xhqli")
-
-[node name="Floor1" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 40.0
-grow_horizontal = 0
-texture = SubResource("AtlasTexture_xhqli")
 
 [connection signal="button_down" from="Maps/Map1" to="." method="choose_spawnpoint"]
 [connection signal="button_down" from="Maps/Map2" to="." method="choose_spawnpoint"]
