@@ -163,7 +163,7 @@ _data = {
 
 [node name="Door" type="Node3D" node_paths=PackedStringArray("animation_player", "interactTarget")]
 script = ExtResource("1_3fku7")
-interactionTag = "23"
+interactionTag = "NrKey23"
 animation_player = NodePath("AnimationPlayer")
 interactTarget = NodePath("DoorArmature/InteractTarget")
 

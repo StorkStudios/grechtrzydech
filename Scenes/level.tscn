@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://pxdn0ccsegk2"]
+[gd_scene load_steps=26 format=3 uid="uid://pxdn0ccsegk2"]
 
 [ext_resource type="PackedScene" uid="uid://durub8p1hj84q" path="res://Scenes/Player.tscn" id="1_q7s76"]
 [ext_resource type="PackedScene" uid="uid://b8jai8n4cjp5w" path="res://Scenes/Wall.tscn" id="2_tq4ib"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://cjow4cogrvy6u" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor22.tscn" id="19_ltj1t"]
 [ext_resource type="PackedScene" uid="uid://c3ncfpnnwrynu" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor23.tscn" id="20_67wpk"]
 [ext_resource type="PackedScene" uid="uid://dqoa6rqkvtj6o" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor24.tscn" id="21_wdqrh"]
+[ext_resource type="PackedScene" uid="uid://dipiexg733cu6" path="res://Scenes/NrKey.tscn" id="22_d1yec"]
 
 [sub_resource type="Environment" id="Environment_lr0u6"]
 ambient_light_source = 2
@@ -356,3 +357,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 7.5, 4.2)
 
 [node name="WallLong9" parent="." instance=ExtResource("21_wdqrh")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10, 7.5, -4.2)
+
+[node name="NrKey" parent="." instance=ExtResource("22_d1yec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.93267, 0.133876, 7.8918)
