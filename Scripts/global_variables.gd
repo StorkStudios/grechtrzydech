@@ -6,6 +6,7 @@ var mail_animation_state: int = 0;
 var mails: Array[Resource] = [];
 
 @export var color_rect: ColorRect;
+@export var music: Music;
 
 func to_black(duration: float, on_ended: Callable) -> void:
 	var time: float = 0;

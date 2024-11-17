@@ -1,10 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://dn5hefh71aaxc"]
+[gd_scene load_steps=8 format=3 uid="uid://dn5hefh71aaxc"]
 
 [ext_resource type="Script" path="res://Scripts/global_variables.gd" id="1_1c0t8"]
+[ext_resource type="Script" path="res://Scripts/music.gd" id="2_mkys3"]
+[ext_resource type="AudioStream" uid="uid://c4dbgy7ped34w" path="res://Sounds/Music/Song6_loop.wav" id="3_imhom"]
+[ext_resource type="AudioStream" uid="uid://dkfppcas3kqm7" path="res://Sounds/Music/Song3_loop_radio.wav" id="4_0rdns"]
+[ext_resource type="AudioStream" uid="uid://crj0rjrjtuvan" path="res://Sounds/Music/Song5_loopish.wav" id="5_03k41"]
+[ext_resource type="AudioStream" uid="uid://cvds4jbgrjljh" path="res://Sounds/Music/Song1_loop.wav" id="6_ckwso"]
+[ext_resource type="AudioStream" uid="uid://dhocwc4s7mxf8" path="res://Sounds/Music/Song2_loop.wav" id="7_7f45k"]
 
-[node name="GlobalVariables" type="Node" node_paths=PackedStringArray("color_rect")]
+[node name="GlobalVariables" type="Node" node_paths=PackedStringArray("color_rect", "music")]
 script = ExtResource("1_1c0t8")
 color_rect = NodePath("ColorRect")
+music = NodePath("Music")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
@@ -14,3 +21,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0)
+
+[node name="Music" type="AudioStreamPlayer" parent="." node_paths=PackedStringArray("second_player")]
+script = ExtResource("2_mkys3")
+menu_music = ExtResource("3_imhom")
+hub_music = ExtResource("4_0rdns")
+level1_music = ExtResource("5_03k41")
+level2_music = ExtResource("6_ckwso")
+level3_music = ExtResource("7_7f45k")
+second_player = NodePath("AudioStreamPlayer")
+music_volume = 0.25
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Music"]

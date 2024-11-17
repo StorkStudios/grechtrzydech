@@ -10,6 +10,7 @@ func _ready() -> void:
 
 
 func _on_start_game_pressed() -> void:
+	GlobalVariables.music.change_music(Music.MusicEnum.Hub, 0.1);
 	get_tree().change_scene_to_file(game_scene)
 
 
