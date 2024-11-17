@@ -27,10 +27,10 @@ func choose_spawnpoint():
 	map_to_world_coordinates(map_pos-top_left_corner, width)
 	
 func map_to_world_coordinates(map: Vector2, width: float):
-	var mapx = map.x*selected_child.width/width
-	var mapy = map.y*selected_child.width/width
+	var mapx = map.x*selected_child.width/selected_child.scale.x/width
+	var mapy = map.y*selected_child.width/selected_child.scale.y/width
 	var res = selected_child.world_pos+Vector3(mapx, 0, mapy)
-	var player: Node3D = get_tree().get_first_node_in_group("Players")
+	print(mapx, " ", mapy, selected_child.world_pos, res)
 	print(res)
 	GlobalVariables.player_start_pos = res
 	get_tree().change_scene_to_file(game_scene)

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://sf0d2oe1w0cs"
+path="res://.godot/imported/BuildingMaskFloor1.png-098c6aa4c1e2d2155a40bd5987a53366.res"
+
+[deps]
+
+source_file="res://Graphic/Bitmaps/BuildingMaskFloor1.png"
+dest_files=["res://.godot/imported/BuildingMaskFloor1.png-098c6aa4c1e2d2155a40bd5987a53366.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

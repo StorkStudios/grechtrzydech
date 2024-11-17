@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c8gm5uj2w4ke8" path="res://Scenes/GameManager.tscn" id="5_cf7b0"]
 [ext_resource type="PackedScene" uid="uid://so351frv8aq8" path="res://Graphic/ModelScenes/Door.tscn" id="5_h7ome"]
 [ext_resource type="PackedScene" uid="uid://bqy1bfxwkghw" path="res://Scenes/PauseMenu.tscn" id="7_ltlv6"]
-[ext_resource type="PackedScene" uid="uid://byyhu5vreuvlr" path="res://Scenes/Doormat.tscn" id="8_tw4b6"]
+[ext_resource type="PackedScene" uid="uid://ghwwbvjjj37a" path="res://Scenes/Doormat.tscn" id="8_tw4b6"]
 [ext_resource type="PackedScene" uid="uid://bpt40y57otp6j" path="res://Scenes/GoldenKey.tscn" id="10_0bw6x"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_fa7u6"]

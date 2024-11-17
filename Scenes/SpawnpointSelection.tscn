@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://bayswrgsk5lxl"]
+[gd_scene load_steps=10 format=3 uid="uid://bayswrgsk5lxl"]
 
 [ext_resource type="Script" path="res://Scripts/spawnpoint_selection.gd" id="1_nsedc"]
-[ext_resource type="Texture2D" uid="uid://c0wp8en4kp5lo" path="res://Graphic/Sprites/coconut.jpg" id="1_pc30g"]
 [ext_resource type="AudioStream" uid="uid://eyuwwhx4nas0" path="res://Sounds/turn_page.wav" id="2_nhb6k"]
 [ext_resource type="Script" path="res://Scripts/map_data.gd" id="3_0klxe"]
+[ext_resource type="Texture2D" uid="uid://1ocfhxc3cq00" path="res://Graphic/Sprites/BuildingPlanFloor1.png" id="3_2036l"]
+[ext_resource type="BitMap" uid="uid://sf0d2oe1w0cs" path="res://Graphic/Bitmaps/BuildingMaskFloor1.png" id="4_45a6a"]
+[ext_resource type="Texture2D" uid="uid://bsrukh44lbyyn" path="res://Graphic/Sprites/BuildingPlanFloor2.png" id="5_xkotm"]
+[ext_resource type="Texture2D" uid="uid://ngeueri8cbmq" path="res://Graphic/Sprites/BuildingPlanFloor3.png" id="6_egotk"]
+[ext_resource type="BitMap" uid="uid://620jt3msu1s5" path="res://Graphic/Bitmaps/BuildingMaskFloor2.png" id="7_p7p0j"]
+[ext_resource type="BitMap" uid="uid://du4qr7yd4316x" path="res://Graphic/Bitmaps/BuildingMaskFloor3.png" id="9_hlypo"]
 
 [node name="SpawnSelection" type="Control"]
 layout_mode = 3
@@ -26,53 +31,41 @@ grow_vertical = 2
 [node name="Map1" type="TextureButton" parent="Maps"]
 visible = false
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -324.0
-offset_right = 324.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("1_pc30g")
+offset_right = 2048.0
+offset_bottom = 2048.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("3_2036l")
+texture_click_mask = ExtResource("4_45a6a")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
-world_pos = Vector3(-13, 1, -14)
-width = 27.0
+world_pos = Vector3(-20, 1, -19)
+width = 40.0
 
 [node name="Map2" type="TextureButton" parent="Maps"]
 visible = false
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -324.0
-offset_right = 324.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("1_pc30g")
+offset_right = 2048.0
+offset_bottom = 2048.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("5_xkotm")
+texture_click_mask = ExtResource("7_p7p0j")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
-world_pos = Vector3(-14, 4, -15)
-width = 28.5
+world_pos = Vector3(-20, 4, -19)
+width = 40.0
 
 [node name="Map3" type="TextureButton" parent="Maps"]
 visible = false
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -324.0
-offset_right = 324.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("1_pc30g")
+offset_right = 2048.0
+offset_bottom = 2048.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("6_egotk")
+texture_click_mask = ExtResource("9_hlypo")
 stretch_mode = 0
 script = ExtResource("3_0klxe")
-world_pos = Vector3(-14, 8, -15)
-width = 28.5
+world_pos = Vector3(-20, 8, -19)
+width = 40.0
 
 [node name="ButtonLeft" type="Button" parent="."]
 layout_mode = 1
