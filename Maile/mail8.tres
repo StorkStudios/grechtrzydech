@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://hvxthwi3v2mw"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://hvxthwi3v2mw"]
 
+[ext_resource type="Texture2D" uid="uid://b74wi6d2ut54a" path="res://Graphic/Sprites/read_mail.png" id="1_4nfne"]
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_rymq2"]
+[ext_resource type="Texture2D" uid="uid://cllu4ufgdw7w2" path="res://Graphic/Sprites/unread_mail.png" id="2_ery0n"]
 
 [resource]
 script = ExtResource("1_rymq2")
@@ -11,3 +13,5 @@ body = "Hey honey,
 I was just wondering how your day was. We can see each other often nowadays because of our jobs so I came up with an idea. I can write you an email sometimes to keep you company mentally. Either way good luck and take care! 
 xoxoxo
 Husband"
+unread_icon = ExtResource("2_ery0n")
+read_icon = ExtResource("1_4nfne")

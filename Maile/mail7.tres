@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://cke2x0vn7g4xc"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://cke2x0vn7g4xc"]
 
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_r45oh"]
+[ext_resource type="Texture2D" uid="uid://b74wi6d2ut54a" path="res://Graphic/Sprites/read_mail.png" id="1_u0dnn"]
+[ext_resource type="Texture2D" uid="uid://cllu4ufgdw7w2" path="res://Graphic/Sprites/unread_mail.png" id="2_d03wd"]
 
 [resource]
 script = ExtResource("1_r45oh")
@@ -8,3 +10,5 @@ from = "irs@fed.gov"
 to = "ilovecats@gmetal.com"
 subject = "You can’t run forever"
 body = "You know we know. But you don’t know that we know that you know that we know this. We have our guys following you. JUST PAY YOUR TAXES!!!"
+unread_icon = ExtResource("2_d03wd")
+read_icon = ExtResource("1_u0dnn")

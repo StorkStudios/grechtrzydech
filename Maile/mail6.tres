@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://d3na6k3jhe0n8"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://d3na6k3jhe0n8"]
 
+[ext_resource type="Texture2D" uid="uid://b74wi6d2ut54a" path="res://Graphic/Sprites/read_mail.png" id="1_7fd16"]
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_e3m0k"]
+[ext_resource type="Texture2D" uid="uid://cllu4ufgdw7w2" path="res://Graphic/Sprites/unread_mail.png" id="2_gja2e"]
 
 [resource]
 script = ExtResource("1_e3m0k")
@@ -9,3 +11,5 @@ to = "ilovecats@gmetal.com"
 subject = "Doing the my work"
 body = "Sup my guy. I know you now have work and all but I wanted to say good job. Thanks to you now I can rest on the seventh day of the week. You know how long it took to take these mortals to my kingdom. Seriously dude, thanks for taking this job.
 Love ya, the G"
+unread_icon = ExtResource("2_gja2e")
+read_icon = ExtResource("1_7fd16")

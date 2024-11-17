@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://bpb8151vr3qb5"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://bpb8151vr3qb5"]
 
+[ext_resource type="Texture2D" uid="uid://b74wi6d2ut54a" path="res://Graphic/Sprites/read_mail.png" id="1_5maed"]
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_ta30c"]
+[ext_resource type="Texture2D" uid="uid://cllu4ufgdw7w2" path="res://Graphic/Sprites/unread_mail.png" id="3_il02h"]
 
 [resource]
 script = ExtResource("1_ta30c")
@@ -10,3 +12,5 @@ subject = "Your mistake"
 body = "Hey Deathy,
 I know you’re new here and all, but why did you do that? You know people hear what you’re doing, right? You are supposed to kill only when the bell tolls. It will drown down their swan song, and you’ll remain undetected. Slip up one more time and we’ll be deducting the losses from your pay.
 The higher management"
+unread_icon = ExtResource("3_il02h")
+read_icon = ExtResource("1_5maed")

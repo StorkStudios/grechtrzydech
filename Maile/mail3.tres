@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://bnxk6dsdn2q6l"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://bnxk6dsdn2q6l"]
 
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_8nfb4"]
+[ext_resource type="Texture2D" uid="uid://b74wi6d2ut54a" path="res://Graphic/Sprites/read_mail.png" id="1_lgjhw"]
+[ext_resource type="Texture2D" uid="uid://cllu4ufgdw7w2" path="res://Graphic/Sprites/unread_mail.png" id="2_omygf"]
 
 [resource]
 script = ExtResource("1_8nfb4")
@@ -8,3 +10,5 @@ from = "TheRealMrDeathGuy@wp.pl"
 to = "ilovecats@gmetal.com"
 subject = "I am Death and i need your help"
 body = "Hey, I am the real Death and I need your help. I need to go kill people but I got stuck on an island and need 10000$ american dollar. Please send quickly."
+unread_icon = ExtResource("2_omygf")
+read_icon = ExtResource("1_lgjhw")

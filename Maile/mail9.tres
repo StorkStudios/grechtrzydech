@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://bxrrabotasgte"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://bxrrabotasgte"]
 
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_3odeh"]
+[ext_resource type="Texture2D" uid="uid://b74wi6d2ut54a" path="res://Graphic/Sprites/read_mail.png" id="1_myc3y"]
+[ext_resource type="Texture2D" uid="uid://cllu4ufgdw7w2" path="res://Graphic/Sprites/unread_mail.png" id="2_dawgh"]
 
 [resource]
 script = ExtResource("1_3odeh")
@@ -11,3 +13,5 @@ body = "Hey honey,
 I’m just stopping by to wish you a nice day. Don’t stress too much, ok? If something bothers you just take a deep breath and try not to worry about it. You can always vent to me as I’ll always be here.
 xoxoxo
 Husband"
+unread_icon = ExtResource("2_dawgh")
+read_icon = ExtResource("1_myc3y")

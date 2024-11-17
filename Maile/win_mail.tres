@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://dqs60ha2srabe"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://dfg1janqyjbyr"]
 
+[ext_resource type="Texture2D" uid="uid://cy4y52acp6rje" path="res://Graphic/Sprites/read_win_mail.png" id="1_73nc2"]
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_xhcwl"]
+[ext_resource type="Texture2D" uid="uid://b8wtmfdxm4du4" path="res://Graphic/Sprites/unread_win_mail.png" id="2_2y38l"]
 
 [resource]
 script = ExtResource("1_xhcwl")
@@ -13,3 +15,5 @@ I would like to thank you for your engagement in fulfilling your duties. Your pe
 
 Sincely,
 The higher management"
+unread_icon = ExtResource("2_2y38l")
+read_icon = ExtResource("1_73nc2")

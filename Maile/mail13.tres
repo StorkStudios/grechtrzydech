@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://of2xj3u0is3j"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://of2xj3u0is3j"]
 
+[ext_resource type="Texture2D" uid="uid://b74wi6d2ut54a" path="res://Graphic/Sprites/read_mail.png" id="1_hovgj"]
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_smbpf"]
+[ext_resource type="Texture2D" uid="uid://cllu4ufgdw7w2" path="res://Graphic/Sprites/unread_mail.png" id="2_twcw2"]
 
 [resource]
 script = ExtResource("1_smbpf")
@@ -37,3 +39,5 @@ Na nim będziesz mógł dokładniej dowiedzieć się jak działa nasze koło, po
 
 Zapraszamy na naszego facebooka: https://www.facebook.com/share/y1Kg2r1rjmQpqsh2/
 Jeżeli chcesz dowiedzieć się więcej zapraszamy do dołączenia do naszego serwera na discordzie: https://discord.gg/yRNZ73W"
+unread_icon = ExtResource("2_twcw2")
+read_icon = ExtResource("1_hovgj")

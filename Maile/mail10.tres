@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://dohsw8rqhrl33"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://dohsw8rqhrl33"]
 
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_d6hg3"]
+[ext_resource type="Texture2D" uid="uid://b74wi6d2ut54a" path="res://Graphic/Sprites/read_mail.png" id="1_gdx5l"]
+[ext_resource type="Texture2D" uid="uid://cllu4ufgdw7w2" path="res://Graphic/Sprites/unread_mail.png" id="2_gcgcf"]
 
 [resource]
 script = ExtResource("1_d6hg3")
@@ -9,3 +11,5 @@ to = "ilovecats@gmetal.com"
 subject = "Love you"
 body = "Hey honey,
 I’m writing to you to just say that I love you. Hope your work is going fine. I want you to know I fully support you and never gonna give you up, never gonna give you up, never gonna let you down, never gonna run around and desert you, never gonna make you cry, never gonna say goodbye, never gonna tell a lie and hurt you."
+unread_icon = ExtResource("2_gcgcf")
+read_icon = ExtResource("1_gdx5l")

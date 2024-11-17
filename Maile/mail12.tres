@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://detobh8fvfi1q"]
+[gd_resource type="Resource" script_class="MailResource" load_steps=4 format=3 uid="uid://detobh8fvfi1q"]
 
+[ext_resource type="Texture2D" uid="uid://b74wi6d2ut54a" path="res://Graphic/Sprites/read_mail.png" id="1_0yj0r"]
 [ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_7tjrf"]
+[ext_resource type="Texture2D" uid="uid://cllu4ufgdw7w2" path="res://Graphic/Sprites/unread_mail.png" id="2_4148n"]
 
 [resource]
 script = ExtResource("1_7tjrf")
@@ -11,3 +13,5 @@ body = "Do you have a hard bone?
 Do you feel empty?
 There are cold skeletons in your area that are waiting to grind some bones together.
 Check out our new app BONERider at the app store and start comparing your bones today."
+unread_icon = ExtResource("2_4148n")
+read_icon = ExtResource("1_0yj0r")
