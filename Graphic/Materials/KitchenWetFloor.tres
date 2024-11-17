@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://wc650646w3qv" path="res://Graphic/Textures/KitchenWetFloor/KitchenWetFloorRoughness.png" id="4_amoe3"]
 
 [resource]
-albedo_color = Color(0.82495, 0.769987, 0.710961, 1)
+albedo_color = Color(0.716171, 0.140143, 0.309173, 1)
 albedo_texture = ExtResource("1_16h3j")
 metallic = 1.0
 metallic_texture = ExtResource("2_vsm07")

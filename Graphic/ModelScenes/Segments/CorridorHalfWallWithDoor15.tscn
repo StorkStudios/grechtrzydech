@@ -1,8 +1,8 @@
-[gd_scene load_steps=11 format=4 uid="uid://c2ylyu65h024y"]
+[gd_scene load_steps=11 format=4 uid="uid://n4yrmblu24wh"]
 
 [ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="1_7gc80"]
 [ext_resource type="Material" uid="uid://dlaiew64f84c4" path="res://Graphic/Materials/UpFloor.tres" id="2_mrq55"]
-[ext_resource type="PackedScene" uid="uid://d3laa7edqv3ud" path="res://Graphic/ModelScenes/Door15.tscn" id="3_2w2xd"]
+[ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Door15.tscn" id="3_2w2xd"]
 [ext_resource type="Material" uid="uid://bdxwitxp8usfv" path="res://Graphic/Materials/WallCoridor.tres" id="4_4qjrk"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_8fwtx"]

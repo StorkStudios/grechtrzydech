@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://c7s2hltrtil67" path="res://Graphic/Textures/UpFloor/UpFloorNormal.png" id="3_0cyar"]
 
 [resource]
-albedo_color = Color(0.82495, 0.769987, 0.710961, 1)
+albedo_color = Color(0.811289, 0.65069, 0.288478, 1)
 albedo_texture = ExtResource("1_dnaag")
 metallic = 1.0
 metallic_texture = ExtResource("2_mx235")

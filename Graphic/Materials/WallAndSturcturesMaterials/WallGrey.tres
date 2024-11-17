@@ -1,17 +1,13 @@
-[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://fdlvpohvs1on"]
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://fdlvpohvs1on"]
 
-[ext_resource type="Texture2D" uid="uid://bj5ehqrlpf747" path="res://Graphic/Textures/Attick/AttickAlbedo.png" id="1_4s6ax"]
-[ext_resource type="Texture2D" uid="uid://1mugsnunplmx" path="res://Graphic/Textures/Attick/AttickNormal.png" id="2_3b8u0"]
-[ext_resource type="Texture2D" uid="uid://bquxl31lr1c5d" path="res://Graphic/Textures/Attick/AttickRoughness.png" id="3_aowl5"]
+[ext_resource type="Texture2D" uid="uid://bg13drmne8gj8" path="res://Graphic/Textures/Paint/PaintBaseColor.png" id="1_tftnr"]
+[ext_resource type="Texture2D" uid="uid://m75kwv4tah6g" path="res://Graphic/Textures/Paint/PaintNormal.png" id="2_3i5dh"]
 
 [resource]
-albedo_color = Color(0.499476, 0.376733, 0.268736, 1)
-albedo_texture = ExtResource("1_4s6ax")
+albedo_texture = ExtResource("1_tftnr")
 roughness = 0.02
-roughness_texture = ExtResource("3_aowl5")
 normal_enabled = true
-normal_scale = 14.55
-normal_texture = ExtResource("2_3b8u0")
+normal_texture = ExtResource("2_3i5dh")
 uv1_scale = Vector3(2, 1, 1)
 uv2_scale = Vector3(2.285, 2.285, 2.285)
 grow = true

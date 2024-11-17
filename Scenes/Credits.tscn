@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cutc4i2812e57"]
 
-[ext_resource type="Texture2D" uid="uid://kmxlf0eftpte" path="res://Graphic/Sprites/credits.png" id="1_psipd"]
+[ext_resource type="Texture2D" uid="uid://kmxlf0eftpte" path="res://Graphic/Materials/WallAndSturcturesMaterials/Sprites/credits.png" id="1_psipd"]
 [ext_resource type="PackedScene" uid="uid://c3t51iuqddibp" path="res://Scenes/UIButton.tscn" id="2_m5n0c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mhphg"]

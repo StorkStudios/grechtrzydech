@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://cop5c8x0aitxj"]
 
 [ext_resource type="Script" path="res://Scripts/player_interacter.gd" id="1_g6wpe"]
-[ext_resource type="Texture2D" uid="uid://dohgauf5l2uyn" path="res://Graphic/Sprites/cursor.png" id="2_rgbf1"]
+[ext_resource type="Texture2D" uid="uid://dohgauf5l2uyn" path="res://Graphic/Materials/WallAndSturcturesMaterials/Sprites/cursor.png" id="2_rgbf1"]
 [ext_resource type="Script" path="res://Scripts/cursor.gd" id="3_rxwow"]
-[ext_resource type="Texture2D" uid="uid://dsrb4tojpj2of" path="res://Graphic/Sprites/pick_up_cursor.png" id="4_rif3x"]
-[ext_resource type="Texture2D" uid="uid://b0aumlxkoyqr1" path="res://Graphic/Sprites/attack_cursor.png" id="5_4oykd"]
-[ext_resource type="Texture2D" uid="uid://dcsfw5nkj6wk4" path="res://Graphic/Sprites/interact_cursor.png" id="6_h08n1"]
-[ext_resource type="Texture2D" uid="uid://c8j5i680ossrt" path="res://Graphic/Sprites/incompatible.png" id="7_iw706"]
+[ext_resource type="Texture2D" uid="uid://dsrb4tojpj2of" path="res://Graphic/Materials/WallAndSturcturesMaterials/Sprites/pick_up_cursor.png" id="4_rif3x"]
+[ext_resource type="Texture2D" uid="uid://b0aumlxkoyqr1" path="res://Graphic/Materials/WallAndSturcturesMaterials/Sprites/attack_cursor.png" id="5_4oykd"]
+[ext_resource type="Texture2D" uid="uid://dcsfw5nkj6wk4" path="res://Graphic/Materials/WallAndSturcturesMaterials/Sprites/interact_cursor.png" id="6_h08n1"]
+[ext_resource type="Texture2D" uid="uid://c8j5i680ossrt" path="res://Graphic/Materials/WallAndSturcturesMaterials/Sprites/incompatible.png" id="7_iw706"]
 
 [node name="PlayerInteracter" type="RayCast3D" node_paths=PackedStringArray("cursor")]
 target_position = Vector3(0, 0, 1)

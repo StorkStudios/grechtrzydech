@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://c3t51iuqddibp"]
 
-[ext_resource type="Texture2D" uid="uid://bnnjxl55g63ge" path="res://Graphic/Sprites/button.png" id="1_26vp2"]
+[ext_resource type="Texture2D" uid="uid://bnnjxl55g63ge" path="res://Graphic/Materials/WallAndSturcturesMaterials/Sprites/button.png" id="1_26vp2"]
 [ext_resource type="Script" path="res://Scripts/ui_button.gd" id="1_xqe2h"]
-[ext_resource type="Texture2D" uid="uid://tra6w5bm3ay5" path="res://Graphic/Sprites/buttonclicked.png" id="2_oaqys"]
-[ext_resource type="Texture2D" uid="uid://b44qpvy3d6emd" path="res://Graphic/Sprites/buttonhover.png" id="3_h5lfj"]
+[ext_resource type="Texture2D" uid="uid://tra6w5bm3ay5" path="res://Graphic/Materials/WallAndSturcturesMaterials/Sprites/buttonclicked.png" id="2_oaqys"]
+[ext_resource type="Texture2D" uid="uid://b44qpvy3d6emd" path="res://Graphic/Materials/WallAndSturcturesMaterials/Sprites/buttonhover.png" id="3_h5lfj"]
 
 [node name="UiButton" type="TextureButton"]
 anchors_preset = 15
