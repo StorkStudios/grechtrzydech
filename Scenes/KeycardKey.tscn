@@ -6,7 +6,7 @@
 [ext_resource type="Material" path="res://Graphic/Materials/Keycard.tres" id="4_oqo1s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pgq08"]
-size = Vector3(0.333936, 0.0201614, 0.221228)
+size = Vector3(0.4, 0.2, 0.2)
 
 [node name="Keycard" type="RigidBody3D" node_paths=PackedStringArray("collider")]
 collision_layer = 2

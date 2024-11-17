@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=4 uid="uid://dq2l6hx3s4n6j"]
+[gd_scene load_steps=5 format=4 uid="uid://d31twir3stbyj"]
 
-[ext_resource type="Material" uid="uid://byyax1cl2qt1s" path="res://Graphic/Materials/SilverGoldenKey.tres" id="1_p7pqg"]
+[ext_resource type="Material" path="res://Graphic/Materials/SilverGoldenKey.tres" id="1_p7pqg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0d1ws"]
 

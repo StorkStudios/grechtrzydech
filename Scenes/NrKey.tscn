@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bxvyku3fick7s" path="res://Scenes/nr_key_model.tscn.tscn" id="3_gbt6s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pgq08"]
-size = Vector3(0.6, 0.1, 0.1)
+size = Vector3(0.6, 0.2, 0.2)
 
 [node name="NrKey" type="RigidBody3D" node_paths=PackedStringArray("collider")]
 collision_layer = 2

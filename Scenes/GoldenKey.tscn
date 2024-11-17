@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bp64463yvojkj" path="res://Scenes/golden_key_model.tscn" id="3_chdls"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_66m6s"]
-size = Vector3(0.4, 0.1, 0.1)
+size = Vector3(0.4, 0.2, 0.2)
 
 [node name="GoldenKey" type="RigidBody3D" node_paths=PackedStringArray("collider")]
 collision_layer = 2
