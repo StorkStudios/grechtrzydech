@@ -1,13 +1,10 @@
-[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://t7p0fkkamjcg"]
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://t7p0fkkamjcg"]
 
 [ext_resource type="Texture2D" uid="uid://c1aigukll5y30" path="res://Graphic/Textures/Mata/WelcoemBaseColor.png" id="1_s4f37"]
-[ext_resource type="Texture2D" uid="uid://cl0glvw2l47v1" path="res://Graphic/Textures/RedWall/RedWallNormal.png" id="2_pebdk"]
-[ext_resource type="Texture2D" uid="uid://bwy46t2lt41ho" path="res://Graphic/Textures/RedWall/RedWallAlbedo.png" id="3_sjfpv"]
 
 [resource]
 albedo_texture = ExtResource("1_s4f37")
-roughness_texture = ExtResource("3_sjfpv")
 normal_enabled = true
-normal_texture = ExtResource("2_pebdk")
-uv1_scale = Vector3(2, 1, 1)
+uv1_scale = Vector3(1.03, 0.76, 1)
+uv1_offset = Vector3(0, 0.125, 0)
 grow = true
