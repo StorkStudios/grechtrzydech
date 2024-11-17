@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://pxdn0ccsegk2"]
+[gd_scene load_steps=47 format=3 uid="uid://pxdn0ccsegk2"]
 
 [ext_resource type="PackedScene" uid="uid://durub8p1hj84q" path="res://Scenes/Player.tscn" id="1_q7s76"]
 [ext_resource type="PackedScene" uid="uid://b8jai8n4cjp5w" path="res://Scenes/Wall.tscn" id="2_tq4ib"]
@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cl2ed6wx1ccp5" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor.tscn" id="7_5sabv"]
 [ext_resource type="PackedScene" uid="uid://bqy1bfxwkghw" path="res://Scenes/PauseMenu.tscn" id="7_jq3bk"]
 [ext_resource type="PackedScene" uid="uid://dx7s5kcs8aiaa" path="res://Graphic/ModelScenes/WallsAndGround/Stairs.tscn" id="8_xi5l7"]
-[ext_resource type="PackedScene" uid="uid://ddv6io8lyx2ic" path="res://Graphic/ModelScenes/Segments/CorridorCeiling.tscn" id="9_cf0u4"]
+[ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorCeiling.tscn" id="9_cf0u4"]
 [ext_resource type="PackedScene" uid="uid://bd0psx38coyy2" path="res://Scenes/EnemySpawnpoint.tscn" id="10_btbda"]
 [ext_resource type="PackedScene" uid="uid://ghwwbvjjj37a" path="res://Scenes/Doormat.tscn" id="11_njfq7"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor01.tscn" id="12_sdi57"]
@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor23.tscn" id="20_67wpk"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoor24.tscn" id="21_wdqrh"]
 [ext_resource type="PackedScene" uid="uid://dipiexg733cu6" path="res://Scenes/NrKey.tscn" id="22_d1yec"]
-[ext_resource type="Material" uid="uid://7dwge2b1x0pm" path="res://Graphic/Materials/WallAndSturcturesMaterials/Home.tres" id="23_4m6b8"]
+[ext_resource type="Material" path="res://Graphic/Materials/WallAndSturcturesMaterials/Home.tres" id="23_4m6b8"]
 [ext_resource type="PackedScene" uid="uid://bpt40y57otp6j" path="res://Scenes/GoldenKey.tscn" id="23_bloqp"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Furnitures/table.tscn" id="23_rbg6p"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoorMain.tscn" id="24_g5iwv"]
@@ -30,16 +30,17 @@
 [ext_resource type="PackedScene" uid="uid://cc80nje2yo0oh" path="res://Graphic/ModelScenes/Furnitures/Chair.tscn" id="28_un7hg"]
 [ext_resource type="PackedScene" uid="uid://dnm3dh215fl1c" path="res://Graphic/ModelScenes/Furnitures/Wardrobe.tscn" id="29_cha6f"]
 [ext_resource type="PackedScene" uid="uid://dvmyrtlex3yvn" path="res://Scenes/KeycardKey.tscn" id="29_edo63"]
-[ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Furnitures/worktable.tscn" id="30_8ojve"]
+[ext_resource type="PackedScene" uid="uid://dub5haqt3qstb" path="res://Graphic/ModelScenes/Furnitures/worktable.tscn" id="30_8ojve"]
 [ext_resource type="PackedScene" uid="uid://dre1uy72lvj28" path="res://Graphic/ModelScenes/Furnitures/Bed1.tscn" id="31_td8lv"]
 [ext_resource type="PackedScene" uid="uid://4h3e3yswppdu" path="res://Graphic/ModelScenes/Furnitures/NightStandDrawer.tscn" id="32_jlaup"]
 [ext_resource type="Material" uid="uid://5gappeh3f0lu" path="res://Graphic/Materials/GreencarpetGroundQuixelMixer.tres" id="33_51wsk"]
 [ext_resource type="Material" uid="uid://dcpp7a4e5uxer" path="res://Graphic/Materials/RedcarpetGroundQuixelMixer.tres" id="35_koblx"]
 [ext_resource type="Material" uid="uid://crdh1o3c8ybxo" path="res://Graphic/Materials/WallAndSturcturesMaterials/Plansk.tres" id="35_rdror"]
-[ext_resource type="Material" uid="uid://dlaiew64f84c4" path="res://Graphic/Materials/UpFloor.tres" id="36_aif51"]
+[ext_resource type="Material" path="res://Graphic/Materials/UpFloor.tres" id="36_aif51"]
 [ext_resource type="Material" uid="uid://dlnpyphdcplol" path="res://Graphic/Materials/KitchenWetFloor.tres" id="36_ulopx"]
-[ext_resource type="PackedScene" path="res://Scenes/WallClock.tscn" id="37_fgmsm"]
+[ext_resource type="PackedScene" uid="uid://dxhajvia2unks" path="res://Scenes/WallClock.tscn" id="37_fgmsm"]
 [ext_resource type="PackedScene" uid="uid://krskuon176lr" path="res://Graphic/ModelScenes/Furnitures/Bed2.tscn" id="37_p5cha"]
+[ext_resource type="Texture2D" uid="uid://c0wp8en4kp5lo" path="res://Graphic/Sprites/coconut.jpg" id="39_dbu2w"]
 [ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Segments/CorridorHalfWallWithDoorAndNoCeiling.tscn" id="40_8oqsf"]
 
 [sub_resource type="Environment" id="Environment_lr0u6"]
@@ -3587,6 +3588,10 @@ material_override = ExtResource("36_aif51")
 mesh = SubResource("PlaneMesh_xdjo8")
 skeleton = NodePath("../..")
 surface_material_override/0 = ExtResource("33_51wsk")
+
+[node name="Sprite3D" type="Sprite3D" parent="Node3D6/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 7.10543e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 9.53674e-07, 0.0437317, 0)
+texture = ExtResource("39_dbu2w")
 
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="Node3D6"]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, -0.25)
