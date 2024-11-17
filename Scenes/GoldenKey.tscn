@@ -10,7 +10,8 @@ size = Vector3(0.4, 0.1, 0.1)
 [node name="GoldenKey" type="RigidBody3D" node_paths=PackedStringArray("collider")]
 collision_layer = 2
 script = ExtResource("1_gemg8")
-key_num = "SilverGoldenKey"
+base_res_path = "res://Graphic/Materials/"
+tag = "SilverGoldenKey"
 collider = NodePath("CollisionShape3D")
 pickupSound = ExtResource("2_3o2d1")
 

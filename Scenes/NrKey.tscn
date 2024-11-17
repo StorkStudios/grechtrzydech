@@ -10,6 +10,7 @@ size = Vector3(0.4, 0.1, 0.1)
 [node name="NrKey" type="RigidBody3D" node_paths=PackedStringArray("collider")]
 collision_layer = 2
 script = ExtResource("1_1cl35")
+tag = "NrKey01"
 collider = NodePath("CollisionShape3D")
 pickupSound = ExtResource("2_1j4ov")
 
