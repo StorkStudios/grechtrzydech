@@ -4,5 +4,4 @@ extends Item
 var tres = ".tres"
 
 func _ready() -> void:
-	
 	$Key/NrPaperKey.set_surface_override_material(0, load(base_res_path + tag + tres))

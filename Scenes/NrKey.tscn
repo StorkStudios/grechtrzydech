@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/key.gd" id="1_1cl35"]
 [ext_resource type="AudioStream" uid="uid://cmfib1uoc6ud6" path="res://Sounds/ring_inventory.wav" id="2_1j4ov"]
-[ext_resource type="PackedScene" uid="uid://bxvyku3fick7s" path="res://Scenes/nr_key_model.tscn.tscn" id="3_gbt6s"]
+[ext_resource type="PackedScene" uid="uid://b4na7tfdfev7a" path="res://Scenes/nr_key_model.tscn" id="3_0lq8i"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pgq08"]
 size = Vector3(0.6, 0.2, 0.2)
@@ -17,5 +17,5 @@ pickupSound = ExtResource("2_1j4ov")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_pgq08")
 
-[node name="Key" parent="." instance=ExtResource("3_gbt6s")]
+[node name="Key" parent="." instance=ExtResource("3_0lq8i")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.1, 0, 0)
