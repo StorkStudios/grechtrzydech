@@ -7,6 +7,7 @@ var mails: Array[MailResource] = [];
 var possible_rooms: Array[String] = ["NrKey01", "NrKey11", "NrKey12", "NrKey13", "NrKey14", "NrKey15", "NrKey21", "NrKey22", "NrKey23", "NrKey24"]
 var rooms: Array[String] = []
 
+@export var enemies: int = 5
 @export var win_mail: MailResource;
 @export var color_rect: ColorRect;
 @export var music: Music;
@@ -37,3 +38,7 @@ func add_random_mail(mail_resources: Array[Resource]) -> void:
 
 func add_win_main():
 	mails.append(win_mail);
+	
+func randomize_rooms():
+	possible_rooms.shuffle()
+	rooms = possible_rooms.slice(0, enemies)

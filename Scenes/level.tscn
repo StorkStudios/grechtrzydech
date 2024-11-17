@@ -269,18 +269,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.1, 10, 7.5, 0)
 
 [node name="EnemySpawnpoint" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14.9901, 0.0932119, 11.2632)
+key_code = "NrKey01"
 
 [node name="EnemySpawnpoint2" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 13.1828, 3.75488, 14.1943)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 11.8817, 3.75488, 14.1943)
+key_code = "NrKey11"
 
 [node name="EnemySpawnpoint3" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1223, 3.77905, -14.3844)
+key_code = "14"
 
 [node name="EnemySpawnpoint4" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7097, 7.48067, -14.35)
+key_code = "NrKey24"
 
 [node name="EnemySpawnpoint5" parent="EnemySpawnpoints" instance=ExtResource("10_btbda")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.86327, 7.45933, 10.7067)
+key_code = "NrKey22"
 
 [node name="WallLong13" parent="." instance=ExtResource("9_cf0u4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -4.25)

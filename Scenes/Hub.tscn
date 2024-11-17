@@ -338,6 +338,7 @@ transform = Transform3D(-2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, -6.589
 script = ExtResource("5_ulefk")
 area = NodePath("Area3D")
 anim_player = NodePath("AnimationPlayer")
+random_npcs = true
 
 [node name="DoorArmature" type="Node3D" parent="Door2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.065, 0)

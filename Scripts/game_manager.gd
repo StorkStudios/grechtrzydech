@@ -35,7 +35,7 @@ func npc_killed(npc: Node) -> void:
 				GlobalVariables.music.change_music(Music.MusicEnum.Level3, 0.5);
 			elif (killed_counter >= 2):
 				GlobalVariables.music.change_music(Music.MusicEnum.Level2, 0.5);
-			if( killed_counter >= $EnemySpawner.enemy_number):
+			if( killed_counter >= GlobalVariables.enemies):
 				win()
 				
 func win():
