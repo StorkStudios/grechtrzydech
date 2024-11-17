@@ -2,6 +2,7 @@ extends Control
 
 
 @export var menu_scene = "res://Scenes/MainMenu.tscn"
+@export var game_manager: GameManager;
 
 var paused = false
 
@@ -28,7 +29,7 @@ func _input(event):
 				pause()
 	elif event is InputEventMouseButton:
 		#capture mouse when window is selected
-		if !paused:
+		if !paused && !game_manager.is_game_over:
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 		

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_ie06p"]
 [ext_resource type="PackedScene" uid="uid://d7hrppljxwtw" path="res://Scenes/PlayerHand.tscn" id="2_2ywn3"]
 [ext_resource type="PackedScene" uid="uid://cop5c8x0aitxj" path="res://Scenes/PlayerInteracter.tscn" id="3_7s13a"]
-[ext_resource type="PackedScene" uid="uid://bm4t7l586qjyc" path="res://Scenes/dead_hand.tscn" id="4_24fce"]
+[ext_resource type="PackedScene" path="res://Scenes/dead_hand.tscn" id="4_24fce"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy4xi"]
 
