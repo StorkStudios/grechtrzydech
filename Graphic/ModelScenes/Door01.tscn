@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=4 uid="uid://so351frv8aq8"]
+[gd_scene load_steps=20 format=4 uid="uid://cnh7wtlpdox5d"]
 
-[ext_resource type="Script" path="res://Scripts/Environment/door.gd" id="1_ed5h2"]
-[ext_resource type="Material" path="res://Graphic/Materials/door.tres" id="2_ng6kl"]
-[ext_resource type="Script" path="res://Scripts/interact_target.gd" id="3_vy4ur"]
-[ext_resource type="AudioStream" uid="uid://buqxxoeqe1fo6" path="res://Sounds/LockedDoorHandleJiggle.wav" id="4_hdm21"]
+[ext_resource type="Script" path="res://Scripts/Environment/door.gd" id="1_g8ute"]
+[ext_resource type="Material" path="res://Graphic/Materials/door.tres" id="2_emct2"]
+[ext_resource type="Script" path="res://Scripts/interact_target.gd" id="3_jrwtq"]
+[ext_resource type="AudioStream" uid="uid://buqxxoeqe1fo6" path="res://Sounds/LockedDoorHandleJiggle.wav" id="4_dnbq1"]
+[ext_resource type="Material" uid="uid://bfejkyscjywt8" path="res://Graphic/Materials/NrDoor/Door01.tres" id="5_rkt44"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h07eu"]
 
@@ -74,6 +75,38 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_kic4h")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fno5u"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fe403"]
+_surfaces = [{
+"aabb": AABB(0.0853872, -0.881528, 0.592855, 0.0344059, 0.298253, 0.182089),
+"format": 34359742465,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAgAEAAUABQADAAIABgADAAUABQAHAAYAAAADAAYABgAIAAAAAgABAAkACQAKAAIABwALAAwADAAGAAcABQANAAsACwAHAAUAAgAKAA4ADgAEAAIAAAAIAA8ADwAQAAAABAAOAA0ADQAFAAQAAQAAABAAEAAJAAEACAAGAAwADAAPAAgA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("GFb1PX5RFb/IYi8/GFb1PQGLIL+0KR8/GFb1PfqMO7+Cdxg/GFb1PYp8O7+UcRg/GFb1PVOFVr9ZOB8/GFb1PZWnYb9+dy8/GFb1PRlsO7/HYkY/GFb1PRJuVr+UsD8/GFb1Pb1zIL/voT8/VLu8PT6PIL+Sdx4/q12/PTiRO79gxRc/2IGxPVByVr90/j4/gd+uPVZwO7+msEU/zG23PdKrYb9dxS4/XCu9PZCJVr84hh4/zhGxPfp3IL/P7z4/X8+2PbtVFb+msC4/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4nfuj"]
+resource_name = "Cube_009"
+_surfaces = [{
+"aabb": AABB(0.0853872, -0.881528, 0.592855, 0.0344059, 0.298253, 0.182089),
+"attribute_data": PackedByteArray("0AZTPp07bz+Kgzk+lOh4P9HX9D1/Mn0/siX1PcM1fT/R1/Q9fzJ9PwbVaj06lnk/9JD9PDAxcD+yJfU9wzV9PwKa8D1MOmI/siX1PcM1fT/0kP08MDFwP4bVZD04hGY/0AZTPp07bz+yJfU9wzV9PwKa8D1MOmI/sgM4PpLWZT9kZTg+b7VVP9fgCD5+wVg/OVMFPsSsVD+BETU+AtBRP2YDLD2G72Q/fHwXPQ4bYD/rsMY9mC5cPwFZ0T3KMmE/wBeGPP3fZT9oJkE80HZhP3x8Fz0OG2A/ZgMsPYbvZD8z/LA92FxXPxVkpz0+kFM/BLICPnAhUD90ogc+QBZUPxQ1Pj6OcVo/2KUlPjjaXD/EeyA+1P1XP654OT4q/VU/dKIHPkAWVD8EsgI+cCFQP8J2Lz7/Kk0/OsY0PuiIUT/X4Ag+fsFYP6wVuT2GI1w/yvawPXmkVz85UwU+xKxUP9ilJT442lw/AVnRPcoyYT/rsMY9mC5cP8R7ID7U/Vc/"),
+"format": 34359742487,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwA"),
+"material": SubResource("StandardMaterial3D_fno5u"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("GFb1PX5RFb/IYi8/GFb1PQGLIL+0KR8/GFb1PfqMO7+Cdxg/GFb1PYp8O7+UcRg/GFb1PfqMO7+Cdxg/GFb1PVOFVr9ZOB8/GFb1PZWnYb9+dy8/GFb1PYp8O7+UcRg/GFb1PRlsO7/HYkY/GFb1PYp8O7+UcRg/GFb1PZWnYb9+dy8/GFb1PRJuVr+UsD8/GFb1PX5RFb/IYi8/GFb1PYp8O7+UcRg/GFb1PRlsO7/HYkY/GFb1Pb1zIL/voT8/GFb1PfqMO7+Cdxg/GFb1PQGLIL+0KR8/VLu8PT6PIL+Sdx4/q12/PTiRO79gxRc/GFb1PRJuVr+UsD8/2IGxPVByVr90/j4/gd+uPVZwO7+msEU/GFb1PRlsO7/HYkY/GFb1PZWnYb9+dy8/zG23PdKrYb9dxS4/2IGxPVByVr90/j4/GFb1PRJuVr+UsD8/GFb1PfqMO7+Cdxg/q12/PTiRO79gxRc/XCu9PZCJVr84hh4/GFb1PVOFVr9ZOB8/GFb1PX5RFb/IYi8/GFb1Pb1zIL/voT8/zhGxPfp3IL/P7z4/X8+2PbtVFb+msC4/GFb1PVOFVr9ZOB8/XCu9PZCJVr84hh4/zG23PdKrYb9dxS4/GFb1PZWnYb9+dy8/GFb1PQGLIL+0KR8/GFb1PX5RFb/IYi8/X8+2PbtVFb+msC4/VLu8PT6PIL+Sdx4/GFb1Pb1zIL/voT8/GFb1PRlsO7/HYkY/gd+uPVZwO7+msEU/zhGxPfp3IL/P7z4//v//fy99/v/+//9/L33+//7//38vff7//v//fy99/v/+//9/z4L///7//3/Pgv///v//f8+C///+//9/z4L///7//3/Pgv///v//f8+C///+//9/z4L///7//3/Pgv//////f8+C//////9/z4L//////3/Pgv//////f8+C//9o6H/2J6bKiGjof/YnpsqIaOh/9iemyoho6H/2J6bKiEl4D2iRlF3qSXgPaJCUXepJeA9okpRc6kl4D2iSlFzqznvDNi+HjNjOe8M2LYeN2M57wzY0h4vYznvDNjaHi9hA6J8JkJIClUDonwmRkgOVQOifCYuSAJVA6J8JipIAlZN7Yclq0lj3k3thyWvSV/eTe2HJa9JX95N7Yclq0ln34LbgBOuRAKrgtuAE65EAquC24ATrkQCq4LbgBOuRAKr4tnL7PtR5i/i2cvs+1HmL+LZy+z7UeYv4tnL7PtR5izx4G5hFqwT0PHgbmEWrBPQ8eBuYRasE9Dx4G5hFqwT0")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_fe403")
+
 [sub_resource type="Animation" id="Animation_q5tum"]
 resource_name = "Closing"
 length = 0.5
@@ -129,7 +162,8 @@ _data = {
 }
 
 [node name="Door" type="Node3D" node_paths=PackedStringArray("animation_player", "interactTarget")]
-script = ExtResource("1_ed5h2")
+script = ExtResource("1_g8ute")
+interactionTag = "01"
 animation_player = NodePath("AnimationPlayer")
 interactTarget = NodePath("DoorArmature/InteractTarget")
 
@@ -138,23 +172,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.065, 0)
 
 [node name="DoorFrameGodot" type="MeshInstance3D" parent="DoorArmature"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.044, 0)
-material_override = ExtResource("2_ng6kl")
+material_override = ExtResource("2_emct2")
 mesh = SubResource("ArrayMesh_83w0h")
 skeleton = NodePath("")
 
 [node name="InteractTarget" type="StaticBody3D" parent="DoorArmature"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965, -0.56)
-script = ExtResource("3_vy4ur")
+script = ExtResource("3_jrwtq")
 allow_multiple_interactions = true
-interactSound = ExtResource("4_hdm21")
+interactSound = ExtResource("4_dnbq1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorArmature/InteractTarget"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121513, 0.551)
 shape = SubResource("BoxShape3D_unh88")
 
 [node name="DoorGodot" type="MeshInstance3D" parent="DoorArmature/InteractTarget"]
-material_override = ExtResource("2_ng6kl")
+material_override = ExtResource("2_emct2")
 mesh = SubResource("ArrayMesh_nyfrk")
+skeleton = NodePath("")
+
+[node name="NrDoor" type="MeshInstance3D" parent="DoorArmature/InteractTarget/DoorGodot"]
+transform = Transform3D(1, -1.74846e-07, -7.64274e-15, 0, -4.37114e-08, 1, -1.74846e-07, -1, -4.37114e-08, -0.0361579, 0.290716, -0.133417)
+material_override = ExtResource("5_rkt44")
+mesh = SubResource("ArrayMesh_4nfuj")
 skeleton = NodePath("")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
