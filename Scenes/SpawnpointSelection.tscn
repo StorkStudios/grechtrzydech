@@ -271,9 +271,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 35.0
-offset_top = -37.5
-offset_bottom = 37.5
+offset_left = 30.0
+offset_top = 23.0
+offset_right = 70.0
+offset_bottom = 98.0
 grow_vertical = 2
 rotation = 3.14159
 pivot_offset = Vector2(20, 37.5)
@@ -283,16 +284,13 @@ texture_hover = SubResource("AtlasTexture_plm13")
 
 [node name="MapButtonRight" parent="." instance=ExtResource("10_mamej")]
 layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
+anchors_preset = 4
 anchor_top = 0.5
-anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -75.0
-offset_top = -37.5
-offset_right = -35.0
-offset_bottom = 37.5
-grow_horizontal = 0
+offset_left = 32.0
+offset_top = -68.0
+offset_right = 72.0
+offset_bottom = 7.0
 grow_vertical = 2
 rotation = 3.14159
 pivot_offset = Vector2(20, 37.5)
@@ -301,6 +299,21 @@ texture_pressed = SubResource("AtlasTexture_sxhlc")
 texture_hover = SubResource("AtlasTexture_d8h0c")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -552.0
+offset_top = -224.0
+offset_right = -152.0
+offset_bottom = 376.0
+grow_horizontal = 0
+grow_vertical = 2
+autowrap_mode = 2
 
 [connection signal="button_down" from="Maps/Map1" to="." method="choose_spawnpoint"]
 [connection signal="button_down" from="Maps/Map2" to="." method="choose_spawnpoint"]

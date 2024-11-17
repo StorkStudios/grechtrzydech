@@ -29,7 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://cc80nje2yo0oh" path="res://Graphic/ModelScenes/Furnitures/Chair.tscn" id="28_un7hg"]
 [ext_resource type="PackedScene" uid="uid://dnm3dh215fl1c" path="res://Graphic/ModelScenes/Furnitures/Wardrobe.tscn" id="29_cha6f"]
 [ext_resource type="PackedScene" uid="uid://dvmyrtlex3yvn" path="res://Scenes/KeycardKey.tscn" id="29_edo63"]
-[ext_resource type="PackedScene" path="res://Graphic/ModelScenes/Furnitures/worktable.tscn" id="30_8ojve"]
+[ext_resource type="PackedScene" uid="uid://dub5haqt3qstb" path="res://Graphic/ModelScenes/Furnitures/worktable.tscn" id="30_8ojve"]
 [ext_resource type="PackedScene" uid="uid://dre1uy72lvj28" path="res://Graphic/ModelScenes/Furnitures/Bed1.tscn" id="31_td8lv"]
 [ext_resource type="PackedScene" uid="uid://4h3e3yswppdu" path="res://Graphic/ModelScenes/Furnitures/NightStandDrawer.tscn" id="32_jlaup"]
 [ext_resource type="Material" path="res://Graphic/Materials/GreencarpetGroundQuixelMixer.tres" id="33_51wsk"]
