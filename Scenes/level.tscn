@@ -355,7 +355,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0044, 3.80286, -5.00683)
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.96664, 0.177856, 11.2098)
 
 [node name="WallLong4" parent="." instance=ExtResource("12_sdi57")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.94332, 0.120122, 11.0065)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.98159, 0.125, 11.2)
 
 [node name="WallLong40" parent="." instance=ExtResource("13_j64lj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 3.75, 4.2)
@@ -5166,6 +5166,54 @@ transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 
 
 [node name="WallClock11" parent="Clocks" instance=ExtResource("37_fgmsm")]
 transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 4.71958, 5.2509, 10.6291)
+
+[node name="WallClock12" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 14.8788, 2.07658, 9.84829)
+
+[node name="WallClock13" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -14.8236, 1.5803, 10.6615)
+
+[node name="WallClock14" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0.5, 0, -0.5, -2.18557e-08, 0, 0, 0, 0.5, -13.3755, 3.44324, 0.0450568)
+
+[node name="WallClock15" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -7.90272, 5.7431, -6.575)
+
+[node name="WallClock16" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 1.64415, 2.01547, -6.575)
+
+[node name="WallClock17" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 4.92608, 9.58169, -8.78733)
+
+[node name="WallClock18" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 14.845, 9.43168, -10.5898)
+
+[node name="WallClock19" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 3.01744, 9.41144, -6.1144)
+
+[node name="WallClock20" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -4.83524, 9.42605, 5.825)
+
+[node name="WallClock21" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 4.78162, 9.36465, 11.4308)
+
+[node name="WallClock22" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 5.20447, 9.07324, 9.38884)
+
+[node name="WallClock23" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -5.22031, 9.11998, -10.265)
+
+[node name="WallClock24" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -14.8811, 2.48459, -11.4611)
+
+[node name="WallClock25" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 9.68347, 5.36902, -14.2978)
+
+[node name="WallClock26" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 14.8841, 5.53367, 10.7153)
+
+[node name="WallClock27" parent="Clocks" instance=ExtResource("37_fgmsm")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -12.1283, 5.56411, 14.2698)
 
 [node name="Bed2" parent="." instance=ExtResource("31_td8lv")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -12.7043, 7.475, 10.1741)
