@@ -14,16 +14,19 @@ func try_to_grab_item(item: Item) -> void:
 	held_item.set_kinematic(true);
 	item_parent = held_item.get_parent();
 	held_item.reparent(self);
-	item_animation();
+	item_animation(item);
 
 # korutyna 😎huj
-func item_animation() -> void:
+func item_animation(item: Item) -> void:
 	var time: float = 0;
 	var start_posiiton: Vector3 = held_item.position;
+	var start_rotation = Quaternion(held_item.transform.basis)
+	var target_rotation = Quaternion()
 	while (held_item && time < animation_duration):
 		time += get_process_delta_time();
 		var t: float = time / animation_duration;
 		held_item.position = start_posiiton.lerp(Vector3.ZERO, t);
+		held_item.transform.basis = Basis(start_rotation.slerp(target_rotation, t));
 		await get_tree().process_frame;
 
 func drop_item() -> void:

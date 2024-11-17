@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dipiexg733cu6"]
+[gd_scene load_steps=5 format=3 uid="uid://cnpl74bbpkx01"]
 
 [ext_resource type="Script" path="res://Scripts/key.gd" id="1_1cl35"]
 [ext_resource type="AudioStream" uid="uid://cmfib1uoc6ud6" path="res://Sounds/ring_inventory.wav" id="2_1j4ov"]
@@ -17,5 +17,5 @@ pickupSound = ExtResource("2_1j4ov")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_pgq08")
 
-[node name="Key" parent="." instance=ExtResource("2_5hpj0")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+[node name="Key" parent="CollisionShape3D" instance=ExtResource("2_5hpj0")]
+transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, 0, 0, 0)

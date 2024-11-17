@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpjj61mi81g3r"]
+[gd_scene load_steps=6 format=3 uid="uid://dg1t4ts7asno1"]
 
 [ext_resource type="Script" path="res://Scripts/key.gd" id="1_xxgux"]
 [ext_resource type="AudioStream" uid="uid://cmfib1uoc6ud6" path="res://Sounds/ring_inventory.wav" id="2_pv40l"]
 [ext_resource type="ArrayMesh" uid="uid://bu7sn38sx4rlk" path="res://Graphic/Models/Keycard.obj" id="3_c71jm"]
-[ext_resource type="Material" uid="uid://bihpbpy41vkxa" path="res://Graphic/Materials/Keycard.tres" id="4_oqo1s"]
+[ext_resource type="Material" path="res://Graphic/Materials/Keycard.tres" id="4_oqo1s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pgq08"]
 size = Vector3(0.333936, 0.0201614, 0.221228)
