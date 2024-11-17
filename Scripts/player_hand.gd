@@ -2,6 +2,7 @@ class_name PlayerHand
 extends Node3D
 
 @export var animation_duration: float;
+@export var attachment: Node3D;
 
 enum picking_state {pick, no_pick}
 
@@ -17,7 +18,7 @@ func try_to_grab_item(item: Item) -> void:
 	held_item = item;
 	held_item.set_kinematic(true);
 	item_parent = held_item.get_parent();
-	held_item.reparent(self);
+	held_item.reparent(attachment);
 	item_animation(item);
 	picking_state_changed.emit(picking_state.pick)
 
