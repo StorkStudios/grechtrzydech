@@ -48,22 +48,23 @@ distance_fade_length = 30.0
 omni_range = 13.0
 
 [node name="DeadHand" parent="CharacterBody3D/Camera3D" instance=ExtResource("4_24fce")]
-transform = Transform3D(-1, -5.01924e-08, 7.15784e-08, 0, 0.818761, 0.574134, -8.74228e-08, 0.574134, -0.818761, 0.385905, -0.325074, -1.0842)
+transform = Transform3D(-0.97715, 0.17403, 0.122034, 0.212553, 0.800052, 0.561015, -8.54251e-08, 0.574134, -0.818761, 0.612334, -0.255466, -1.0842)
 
 [node name="Skeleton3D" parent="CharacterBody3D/Camera3D/DeadHand/RightkeletonHand" index="0"]
-bones/0/position = Vector3(2.17259, -0.236357, -1.03804)
-bones/0/rotation = Quaternion(0.932155, -0.272994, -0.208903, -0.113669)
-bones/1/rotation = Quaternion(-6.31728e-08, 4.95566e-09, 0.0370663, 0.999313)
+bones/0/position = Vector3(2.17259, -0.711141, -1.03804)
+bones/0/rotation = Quaternion(0.576779, -0.0341025, -0.815371, 0.036517)
+bones/0/scale = Vector3(1, 1, 1)
+bones/1/rotation = Quaternion(0.131455, 0.0333961, -0.0225934, 0.990502)
 bones/2/rotation = Quaternion(0.0738022, -0.0343743, 0.0411857, 0.995829)
 bones/3/rotation = Quaternion(0.419959, -0.0920981, -0.190856, 0.882455)
 bones/4/rotation = Quaternion(0.877505, 0.10456, 0.0748643, 0.462003)
 bones/5/rotation = Quaternion(0.512496, 0.0263577, 0.0427012, 0.857222)
 bones/6/rotation = Quaternion(0.0819909, -0.0139223, 0.0550302, 0.995015)
 bones/7/rotation = Quaternion(0.423799, -0.0608599, -0.0837155, 0.899824)
-bones/8/rotation = Quaternion(0.873142, 0.0681577, 0.063781, 0.478445)
-bones/9/rotation = Quaternion(0.230958, 0.0303552, 0.113231, 0.965876)
-bones/10/rotation = Quaternion(0.0826585, -0.00281074, 0.0104864, 0.996519)
-bones/11/rotation = Quaternion(0.422813, -0.0337359, 0.00806183, 0.905553)
+bones/8/rotation = Quaternion(0.873142, 0.0681577, 0.063781, 0.478444)
+bones/9/rotation = Quaternion(0.230958, 0.0303552, 0.11323, 0.965876)
+bones/10/rotation = Quaternion(0.0826585, -0.00281078, 0.0104864, 0.996519)
+bones/11/rotation = Quaternion(0.422813, -0.0337359, 0.00806184, 0.905553)
 bones/12/rotation = Quaternion(0.865144, 0.0578933, 0.0692669, 0.493332)
 bones/13/rotation = Quaternion(0.486664, -0.166807, -0.345984, 0.78462)
 bones/14/rotation = Quaternion(0.0767069, 0.0291057, -0.0415744, 0.995761)
@@ -73,7 +74,7 @@ bones/17/rotation = Quaternion(0.423037, -0.138406, -0.349431, 0.824489)
 bones/18/rotation = Quaternion(0.348075, -0.474568, -0.376549, 0.71543)
 bones/19/rotation = Quaternion(0.776258, 0.164103, 0.131669, 0.59427)
 bones/20/rotation = Quaternion(0.0471759, 0.03975, -0.071526, 0.995529)
-bones/21/rotation = Quaternion(0.0390018, 0.0477961, -0.00187649, 0.998094)
+bones/21/rotation = Quaternion(0.0390019, 0.0477961, -0.00187648, 0.998094)
 bones/22/position = Vector3(-0.313325, 0.526419, -0.57153)
 bones/22/rotation = Quaternion(0.931381, 0.0497329, 0.33267, 0.139238)
 bones/23/rotation = Quaternion(-0.182807, -0.00678067, -0.185702, 0.965428)
@@ -101,7 +102,7 @@ bones/43/rotation = Quaternion(-0.521916, 0.852997, -1.14868e-07, 6.52633e-08)
 bones/44/rotation = Quaternion(0.604768, 0.0105792, 0.0139283, 0.79621)
 
 [node name="Scythe50" parent="CharacterBody3D/Camera3D/DeadHand/RightkeletonHand/Skeleton3D" index="0"]
-transform = Transform3D(0.872192, -0.488639, -0.0226552, 0.317656, 0.530563, 0.785874, -0.371988, -0.69263, 0.617972, -0.15333, -0.329321, 0.0579108)
+transform = Transform3D(0.872192, -0.488639, -0.0226557, 0.317657, 0.530562, 0.785874, -0.371989, -0.69263, 0.617971, -0.153331, -0.329321, 0.057911)
 
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 
@@ -109,6 +110,8 @@ transform = Transform3D(0.872192, -0.488639, -0.0226552, 0.317656, 0.530563, 0.7
 
 [connection signal="walking_state_changed" from="CharacterBody3D" to="CharacterBody3D/Camera3D/DeadHand/AnimationPlayer" method="_on_player_walk_state_changed"]
 [connection signal="killed_enemy" from="CharacterBody3D/Camera3D/PlayerInteracter" to="CharacterBody3D/Camera3D/DeadHand/AnimationPlayer" method="_on_player_interacter_killed_enemy"]
+[connection signal="middle_finger" from="CharacterBody3D/Camera3D/PlayerInteracter" to="CharacterBody3D/Camera3D/DeadHand/AnimationPlayer" method="_on_player_interacter_middle_finger"]
+[connection signal="picking_state_changed" from="CharacterBody3D/Camera3D/PlayerHand" to="CharacterBody3D/Camera3D/DeadHand/AnimationPlayer" method="_on_player_hand_picking_state_changed"]
 [connection signal="animation_finished" from="CharacterBody3D/Camera3D/DeadHand/AnimationPlayer" to="CharacterBody3D/Camera3D/DeadHand/AnimationPlayer" method="_on_animation_finished"]
 
 [editable path="CharacterBody3D/Camera3D/DeadHand"]

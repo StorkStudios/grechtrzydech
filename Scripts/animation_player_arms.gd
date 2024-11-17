@@ -1,8 +1,9 @@
 extends AnimationPlayer
 
 var walking_state: Player.walking_state = Player.walking_state.idle;
+var picking_state: PlayerHand.picking_state = PlayerHand.picking_state.no_pick;
 
-var animations: Array[String] = ["Walking", "Iddle"]
+var animations: Array[String] = ["Walking", "Iddle", "MiddleFinger", "WalkingWithPicking", "IdleWithPicking"]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,11 +24,27 @@ func _on_player_walk_state_changed(state: Player.walking_state) -> void:
 
 
 func _on_animation_finished(anim_name: StringName) -> void:
-	update_animation();
+	#print("Finished " + anim_name)
+	if (anim_name == "MiddleFinger" ||
+	anim_name == "KillingBetter" ||
+	anim_name == "Picking"):
+		update_animation();
 
 
 func update_animation():
 	if walking_state == Player.walking_state.walk:
-		play("Walking")
+		play("Walking" if picking_state == PlayerHand.picking_state.no_pick else "WalkingWithPicking")
 	else:
-		play("Iddle")
+		play("Iddle" if picking_state == PlayerHand.picking_state.no_pick else "IdleWithPicking")
+
+
+func _on_player_interacter_middle_finger() -> void:
+	play("MiddleFinger")
+
+
+func _on_player_hand_picking_state_changed(state: PlayerHand.picking_state) -> void:
+	picking_state = state;
+	if (state == PlayerHand.picking_state.pick):
+		play("Picking");
+	else:
+		update_animation();

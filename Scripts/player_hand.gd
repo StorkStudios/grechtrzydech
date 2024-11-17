@@ -3,8 +3,12 @@ extends Node3D
 
 @export var animation_duration: float;
 
+enum picking_state {pick, no_pick}
+
 var item_parent: Node = null;
 var held_item: Item = null;
+
+signal picking_state_changed;
 
 func try_to_grab_item(item: Item) -> void:
 	if (held_item):
@@ -15,8 +19,10 @@ func try_to_grab_item(item: Item) -> void:
 	item_parent = held_item.get_parent();
 	held_item.reparent(self);
 	item_animation(item);
+	picking_state_changed.emit(picking_state.pick)
 
-# korutyna 😎huj
+
+# korutyna 😎chuj
 func item_animation(item: Item) -> void:
 	var time: float = 0;
 	var start_posiiton: Vector3 = held_item.position;
@@ -29,8 +35,10 @@ func item_animation(item: Item) -> void:
 		held_item.transform.basis = Basis(start_rotation.slerp(target_rotation, t));
 		await get_tree().process_frame;
 
+
 func drop_item() -> void:
 	held_item.set_kinematic(false);
 	held_item.reparent(item_parent);
 	held_item = null;
 	item_parent = null;
+	picking_state_changed.emit(picking_state.no_pick)

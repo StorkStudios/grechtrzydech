@@ -7,6 +7,7 @@ extends RayCast3D
 var playback : AudioStreamPlaybackPolyphonic
 
 signal killed_enemy;
+signal middle_finger;
 
 func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("interact")):
@@ -49,3 +50,6 @@ func interact() -> void:
 	
 	elif (player_hand.held_item):
 		player_hand.drop_item();
+		
+	else:
+		middle_finger.emit();
