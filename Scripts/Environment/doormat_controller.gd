@@ -38,9 +38,10 @@ func on_interacted() -> void:
 	
 func doormat_animation() -> void:
 	var time: float = 0;
-	var start_posiiton: Vector3 = position;
+	var start_posiiton: Vector3 = global_position;
+	var end_position: Vector3 = to_global(local_position_target);
 	while (time < animation_duration):
 		time += get_process_delta_time();
 		var t: float = time / animation_duration;
-		position = start_posiiton.lerp(start_posiiton + local_position_target, t);
+		global_position = start_posiiton.lerp(end_position, t);
 		await get_tree().process_frame;
