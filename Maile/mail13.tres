@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MailResource" load_steps=2 format=3 uid="uid://of2xj3u0is3j"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/mail_resource.gd" id="1_smbpf"]
+
+[resource]
+script = ExtResource("1_smbpf")
+from = "noreply@put.poznan.pl"
+to = "ilovecats@gmetal.com"
+subject = "Ruch Projektantów Gier to (może) koło naukowe dla Ciebie"
+body = "Lubisz gry komputerowe?
+My też!
+Czy kiedykolwiek zastanawiałeś się jak się je tworzy?
+Czy zawsze chciałeś tego spróbować?
+
+Jeśli tak, to Ruch Projektantów Gier to koło naukowe dla Ciebie!
+
+Nasze koło naukowe zajmuje się tworzeniem gier komputerowych.
+Od wymyślania konceptu, przez planowanie, programowanie, tworzenie grafik, aż po ich wydanie.
+Organizujemy prelekcje, które mają za zadanie przedstawiać aspekty GameDevu w taki sposób, aby członkom koła jak najłatwiej stawiało się pierwsze kroki w tej dziedzinie.
+
+Nie musisz posiadać doświadczenia, ani umieć programować.
+Tworzenie gier to dziedzina multidyscyplinarna.
+Każdy wnosi do projektu coś innego, coś swojego.
+Przykładowe role w projekcie to:
+    - programista - nie narzucamy języka ani silnika
+    - grafik - 2D lub 3D
+    - level designer
+    - sound designer
+    - muzyk
+Jeśli chcesz tworzyć gry i jesteś gotowy na naukę, to bez problemu znajdziesz u nas miejsce dla siebie!
+
+Nasze koło zajmuje się również organizacją Game Jamów, czyli maratonów tworzenia gier.
+Jeżeli lubisz gry i jesteś chętny zajmować się organizacją wydarzeń, również zapraszamy do dołączenia do koła.
+
+Pierwsze spotkanie koła odbędzie się 7 listopada o godzinie 18.30 w sali L122 Biblioteki Technicznej.
+Na nim będziesz mógł dokładniej dowiedzieć się jak działa nasze koło, posłuchać prezentacji o tym jak stworzyć swoją pierwszą grę i pograć w gry stworzone przez członków naszego koła.
+
+Zapraszamy na naszego facebooka: https://www.facebook.com/share/y1Kg2r1rjmQpqsh2/
+Jeżeli chcesz dowiedzieć się więcej zapraszamy do dołączenia do naszego serwera na discordzie: https://discord.gg/yRNZ73W"

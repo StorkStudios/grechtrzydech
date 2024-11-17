@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cpmnyp5n7qp7v"]
+[gd_scene load_steps=20 format=3 uid="uid://cpmnyp5n7qp7v"]
 
 [ext_resource type="Script" path="res://Scripts/pc_display.gd" id="1_4mcat"]
 [ext_resource type="Resource" uid="uid://bpb8151vr3qb5" path="res://Maile/mail1.tres" id="2_5c1o8"]
@@ -18,6 +18,7 @@
 [ext_resource type="Resource" uid="uid://detobh8fvfi1q" path="res://Maile/mail12.tres" id="15_7dro3"]
 [ext_resource type="Script" path="res://Scripts/full_email.gd" id="15_h36h2"]
 [ext_resource type="Texture2D" uid="uid://bak8spdu6uuta" path="res://Graphic/Sprites/back_arrow.png" id="15_pfuan"]
+[ext_resource type="Resource" uid="uid://of2xj3u0is3j" path="res://Maile/mail13.tres" id="16_cblyg"]
 
 [node name="PCDisplay" type="Control" node_paths=PackedStringArray("mail_parent", "full_email")]
 layout_mode = 3
@@ -28,7 +29,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4mcat")
 mail_instance = ExtResource("13_42m65")
-mail_resources = Array[Resource]([ExtResource("3_lvkfj"), ExtResource("2_5c1o8"), ExtResource("3_hv3g4"), ExtResource("4_m4o61"), ExtResource("5_s4i8f"), ExtResource("6_4q158"), ExtResource("7_p1fpe"), ExtResource("8_2qghs"), ExtResource("9_5nekq"), ExtResource("10_0c1r3"), ExtResource("11_xwg4u"), ExtResource("12_fu6ji"), ExtResource("15_7dro3")])
+mail_resources = Array[Resource]([ExtResource("3_lvkfj"), ExtResource("2_5c1o8"), ExtResource("3_hv3g4"), ExtResource("4_m4o61"), ExtResource("5_s4i8f"), ExtResource("6_4q158"), ExtResource("7_p1fpe"), ExtResource("8_2qghs"), ExtResource("9_5nekq"), ExtResource("10_0c1r3"), ExtResource("11_xwg4u"), ExtResource("12_fu6ji"), ExtResource("15_7dro3"), ExtResource("16_cblyg")])
 mail_parent = NodePath("ScrollContainer/BoxContainer")
 full_email = NodePath("FullEmail")
 random_mails = 2
