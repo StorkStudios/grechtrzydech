@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bm4t7l586qjyc"]
+[gd_scene load_steps=6 format=3 uid="uid://c57s3v5crfc64"]
 
 [ext_resource type="PackedScene" uid="uid://dsix0norija7y" path="res://Graphic/Models/DeadHand.glb" id="1_077si"]
 [ext_resource type="Script" path="res://Scripts/animation_player_arms.gd" id="2_gpr2f"]
+[ext_resource type="Material" uid="uid://burisw1c1t3vl" path="res://Graphic/Materials/Scyth50.tres" id="2_k6swd"]
+[ext_resource type="Material" uid="uid://cr3dyx6erw0be" path="res://Graphic/Materials/HandC.tres" id="3_gkw05"]
+[ext_resource type="Material" uid="uid://be42eso8phtxa" path="res://Graphic/Materials/HandCloth.tres" id="4_uqxmi"]
 
 [node name="DeadHand" instance=ExtResource("1_077si")]
 
@@ -47,6 +50,24 @@ bones/40/rotation = Quaternion(1.4134e-08, -1.19163e-07, -0.0277888, 0.999614)
 bones/41/rotation = Quaternion(2.27275e-14, 1.46234e-07, -0.249168, 0.96846)
 bones/42/rotation = Quaternion(-1.92779e-08, -1.15591e-13, 0.127672, 0.991817)
 bones/43/rotation = Quaternion(-0.216852, 0.976204, -1.63719e-08, 7.37014e-08)
+
+[node name="Scythe50" parent="RightkeletonHand/Skeleton3D" index="0"]
+transform = Transform3D(0.00010771, -0.187295, 0.982304, -0.272433, -0.945153, -0.180182, 0.962174, -0.267593, -0.0511273, 0.105349, -0.0630655, 0.778969)
+
+[node name="Scythe50" parent="RightkeletonHand/Skeleton3D/Scythe50" index="0"]
+material_override = ExtResource("2_k6swd")
+
+[node name="lEFTSkeletonHand_001" parent="RightkeletonHand/Skeleton3D" index="1"]
+material_override = ExtResource("3_gkw05")
+
+[node name="lEFTSkeletonHand_002" parent="RightkeletonHand/Skeleton3D" index="2"]
+material_override = ExtResource("3_gkw05")
+
+[node name="lEFTSkeletonHandCloth" parent="RightkeletonHand/Skeleton3D" index="3"]
+material_override = ExtResource("4_uqxmi")
+
+[node name="lEFTSkeletonHandCloth_001" parent="RightkeletonHand/Skeleton3D" index="4"]
+material_override = ExtResource("4_uqxmi")
 
 [node name="AnimationPlayer" parent="." index="1"]
 script = ExtResource("2_gpr2f")

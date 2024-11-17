@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwm7eavbmsoki"
-path.s3tc="res://.godot/imported/SkeletonHandsAlbedoTransparency.png-18a2d05e7743ac3b39bff326b058919d.s3tc.ctex"
-path.etc2="res://.godot/imported/SkeletonHandsAlbedoTransparency.png-18a2d05e7743ac3b39bff326b058919d.etc2.ctex"
+uid="uid://chp22r00kbvfu"
+path.s3tc="res://.godot/imported/ScytheAlbedoTransparency.png-10ddffbfdd19090b3c92d81a4aaaca93.s3tc.ctex"
+path.etc2="res://.godot/imported/ScytheAlbedoTransparency.png-10ddffbfdd19090b3c92d81a4aaaca93.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Graphic/Textures/Characters/Protagonist/SkeletonHandsAlbedoTransparency.png"
-dest_files=["res://.godot/imported/SkeletonHandsAlbedoTransparency.png-18a2d05e7743ac3b39bff326b058919d.s3tc.ctex", "res://.godot/imported/SkeletonHandsAlbedoTransparency.png-18a2d05e7743ac3b39bff326b058919d.etc2.ctex"]
+source_file="res://Graphic/Textures/kosa/ScytheAlbedoTransparency.png"
+dest_files=["res://.godot/imported/ScytheAlbedoTransparency.png-10ddffbfdd19090b3c92d81a4aaaca93.s3tc.ctex", "res://.godot/imported/ScytheAlbedoTransparency.png-10ddffbfdd19090b3c92d81a4aaaca93.etc2.ctex"]
 
 [params]
 

@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://durub8p1hj84q"]
+[gd_scene load_steps=8 format=3 uid="uid://durub8p1hj84q"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_ie06p"]
 [ext_resource type="PackedScene" path="res://Scenes/PlayerHand.tscn" id="2_2ywn3"]
 [ext_resource type="PackedScene" uid="uid://cop5c8x0aitxj" path="res://Scenes/PlayerInteracter.tscn" id="3_7s13a"]
-[ext_resource type="PackedScene" path="res://Scenes/dead_hand.tscn" id="4_24fce"]
+[ext_resource type="PackedScene" uid="uid://c57s3v5crfc64" path="res://Scenes/dead_hand.tscn" id="4_24fce"]
+[ext_resource type="Material" uid="uid://be42eso8phtxa" path="res://Graphic/Materials/HandCloth.tres" id="5_hdltr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xy4xi"]
 
@@ -49,6 +50,15 @@ omni_range = 13.0
 
 [node name="DeadHand" parent="CharacterBody3D/Camera3D" instance=ExtResource("4_24fce")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.385905, -0.703267, -0.502834)
+
+[node name="Scythe50" parent="CharacterBody3D/Camera3D/DeadHand/RightkeletonHand/Skeleton3D" index="0"]
+transform = Transform3D(0.00010771, -0.187295, 0.982304, -0.272433, -0.945153, -0.180182, 0.962174, -0.267593, -0.0511273, 0.105349, -0.0630655, 0.778969)
+
+[node name="lEFTSkeletonHandCloth" parent="CharacterBody3D/Camera3D/DeadHand/RightkeletonHand/Skeleton3D" index="3"]
+material_override = ExtResource("5_hdltr")
+
+[node name="lEFTSkeletonHandCloth_001" parent="CharacterBody3D/Camera3D/DeadHand/RightkeletonHand/Skeleton3D" index="4"]
+material_override = ExtResource("5_hdltr")
 
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 
