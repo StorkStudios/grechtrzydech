@@ -12,6 +12,8 @@ size = Vector2(1, 1)
 [node name="Doormat" type="StaticBody3D"]
 collision_layer = 2
 script = ExtResource("1_6dhlw")
+local_position_target = Vector3(1, 0, 1)
+animation_duration = 0.6
 interactSound = ExtResource("2_b7420")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
