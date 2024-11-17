@@ -8,6 +8,7 @@
 script = ExtResource("1_qb0kb")
 
 [node name="ClockScene" parent="." instance=ExtResource("2_dhdwe")]
+time_between_kills = 30.0
 
 [node name="EnemySpawner" type="Node" parent="."]
 script = ExtResource("3_pbhfc")

@@ -10,5 +10,6 @@ kill_time = 3.0
 
 [node name="Bell" type="Node" parent="."]
 script = ExtResource("2_0gjyp")
+enabled = true
 
 [connection signal="kill_time_start" from="." to="Bell" method="_on_clock_scene_kill_time_start"]
