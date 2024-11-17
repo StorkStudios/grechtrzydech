@@ -21,7 +21,9 @@ func _process(delta: float) -> void:
 		var interact_target := collider as InteractTarget;
 		cursor.set_cursor_state(Cursor.State.interact, interact_target.will_interact(player_hand.held_item));
 	elif (collider is Enemy):
-		cursor.set_cursor_state(Cursor.State.attack, true);
+		var enemy := collider as Enemy;
+		var can_kill: bool = !player_hand.held_item && enemy.can_be_killed;
+		cursor.set_cursor_state(Cursor.State.attack, can_kill);
 
 func interact() -> void:
 	var collider: Object = get_collider();
@@ -42,8 +44,8 @@ func interact() -> void:
 	
 	elif (collider is Enemy):
 		var enemy := collider as Enemy;
-		enemy.get_killed();
-		killed_enemy.emit();
+		if (enemy.get_killed()):
+			killed_enemy.emit();
 	
 	elif (player_hand.held_item):
 		player_hand.drop_item();

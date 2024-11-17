@@ -5,10 +5,11 @@ extends Node3D
 var can_be_killed = true;
 
 
-func get_killed() -> void:
+func get_killed() -> bool:
 	if (!can_be_killed):
-		return;
+		return false;
 	can_be_killed = false;
 	get_tree().get_first_node_in_group("GameManager").npc_killed(self)
 	animation.play_death_animation();
 	$AudioStreamPlayer3D.play();
+	return true;
