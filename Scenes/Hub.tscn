@@ -333,16 +333,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10887, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Door/Area3D"]
 shape = SubResource("BoxShape3D_unh88")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Door"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
-skeleton = NodePath("")
-
-[node name="Wall-5x5" type="MeshInstance3D" parent="Door/MeshInstance3D"]
-transform = Transform3D(-1, 0, 0, 0, 0, 1, 0, 1, 0, -0.00352573, 0.03168, 0.00121403)
-material_override = ExtResource("10_sjaxd")
-mesh = SubResource("ArrayMesh_olmod")
-skeleton = NodePath("")
-
 [node name="Door2" type="Node3D" parent="." node_paths=PackedStringArray("area", "anim_player")]
 transform = Transform3D(-2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, -6.58963, -3.60146, -4.49985)
 script = ExtResource("5_ulefk")
@@ -390,11 +380,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10887, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Door2/Area3D"]
 shape = SubResource("BoxShape3D_unh88")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Door2"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 6.76879, -3.60146, -4.49985)
 skeleton = NodePath("")
 
-[node name="Wall-5x5" type="MeshInstance3D" parent="Door2/MeshInstance3D"]
+[node name="Wall-5x5" type="MeshInstance3D" parent="MeshInstance3D2"]
+transform = Transform3D(-1, 0, 0, 0, 0, 1, 0, 1, 0, -0.00352573, 0.03168, 0.00121403)
+material_override = ExtResource("10_sjaxd")
+mesh = SubResource("ArrayMesh_olmod")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.62269e-07, 0, -2, 0, 2, 0, 2, 0, 2.62269e-07, -6.58963, -3.60146, -4.49985)
+skeleton = NodePath("")
+
+[node name="Wall-5x5" type="MeshInstance3D" parent="MeshInstance3D"]
 transform = Transform3D(-1, 0, 0, 0, 0, 1, 0, 1, 0, -0.00352573, 0.03168, 0.00121403)
 material_override = ExtResource("10_sjaxd")
 mesh = SubResource("ArrayMesh_olmod")
