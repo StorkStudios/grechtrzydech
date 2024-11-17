@@ -1,17 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://cpmnyp5n7qp7v"]
+[gd_scene load_steps=7 format=3 uid="uid://cpmnyp5n7qp7v"]
 
 [ext_resource type="Script" path="res://Scripts/pc_display.gd" id="1_4mcat"]
-[ext_resource type="Resource" uid="uid://bpb8151vr3qb5" path="res://Maile/mail1.tres" id="2_5c1o8"]
-[ext_resource type="Resource" uid="uid://bybdf1t4sgeei" path="res://Maile/mail2.tres" id="3_hv3g4"]
-[ext_resource type="Resource" uid="uid://bnxk6dsdn2q6l" path="res://Maile/mail3.tres" id="4_m4o61"]
-[ext_resource type="Resource" uid="uid://bi0qgbspkqyfx" path="res://Maile/mail4.tres" id="5_s4i8f"]
-[ext_resource type="Resource" uid="uid://c4bhk0md37pxd" path="res://Maile/mail5.tres" id="6_4q158"]
-[ext_resource type="Resource" uid="uid://d3na6k3jhe0n8" path="res://Maile/mail6.tres" id="7_p1fpe"]
-[ext_resource type="Resource" uid="uid://cke2x0vn7g4xc" path="res://Maile/mail7.tres" id="8_2qghs"]
-[ext_resource type="Resource" uid="uid://hvxthwi3v2mw" path="res://Maile/mail8.tres" id="9_5nekq"]
-[ext_resource type="Resource" uid="uid://bxrrabotasgte" path="res://Maile/mail9.tres" id="10_0c1r3"]
-[ext_resource type="Resource" uid="uid://dohsw8rqhrl33" path="res://Maile/mail10.tres" id="11_xwg4u"]
-[ext_resource type="Resource" uid="uid://cyaoe45g1pu8j" path="res://Maile/mail11.tres" id="12_fu6ji"]
+[ext_resource type="Resource" uid="uid://frvaflsj4e3r" path="res://Maile/mail_manager.tres" id="3_4e4xm"]
 [ext_resource type="PackedScene" uid="uid://c5l12t4j1xyyq" path="res://Scenes/mail_entry.tscn" id="13_42m65"]
 [ext_resource type="Texture2D" uid="uid://t7mdlowvssri" path="res://Graphic/Sprites/background.png" id="14_fb3g8"]
 [ext_resource type="Script" path="res://Scripts/full_email.gd" id="15_h36h2"]
@@ -26,7 +16,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4mcat")
 mail_instance = ExtResource("13_42m65")
-mail_resources = Array[Resource]([ExtResource("2_5c1o8"), ExtResource("3_hv3g4"), ExtResource("4_m4o61"), ExtResource("5_s4i8f"), ExtResource("6_4q158"), ExtResource("7_p1fpe"), ExtResource("8_2qghs"), ExtResource("9_5nekq"), ExtResource("10_0c1r3"), ExtResource("11_xwg4u"), ExtResource("12_fu6ji")])
+mail_manager = ExtResource("3_4e4xm")
 mail_parent = NodePath("ScrollContainer/BoxContainer")
 full_email = NodePath("FullEmail")
 

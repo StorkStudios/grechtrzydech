@@ -1,6 +1,6 @@
 extends Control
 
-@export var game_scene = "res://Scenes/SpawnpointSelection.tscn"
+@export var game_scene = "res://Scenes/Hub.tscn"
 
 func _ready() -> void:
 	$VBoxContainer/StartGameButton.pressed.connect(_on_start_game_pressed)
