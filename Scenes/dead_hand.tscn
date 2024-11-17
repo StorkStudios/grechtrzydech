@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://dsix0norija7y" path="res://Graphic/Models/DeadHand.glb" id="1_077si"]
 [ext_resource type="Script" path="res://Scripts/animation_player_arms.gd" id="2_gpr2f"]
-[ext_resource type="Material" uid="uid://25wafwtseh1v" path="res://Graphic/Materials/Scyth50.tres" id="2_k6swd"]
-[ext_resource type="Material" uid="uid://bjmau3bw4lkij" path="res://Graphic/Materials/HandC.tres" id="3_gkw05"]
-[ext_resource type="Material" uid="uid://dok780bgf31wg" path="res://Graphic/Materials/HandCloth.tres" id="4_uqxmi"]
+[ext_resource type="Material" uid="uid://4ku6ww2h7dun" path="res://Graphic/Materials/Scyth50.tres" id="2_k6swd"]
+[ext_resource type="Material" uid="uid://cqv4c10uvstmm" path="res://Graphic/Materials/HandC.tres" id="3_gkw05"]
+[ext_resource type="Material" uid="uid://bmlmtryi52uvf" path="res://Graphic/Materials/HandCloth.tres" id="4_uqxmi"]
 
 [node name="DeadHand" instance=ExtResource("1_077si")]
 
@@ -32,7 +32,6 @@ bones/15/rotation = Quaternion(9.45784e-09, -1.19134e-07, 0.0350023, 0.999387)
 bones/15/scale = Vector3(1, 1, 1)
 bones/16/rotation = Quaternion(-4.97732e-09, 2.6996e-07, -0.0417499, 0.999128)
 bones/17/rotation = Quaternion(6.72539e-09, -3.8925e-07, 0.0282074, 0.999602)
-bones/17/scale = Vector3(1, 1, 1)
 bones/18/rotation = Quaternion(-5.53355e-08, 1.18501e-07, -0.108795, 0.994064)
 bones/19/rotation = Quaternion(3.424e-08, 1.43227e-12, 0.226759, 0.973951)
 bones/20/rotation = Quaternion(-1.92779e-08, 1.34144e-15, -0.127672, 0.991816)
@@ -41,7 +40,6 @@ bones/22/position = Vector3(0.0107609, -0.0207636, -0.46675)
 bones/22/rotation = Quaternion(0.707107, -5.33851e-08, -5.33851e-08, 0.707107)
 bones/23/rotation = Quaternion(-5.09359e-08, -1.68169e-09, -0.0370663, 0.999313)
 bones/24/rotation = Quaternion(3.36945e-14, 1.50957e-07, -0.0230707, 0.999734)
-bones/24/scale = Vector3(1, 1, 1)
 bones/25/rotation = Quaternion(-3.57164e-08, -1.41458e-12, 0.236537, 0.971623)
 bones/26/rotation = Quaternion(1.13578e-14, -1.50942e-07, -0.0265846, 0.999647)
 bones/27/rotation = Quaternion(-1.36152e-13, 1.50511e-07, -0.0799238, 0.996801)
@@ -70,15 +68,14 @@ bones/41/rotation = Quaternion(2.52279e-08, -1.42715e-12, -0.167075, 0.985944)
 bones/41/scale = Vector3(1, 1, 1)
 bones/42/rotation = Quaternion(-8.64054e-09, -1.33067e-14, 0.0572237, 0.998361)
 bones/43/rotation = Quaternion(-0.151808, 0.98841, -1.14612e-08, 7.46229e-08)
-bones/43/scale = Vector3(1, 1, 1)
 bones/44/rotation = Quaternion(4.10637e-08, 7.631e-10, 0.0174905, 0.999847)
 bones/45/rotation = Quaternion(0.505104, 0.39342, 0.621418, 0.451587)
 
 [node name="Scythe50" parent="RightkeletonHand/Skeleton3D" index="0"]
-transform = Transform3D(0.000107514, -0.187295, 0.982304, -0.272435, -0.945153, -0.180182, 0.962174, -0.267594, -0.0511271, 0.105349, -0.104194, 0.778969)
+transform = Transform3D(-0.931124, 0.272001, -0.242947, -0.314935, -0.263759, 0.911727, 0.183911, 0.925444, 0.331256, -0.333508, 1.21262, -0.382776)
 
 [node name="Scythe50" parent="RightkeletonHand/Skeleton3D/Scythe50" index="0"]
-transform = Transform3D(0.999956, 0, -1.86265e-09, -2.98023e-08, 1.07695, 9.31323e-09, 0, 6.51926e-09, 0.596399, 0, 0, 0)
+transform = Transform3D(1, 2.98036e-08, -2.73512e-16, -2.98036e-08, 1, -6.05345e-09, 9.30976e-17, 6.05345e-09, 1, 0, 0, 0)
 material_override = ExtResource("2_k6swd")
 
 [node name="lEFTSkeletonHand_001" parent="RightkeletonHand/Skeleton3D" index="1"]
