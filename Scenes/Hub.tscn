@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://cmqk1pykjuvtc"]
+[gd_scene load_steps=28 format=4 uid="uid://cmqk1pykjuvtc"]
 
 [ext_resource type="Script" path="res://Scripts/hub_player.gd" id="1_7xoef"]
 [ext_resource type="Script" path="res://Scripts/pc_screen.gd" id="2_gw130"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://Scripts/interact_target.gd" id="7_f0yqa"]
 [ext_resource type="AudioStream" uid="uid://buqxxoeqe1fo6" path="res://Sounds/LockedDoorHandleJiggle.wav" id="8_m7vd0"]
 [ext_resource type="Material" uid="uid://bfejkyscjywt8" path="res://Graphic/Materials/NrDoor/Door01.tres" id="9_up1t2"]
+[ext_resource type="ArrayMesh" uid="uid://bkdlrtbxwy872" path="res://Graphic/Models/worktable.obj" id="10_hwys1"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_wl6qf"]
 
@@ -205,6 +206,9 @@ size = Vector2i(1024, 1024)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.00884871, 0.999961, 0, -0.999961, -0.00884871, 0, 0, 0)
+
 [node name="Monitor" type="MeshInstance3D" parent="."]
 transform = Transform3D(3.97268, 0, 0.466683, 0, 4, 0, -0.466683, 0, 3.97268, -0.31738, -1.14206, -1.37088)
 mesh = ExtResource("4_7omlu")
@@ -255,3 +259,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10887, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Door/Area3D"]
 shape = SubResource("BoxShape3D_unh88")
+
+[node name="Worktable" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.372674, 0, -2.51251, 0, 2.54, 0, 2.51251, 0, 0.372674, -1.11612, -3.64982, -1.15038)
+mesh = ExtResource("10_hwys1")
+surface_material_override/0 = ExtResource("6_xocb0")
