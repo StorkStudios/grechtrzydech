@@ -1,7 +1,7 @@
 extends Node
 
 @export var enabled: bool
-var bell_sound = preload("res://Sounds/Bell.mp3")
+var bell_sound = preload("res://Sounds/churchbell.mp3")
 var audio_player: AudioStreamPlayer3D
 
 func _ready() -> void:
